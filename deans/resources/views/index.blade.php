@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="content-wrapper">
-        {{auth()->user()->name}}
         <div class="content-header">
             <div class="container">
                 <div class="row mb-2">

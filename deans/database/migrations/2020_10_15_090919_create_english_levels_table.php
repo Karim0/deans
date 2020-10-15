@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateStudyStatusesTable extends Migration
+class CreateEnglishLevelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateStudyStatusesTable extends Migration
      */
     public function up()
     {
-        Schema::create('study_statuses', function (Blueprint $table) {
+        Schema::create('english_levels', function (Blueprint $table) {
             $table->id();
-            $table->string('description_kz');
+            $table->tinyInteger('sort_order');
+            $table->string('name');
+            $table->string('description_kk');
             $table->string('description_ru');
             $table->string('description_en');
             $table->timestamps();
@@ -29,6 +31,6 @@ class CreateStudyStatusesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('study_statuses');
+        Schema::dropIfExists('english_levels');
     }
 }

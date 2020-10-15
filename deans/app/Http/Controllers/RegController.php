@@ -28,8 +28,7 @@ class RegController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            Log::info('2312312312312asdas');
-            return redirect('profile');
+            return redirect()->route('profile');
         }
         return redirect()->route('login', ['error']);
     }
@@ -51,18 +50,31 @@ class RegController extends Controller
         $data = $request->all();
 
 
-        $isAdded = User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password'])
+            'password' => Hash::make($data['password']),
+            'lastname' => $data['lastname'],
+            'patronymic' => $data['patronymic'],
+            'gender' => $data['gender'],
+            'tel' => $data['tel'],
+            'birthdate' => $data['birthdate'],
+            'registration_address' => $data['registration_address'],
+            'residential_address' => $data['residential_address'],
+            'iin' => $data['iin'],
         ]);
-        Log::info('$isAdded');
-        return redirect("profile");
+        Log::info($user);
+        $credentials = $user->only('email', 'password');
+        if (Auth::attempt($credentials)) {
+            return redirect()->route('profile');
+        }
+
+        return redirect()->route('register', ['error']);
     }
 
     public function profile()
     {
 
-        return redirect()->route('profile', ['error']);
+        return view('profile', ['user' => Auth::user()]);
     }
 }

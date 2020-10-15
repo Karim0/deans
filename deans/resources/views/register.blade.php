@@ -41,43 +41,53 @@
                                 </div>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" placeholder="Retype password" name="password2">
+                                <input type="password" class="form-control" placeholder="Retype password"
+                                       name="password2">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fas fa-lock"></span>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Lastname"
+                                       name="lastname">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Patronymic"
+                                       name="patronymic">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Gender"
+                                       name="gender">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Phone number"
+                                       name="tel">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="date" class="form-control" placeholder="Birthdate"
+                                       name="birthdate">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Registration Address"
+                                       name="registration_address">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Residential Address"
+                                       name="residential_address">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="IIN"
+                                       name="iin">
+                            </div>
                             <div class="row">
-                                <div class="col-8">
-                                    <div class="icheck-primary">
-                                        <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                                        <label for="agreeTerms">
-                                            I agree to the <a href="#">terms</a>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- /.col -->
                                 <div class="col-4">
                                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                                 </div>
-                                <!-- /.col -->
                             </div>
                         </form>
-
-                        <div class="social-auth-links text-center">
-                            <p>- OR -</p>
-                            <a href="#" class="btn btn-block btn-primary">
-                                <i class="fab fa-facebook mr-2"></i>
-                                Sign up using Facebook
-                            </a>
-                            <a href="#" class="btn btn-block btn-danger">
-                                <i class="fab fa-google-plus mr-2"></i>
-                                Sign up using Google+
-                            </a>
-                        </div>
-
-                        <a href="login.html" class="text-center">I already have a membership</a>
                     </div>
                 </div>
             </div>

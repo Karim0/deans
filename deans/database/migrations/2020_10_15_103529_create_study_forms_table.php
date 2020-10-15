@@ -16,6 +16,16 @@ class CreateStudyFormsTable extends Migration
         Schema::create('study_forms', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->unsignedBigInteger('degree_id');
+            $table->unsignedBigInteger('department_type_id');
+
+            $table->string('description_kz');
+            $table->string('description_ru');
+            $table->string('description_en');
+            $table->tinyInteger('course_count');
+            $table->foreign('degree_id')->references('id')->on('degree_types')->onDelete('cascade');
+            $table->foreign('department_type_id')->references('id')->on('department_types')->onDelete('cascade');
         });
     }
 
