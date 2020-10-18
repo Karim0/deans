@@ -59,8 +59,12 @@
                                        name="patronymic">
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Gender"
-                                       name="gender">
+                                <select name="gender" class="form-control">
+                                    @foreach(\App\Models\Gender::all() as $gen)
+                                        <option value="{{$gen->id}}">{{$gen->title_en}}</option>
+                                    @endforeach
+                                </select>
+
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Phone number"

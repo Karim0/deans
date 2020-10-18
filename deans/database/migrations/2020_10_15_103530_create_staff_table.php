@@ -18,7 +18,6 @@ class CreateStaffTable extends Migration
             $table->unsignedBigInteger('english_level_id');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('academic_degree_id');
-            $table->unsignedBigInteger('payment_form_id');
             $table->unsignedBigInteger('academic_rank_id');
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

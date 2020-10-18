@@ -98,7 +98,7 @@
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
                             <li class="breadcrumb-item active">User Profile</li>
                         </ol>
                     </div>
@@ -110,7 +110,6 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3">
-
                         <!-- Profile Image -->
                         <div class="card card-primary card-outline">
                             <div class="card-body box-profile">
@@ -149,69 +148,111 @@
                                         <b>Birthdate</b> <a class="float-right">{{$user->birthdate}}</a>
                                     </li>
                                     <li class="list-group-item">
-                                        <b>Registration Address</b> <a class="float-right">{{$user->registration_address}}</a>
+                                        <b>Registration Address</b> <a
+                                            class="float-right">{{$user->registration_address}}</a>
                                     </li>
                                     <li class="list-group-item">
-                                        <b>Residential_Address</b> <a class="float-right">{{$user->residential_address}}</a>
+                                        <b>Residential_Address</b> <a
+                                            class="float-right">{{$user->residential_address}}</a>
                                     </li>
                                     <li class="list-group-item">
                                         <b>IIN</b> <a class="float-right">{{$user->iin}}</a>
                                     </li>
                                 </ul>
 
-                                <a href="#" class="btn btn-primary btn-block"><b>Edit</b></a>
+                                <a href="#" type="button" data-toggle="modal" data-target="#modal_edit"
+                                   class="btn btn-primary btn-block"><b>Edit</b></a>
                             </div>
                         </div>
+                        @if($user->staff)
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Staff info</h3>
+                                </div>
+                                <div class="card-body">
+                                    <strong><i class="fas fa-book mr-1"></i> English level</strong>
 
-                        <div class="card card-primary">
-                            <div class="card-header">
-                                <h3 class="card-title">About Me</h3>
+                                    <p class="text-muted">
+                                        {{$user->staff->english_level->description_en}}
+                                    </p>
+                                    <hr>
+                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Academic degree</strong>
+                                    <p class="text-muted">{{$user->staff->academic_degree->title_en}}</p>
+                                    <hr>
+                                    <strong><i class="fas fa-pencil-alt mr-1"></i> Academic rank</strong>
+                                    <p class="text-muted">
+                                        {{$user->staff->academic_rank->title_en}}
+                                    </p>
+                                    <hr>
+                                    <strong><i class="far fa-file-alt mr-1"></i> Foreign</strong>
+                                    @if($user->staff->is_foreign)
+                                        <p class="text-muted">Yes</p>
+                                    @else
+                                        <p class="text-muted">No</p>
+                                    @endif
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <strong><i class="fas fa-book mr-1"></i> Education</strong>
+                        @endif
 
-                                <p class="text-muted">
-                                    B.S. in Computer Science from the University of Tennessee at Knoxville
-                                </p>
+                        @if($user->student)
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">About Me</h3>
+                                </div>
+                                <div class="card-body">
+                                    <strong><i class="fas fa-book mr-1"></i> Education</strong>
 
-                                <hr>
 
-                                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+                                    <p class="text-muted">
 
-                                <p class="text-muted">Malibu, California</p>
+                                    </p>
 
-                                <hr>
+                                    <hr>
 
-                                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
 
-                                <p class="text-muted">
-                                    <span class="tag tag-danger">UI Design</span>
-                                    <span class="tag tag-success">Coding</span>
-                                    <span class="tag tag-info">Javascript</span>
-                                    <span class="tag tag-warning">PHP</span>
-                                    <span class="tag tag-primary">Node.js</span>
-                                </p>
+                                    <p class="text-muted">Malibu, California</p>
 
-                                <hr>
+                                    <hr>
 
-                                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+                                    <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
 
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    fermentum enim neque.</p>
+                                    <p class="text-muted">
+                                        <span class="tag tag-danger">UI Design</span>
+                                        <span class="tag tag-success">Coding</span>
+                                        <span class="tag tag-info">Javascript</span>
+                                        <span class="tag tag-warning">PHP</span>
+                                        <span class="tag tag-primary">Node.js</span>
+                                    </p>
+
+                                    <hr>
+
+                                    <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                        fermentum enim neque.</p>
+                                </div>
+                                <!-- /.card-body -->
                             </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
+                    @endif
+
+                    <!-- /.card -->
                     </div>
                     <!-- /.col -->
                     <div class="col-md-9">
                         <div class="card">
                             <div class="card-header p-2">
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a>
+                                    <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Process</a>
                                     </li>
+                                    {{--                                    <li class="nav-item"><a class="nav-link" href="#send_order"--}}
+                                    {{--                                                            data-toggle="tab">Send order</a></li>--}}
                                     <li class="nav-item"><a class="nav-link" href="#timeline"
-                                                            data-toggle="tab">Timeline</a></li>
+                                                            data-toggle="tab">My groups</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#add_student"
+                                                            data-toggle="tab">Add student</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#add_stuff"
+                                                            data-toggle="tab">Add stuff</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#settings"
                                                             data-toggle="tab">Settings</a></li>
                                 </ul>
@@ -219,140 +260,295 @@
                             <div class="card-body">
                                 <div class="tab-content">
                                     <div class="active tab-pane" id="activity">
-                                        <!-- Post -->
-                                        <div class="post">
-                                            <div class="user-block">
-                                                <img class="img-circle img-bordered-sm"
-                                                     src="../../dist/img/user1-128x128.jpg" alt="user image">
-                                                <span class="username">
-                          <a href="#">Jonathan Burke Jr.</a>
-                          <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
-                        </span>
-                                                <span class="description">Shared publicly - 7:30 PM today</span>
-                                            </div>
-                                            <!-- /.user-block -->
-                                            <p>
-                                                Lorem ipsum represents a long-held tradition for designers,
-                                                typographers and the like. Some people hate it and argue for
-                                                its demise, but others ignore the hate as they create awesome
-                                                tools to help create filler text for everyone from bacon lovers
-                                                to Charlie Sheen fans.
-                                            </p>
+                                        @foreach($orders as $order)
+                                            <div class="post">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="user-block">
 
-                                            <p>
-                                                <a href="#" class="link-black text-sm mr-2"><i
-                                                        class="fas fa-share mr-1"></i> Share</a>
-                                                <a href="#" class="link-black text-sm"><i
-                                                        class="far fa-thumbs-up mr-1"></i> Like</a>
-                                                <span class="float-right">
-                          <a href="#" class="link-black text-sm">
-                            <i class="far fa-comments mr-1"></i> Comments (5)
-                          </a>
-                        </span>
-                                            </p>
+                                                <span class="username ml-0">
+                                                        <a href="#">{{$order->user->name}}</a>
+                                                </span>
+                                                            <span class="description ml-0">{{$order->created_at}}</span>
+                                                        </div>
+                                                    </div>
 
-                                            <input class="form-control form-control-sm" type="text"
-                                                   placeholder="Type a comment">
-                                        </div>
-                                        <!-- /.post -->
+                                                    <div class="col-6">
+                                                        <p>
+                                                            {{$order->cat->description_en}}
+                                                        </p>
+                                                    </div>
 
-                                        <!-- Post -->
-                                        <div class="post clearfix">
-                                            <div class="user-block">
-                                                <img class="img-circle img-bordered-sm"
-                                                     src="../../dist/img/user7-128x128.jpg" alt="User Image">
-                                                <span class="username">
-                          <a href="#">Sarah Ross</a>
-                          <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
-                        </span>
-                                                <span class="description">Sent you a message - 3 days ago</span>
-                                            </div>
-                                            <!-- /.user-block -->
-                                            <p>
-                                                Lorem ipsum represents a long-held tradition for designers,
-                                                typographers and the like. Some people hate it and argue for
-                                                its demise, but others ignore the hate as they create awesome
-                                                tools to help create filler text for everyone from bacon lovers
-                                                to Charlie Sheen fans.
-                                            </p>
-
-                                            <form class="form-horizontal">
-                                                <div class="input-group input-group-sm mb-0">
-                                                    <input class="form-control form-control-sm" placeholder="Response">
-                                                    <div class="input-group-append">
-                                                        <button type="submit" class="btn btn-danger">Send</button>
+                                                    <div class="col-3">
+                                                        <a href="#" class="btn btn-success">Load document</a>
                                                     </div>
                                                 </div>
-                                            </form>
-                                        </div>
-                                        <!-- /.post -->
-
-                                        <!-- Post -->
-                                        <div class="post">
-                                            <div class="user-block">
-                                                <img class="img-circle img-bordered-sm"
-                                                     src="../../dist/img/user6-128x128.jpg" alt="User Image">
-                                                <span class="username">
-                          <a href="#">Adam Jones</a>
-                          <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
-                        </span>
-                                                <span class="description">Posted 5 photos - 5 days ago</span>
                                             </div>
-                                            <!-- /.user-block -->
-                                            <div class="row mb-3">
-                                                <div class="col-sm-6">
-                                                    <img class="img-fluid" src="../../dist/img/photo1.png" alt="Photo">
-                                                </div>
-                                                <!-- /.col -->
-                                                <div class="col-sm-6">
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <img class="img-fluid mb-3" src="../../dist/img/photo2.png"
-                                                                 alt="Photo">
-                                                            <img class="img-fluid" src="../../dist/img/photo3.jpg"
-                                                                 alt="Photo">
-                                                        </div>
-                                                        <!-- /.col -->
-                                                        <div class="col-sm-6">
-                                                            <img class="img-fluid mb-3" src="../../dist/img/photo4.jpg"
-                                                                 alt="Photo">
-                                                            <img class="img-fluid" src="../../dist/img/photo1.png"
-                                                                 alt="Photo">
-                                                        </div>
-                                                        <!-- /.col -->
-                                                    </div>
-                                                    <!-- /.row -->
-                                                </div>
-                                                <!-- /.col -->
-                                            </div>
-                                            <!-- /.row -->
-
-                                            <p>
-                                                <a href="#" class="link-black text-sm mr-2"><i
-                                                        class="fas fa-share mr-1"></i> Share</a>
-                                                <a href="#" class="link-black text-sm"><i
-                                                        class="far fa-thumbs-up mr-1"></i> Like</a>
-                                                <span class="float-right">
-                          <a href="#" class="link-black text-sm">
-                            <i class="far fa-comments mr-1"></i> Comments (5)
-                          </a>
-                        </span>
-                                            </p>
-
-                                            <input class="form-control form-control-sm" type="text"
-                                                   placeholder="Type a comment">
-                                        </div>
-                                        <!-- /.post -->
+                                        @endforeach
                                     </div>
-                                    <!-- /.tab-pane -->
+                                    <div class="tab-pane" id="add_student">
+                                        <form action="{{route('add_student')}}" method="post">
+                                            @csrf
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Full name"
+                                                       name="name">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-user"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="email" class="form-control" placeholder="Email"
+                                                       name="email">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-envelope"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control" placeholder="Password"
+                                                       name="password">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-lock"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control"
+                                                       placeholder="Retype password"
+                                                       name="password2">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-lock"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Lastname"
+                                                       name="lastname">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Patronymic"
+                                                       name="patronymic">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <select name="gender" class="form-control">
+                                                    @foreach(\App\Models\Gender::all() as $gen)
+                                                        <option value="{{$gen->id}}">{{$gen->title_en}}</option>
+                                                    @endforeach
+                                                </select>
+
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Phone number"
+                                                       name="tel">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="date" class="form-control" placeholder="Birthdate"
+                                                       name="birthdate">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Registration Address"
+                                                       name="registration_address">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Residential Address"
+                                                       name="residential_address">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="IIN"
+                                                       name="iin">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="d-flex w-100">
+                                                    <select name="group" id="" class="form-control">
+                                                        @foreach(\App\Models\Groups::all() as $group)
+                                                            <option value="{{$group->id}}">{{$group->title_en}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                    <button type="button"
+                                                            class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                            data-toggle="modal" data-target="#add_group">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="d-flex w-100">
+                                                    <select name="study_form" id="" class="form-control">
+                                                        @foreach(\App\Models\StudyForms::all() as $form)
+                                                            <option
+                                                                value="{{$form->id}}">{{$form->description_en}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                    <button type="button"
+                                                            class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                            data-toggle="modal" data-target="#add_study_form">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="d-flex w-100">
+                                                    <select name="study_lang" id="" class="form-control">
+                                                        @foreach(\App\Models\StudyLangs::all() as $langs)
+                                                            <option value="{{$langs->id}}">{{$langs->title_en}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                    <button type="button"
+                                                            class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                            data-toggle="modal" data-target="#study_lang">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="d-flex w-100">
+                                                    <select name="payment_form" id="" class="form-control">
+                                                        @foreach(\App\Models\PaymentForms::all() as $pay)
+                                                            <option
+                                                                value="{{$pay->id}}">{{$pay->description_en}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                    <button type="button"
+                                                            class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                            data-toggle="modal" data-target="#payment_form">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <div class="d-flex w-100">
+                                                    <select name="study_status" id="" class="form-control flex-grow-1">
+                                                        @foreach(\App\Models\StudyStatuses::all() as $stat)
+                                                            <option
+                                                                value="{{$stat->id}}">{{$stat->description_en}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                    <button type="button"
+                                                            class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                            data-toggle="modal" data-target="#study_statuses">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="course"
+                                                       name="course">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <button type="submit" class="btn btn-primary btn-block">
+                                                        add student
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" id="add_stuff">
+                                        <form action="{{route('add_stuff')}}" method="post">
+                                            @csrf
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Full name"
+                                                       name="name">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-user"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="email" class="form-control" placeholder="Email"
+                                                       name="email">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-envelope"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control" placeholder="Password"
+                                                       name="password">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-lock"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control"
+                                                       placeholder="Retype password"
+                                                       name="password2">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <span class="fas fa-lock"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Lastname"
+                                                       name="lastname">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Patronymic"
+                                                       name="patronymic">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <select name="gender" class="form-control">
+                                                    @foreach(\App\Models\Gender::all() as $gen)
+                                                        <option value="{{$gen->id}}">{{$gen->title_en}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Phone number"
+                                                       name="tel">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="date" class="form-control" placeholder="Birthdate"
+                                                       name="birthdate">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Registration Address"
+                                                       name="registration_address">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Residential Address"
+                                                       name="residential_address">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="IIN"
+                                                       name="iin">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <button type="submit" class="btn btn-primary btn-block">
+                                                        add student
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                     <div class="tab-pane" id="timeline">
                                         <!-- The timeline -->
                                         <div class="timeline timeline-inverse">
                                             <!-- timeline time label -->
                                             <div class="time-label">
-                        <span class="bg-danger">
-                          10 Feb. 2014
-                        </span>
+                                                <span class="bg-danger">
+                                                  10 Feb. 2014
+                                                </span>
                                             </div>
                                             <!-- /.timeline-label -->
                                             <!-- timeline item -->
@@ -445,8 +641,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- /.tab-pane -->
-
                                     <div class="tab-pane" id="settings">
                                         <form class="form-horizontal">
                                             <div class="form-group row">
@@ -502,21 +696,15 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <!-- /.tab-pane -->
                                 </div>
-                                <!-- /.tab-content -->
-                            </div><!-- /.card-body -->
+                            </div>
                         </div>
-                        <!-- /.nav-tabs-custom -->
                     </div>
-                    <!-- /.col -->
                 </div>
-                <!-- /.row -->
-            </div><!-- /.container-fluid -->
+            </div>
         </section>
-        <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
             <b>Version</b> 3.0.5
@@ -524,10 +712,243 @@
         <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
         reserved.
     </footer>
-</div>
-<!-- ./wrapper -->
 
-<!-- jQuery -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="modal_edit">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="p-4">
+                        <form action="{{route('post_change_user')}}" method="post">
+                            @csrf
+
+                            <input type="number" class="form-control" name="id" hidden value="{{$user->id}}">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Full name" name="name"
+                                       value="{{$user->name}}">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-user"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email" name="email"
+                                       value="{{$user->email}}">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-envelope"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Lastname"
+                                       name="lastname" value="{{$user->lastname}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Patronymic"
+                                       name="patronymic" value="{{$user->patronymic}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Gender"
+                                       name="gender" value="{{$user->gender}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Phone number"
+                                       name="tel" value="{{$user->tel}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="date" class="form-control" placeholder="Birthdate"
+                                       name="birthdate" value="{{date('Y-m-d', strtotime($user->birthdate))}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Registration Address"
+                                       name="registration_address" value="{{$user->registration_address}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Residential Address"
+                                       name="residential_address" value="{{$user->residential_address}}">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="IIN"
+                                       name="iin" value="{{$user->iin}}">
+                            </div>
+                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Edit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="add_group">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{route('add_group')}}" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Group name (en)" name="title_en">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Group name (ru)" name="title_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Group name (kk)" name="title_kk">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="add_study_form">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add study form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{route('add_study_form')}}" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <select name="degree_id" class="form-control">
+                                @foreach(\App\Models\DegreeTypes::all() as $degree)
+                                    <option value="{{$degree->id}}">{{$degree->title_en}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="department_type_id" class="form-control">
+                                @foreach(\App\Models\DepartmentTypes::all() as $dep)
+                                    <option value="{{$dep->id}}">{{$dep->description_en}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (en)" name="description_en">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (ru)" name="description_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (kk)" name="description_kk">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="course" name="course_count">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="study_lang">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add study language</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{route('add_study_lang')}}"  method="post">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Language (en)" name="title_en">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Language (ru)" name="title_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Language (kk)" name="title_kk">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="payment_form">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add payment form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{route('add_payment_forms')}}"  method="post">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (en)" name="description_en">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (ru)" name="description_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (kk)" name="description_kk">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="study_statuses">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add study status</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{route('add_study_status')}}"  method="post">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (en)" name="description_en">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (ru)" name="description_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Description (kk)" name="description_kk">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/adminlte.min.js')}}"></script>

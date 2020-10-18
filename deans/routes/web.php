@@ -19,6 +19,16 @@ Route::post('/login', 'RegController@login')->name('post_login');
 Route::get('/regist', 'RegController@registration_page')->name('register');
 Route::post('/regist', 'RegController@registration')->name('post_register');
 Route::get('/profile', 'RegController@profile')->name('profile');
+Route::post('/post_change_user', 'RegController@change_user')->name('post_change_user');
+Route::post('/add_order', 'Controller@addOrder')->name('add_order');
+Route::post('/add_student', 'Controller@addStudent')->name('add_student');
+
+Route::post('/add_group', 'Controller@addGroup')->name('add_group');
+Route::post('/add_study_group', 'Controller@addStudyStatus')->name('add_study_status');
+Route::post('/add_study_form', 'Controller@addStudyForm')->name('add_study_form');
+Route::post('/add_payment_forms', 'Controller@addPaymentForms')->name('add_payment_forms');
+Route::post('/add_study_lang', 'Controller@addStudyLang')->name('add_study_lang');
+Route::post('/add_stuff', 'Controller@addStuff')->name('add_stuff');
 //Route::get('/addPost', 'PostController@addPostPage')->name('add_post_page');
 //Route::post('/addPost', 'PostController@addPost')->name('add_post');
 

@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('lastname');
             $table->string('patronymic');
-            $table->string('gender');
+            $table->unsignedBigInteger('gender_id');
             $table->string('tel');
             $table->dateTime('birthdate');
             $table->string('registration_address');
@@ -28,6 +28,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
+            $table->foreign('gender_id')->references('id')->on('genders')->onDelete('cascade');;
 
             $table->rememberToken();
             $table->timestamps();

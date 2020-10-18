@@ -16,6 +16,10 @@ class CreateStudentOrderCategoriesTable extends Migration
         Schema::create('student_order_categories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->string('description_kz');
+            $table->string('description_ru');
+            $table->string('description_en');
         });
     }
 
