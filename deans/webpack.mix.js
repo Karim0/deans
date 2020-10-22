@@ -11,7 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.copy('resources/js/app.js', 'public/js')
     .copy('resources/js/awesome/*', 'public/js/awesome')
     .copy('resources/plugins/js/*', 'public/js')
     .copy('resources/plugins/js/pages/*', 'public/js/pages')

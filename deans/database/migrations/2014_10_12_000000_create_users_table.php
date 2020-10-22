@@ -25,8 +25,8 @@ class CreateUsersTable extends Migration
             $table->string('registration_address');
             $table->string('residential_address');
             $table->string('iin');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('login')->unique();
+            $table->timestamp('login_verified_at')->nullable();
             $table->string('password');
 
             $table->foreign('gender_id')->references('id')->on('genders')->onDelete('cascade');;

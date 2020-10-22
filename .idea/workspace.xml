@@ -29,26 +29,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_22_123002_create_department_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/group_page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/StudentOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/StudentOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Models/Groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Groups.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122000_create_student_order_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122000_create_student_order_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122013_create_student_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122013_create_student_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122024_create_student_order_statuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122012_create_student_order_statuses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103528_create_degree_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103528_create_degree_types_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103530_create_staff_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103530_create_staff_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094846_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094846_create_groups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/deans/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/deans/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/deans/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/deans/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +220,12 @@
       <workItem from="1602937061588" duration="158000" />
       <workItem from="1602944546964" duration="12000" />
       <workItem from="1602947757627" duration="2699000" />
-      <workItem from="1602992900880" duration="8599000" />
+      <workItem from="1602992900880" duration="8683000" />
+      <workItem from="1603099187413" duration="2000" />
+      <workItem from="1603106746550" duration="4662000" />
+      <workItem from="1603162050331" duration="4292000" />
+      <workItem from="1603173465948" duration="5995000" />
+      <workItem from="1603364299440" duration="11403000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -226,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602765899279</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding student, studyForm, payment_form, studyLang etc.">
+      <created>1603001762802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603001762802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +278,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login and reg" />
-    <option name="LAST_COMMIT_MESSAGE" value="login and reg" />
+    <MESSAGE value="adding student, studyForm, payment_form, studyLang etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding student, studyForm, payment_form, studyLang etc." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
@@ -282,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603001693694" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1602685466020">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603370724122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602685466020" />
+    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603370724122" />
     <state x="838" y="417" key="Github.ShareDialog" timestamp="1602685480657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,37 +322,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602755921079" />
-    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1602842092489">
+    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1603163308311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602842092489" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602685533354">
+    <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603001765582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602685533354" />
-    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603000332030">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603001765582" />
+    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603371165721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603000332030" />
-    <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602996537816">
+    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603371165721" />
+    <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603369326061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602996537816" />
-    <state x="2037" y="0" width="1119" height="733" key="dock-window-1" timestamp="1602995910150">
-      <screen x="1920" y="0" width="1280" height="693" />
+    <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603369326061" />
+    <state x="321" y="154" width="1294" height="636" key="dock-window-1" timestamp="1603367140314">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2037" y="0" width="1119" height="733" key="dock-window-1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602995910150" />
+    <state x="321" y="154" width="1294" height="636" key="dock-window-1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603367140314" />
     <state x="1851" y="19" width="1294" height="733" key="dock-window-2" timestamp="1602839575387">
       <screen x="1920" y="0" width="1280" height="693" />
     </state>
     <state x="1851" y="19" width="1294" height="733" key="dock-window-2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602839575387" />
-    <state x="1096" y="242" key="run.anything.popup" timestamp="1602595224957">
+    <state x="1096" y="242" key="run.anything.popup" timestamp="1603365952083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="242" key="run.anything.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602595224957" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602849773376">
+    <state x="1096" y="242" key="run.anything.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603365952083" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603371598940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602849773376" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603371598940" />
   </component>
 </project>

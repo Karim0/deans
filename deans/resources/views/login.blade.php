@@ -16,7 +16,7 @@
                         <form action="{{route('post_login')}}" method="post">
                             @csrf
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email" name="email">
+                                <input type="text" class="form-control" placeholder="Login" name="login">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fas fa-envelope"></span>
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" placeholder="Password" , name="password">
+                                <input type="password" class="form-control" placeholder="Password" onchange="ch_search()" name="password">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fas fa-lock"></span>

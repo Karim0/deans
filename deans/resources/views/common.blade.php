@@ -109,15 +109,19 @@
 <aside class="control-sidebar control-sidebar-dark">
     <div class="p-3">
         <div class="d-flex border-bottom pb-2">
-            <div class="w-50 d-flex justify-content-center align-items-center">
-                <a href="{{route('login')}}">Login</a>
-            </div>
-            <div class="w-50 d-flex justify-content-center align-items-center">
-                <a href="{{route('register')}}">Registration</a>
-            </div>
-            <div class="w-50 d-flex justify-content-center align-items-center">
-{{--                <a href="{{auth()->logout()}}">Logout</a>--}}
-            </div>
+
+            @if(auth()->user())
+                <div class="w-50 d-flex justify-content-center align-items-center">
+                    <a href="{{route('logout')}}">Logout</a>
+                </div>
+            @else
+                <div class="w-50 d-flex justify-content-center align-items-center">
+                    <a href="{{route('login')}}">Login</a>
+                </div>
+                <div class="w-50 d-flex justify-content-center align-items-center">
+                    <a href="{{route('register')}}">Registration</a>
+                </div>
+            @endif
         </div>
     </div>
 </aside>
