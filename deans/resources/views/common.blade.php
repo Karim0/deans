@@ -123,7 +123,13 @@
                 </div>
             @endif
         </div>
+        @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
+            <div class="pt-2 pb-2">
+                <a href="{{route('profile')}}">Profile</a>
+            </div>
+        @endif
     </div>
+
 </aside>
 {{--    <footer class="main-footer">--}}
 {{--    </footer>--}}

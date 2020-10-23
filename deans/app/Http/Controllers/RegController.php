@@ -49,21 +49,12 @@ class RegController extends Controller
     public function registration(Request $request)
     {
         Log::info('registration');
-//        dd($request->all());
 
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'login' => 'required|login|unique:users',
             'password' => 'required|min:6',
         ]);
-//        request()->validate([
-//            'name' => 'required',
-//            'login' => 'required|login|unique:users',
-//            'password' => 'required|min:6',
-//        ]);
-        if ($validator->fails()) {
-            return redirect()->route('register', ['error']);
-        }
         $data = $request->all();
 
         $user = User::create([
@@ -79,6 +70,8 @@ class RegController extends Controller
             'residential_address' => $data['residential_address'],
             'iin' => $data['iin'],
         ]);
+
+        DB::insert('INSERT INTO users_role(user_id, role_id) VALUES(?, ?)', [$user->id, 12]);
         Log::info($user);
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
@@ -128,6 +121,13 @@ class RegController extends Controller
 
     public function profile()
     {
+        if (auth()->check()) {
+            if (!auth()->user()->isAdvisor() and !auth()->user()->isAdmin()) {
+                abort('403', 'У вас нет прав доступа');
+            }
+        } else {
+            abort('403', 'Вы не авторизованы');
+        }
         $orders = StudentOrder::all();
 
         return view('profile', ['user' => Auth::user(), 'orders' => $orders]);
@@ -135,7 +135,6 @@ class RegController extends Controller
 
     public function logout()
     {
-//        dd(auth()->logout());
         auth()->logout();
         return redirect()->route('home');
     }

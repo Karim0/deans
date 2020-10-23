@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Groups;
 use App\Models\StudentOrder;
-use App\Models\User;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -13,9 +12,6 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Log;
-use function GuzzleHttp\Promise\all;
 
 class Controller extends BaseController
 {
@@ -43,6 +39,7 @@ class Controller extends BaseController
 
     public function addStudent(Request $request)
     {
+
         $data = $request->all();
         $user = DB::select('SELECT * FROM users WHERE  login = ?', [$data['login']])[0];
 
@@ -52,7 +49,7 @@ class Controller extends BaseController
         return redirect()->route('profile');
     }
 
-    public function addStuff(Request $request)
+    public function addStaff(Request $request)
     {
         $data = $request->all();
         $user = DB::select('SELECT * FROM users WHERE  login = ?', [$data['login']])[0];
@@ -128,9 +125,19 @@ class Controller extends BaseController
 
     public function getGroup(Request $request, $id)
     {
+
+        if (auth()->check()) {
+            if (!auth()->user()->isAdvisor() and !auth()->user()->isAdmin()) {
+                abort('403', 'У вас нет прав доступа');
+            }
+        } else {
+            abort('403', 'Вы не авторизованы');
+        }
+
         $group = Groups::find($id);
 
         return view('group_page', ['group' => $group]);
+
     }
 
 }

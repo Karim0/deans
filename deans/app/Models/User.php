@@ -66,4 +66,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(StudentOrder::class, 'user_id');
     }
+
+    public function isAdvisor(): bool
+    {
+        return $this->roles()->allRelatedIds()->contains(12);
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->roles()->allRelatedIds()->contains(1);
+    }
 }

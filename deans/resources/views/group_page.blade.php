@@ -1,5 +1,6 @@
 @extends('common')
 @section('content')
+
     <div class="container">
         <h3 class="text-center mt-3">{{$group->title_en}}</h3>
 
@@ -45,4 +46,5 @@
 
         </div>
     </div>
+
 @endsection()

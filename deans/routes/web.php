@@ -29,7 +29,7 @@ Route::post('/add_study_group', 'Controller@addStudyStatus')->name('add_study_st
 Route::post('/add_study_form', 'Controller@addStudyForm')->name('add_study_form');
 Route::post('/add_payment_forms', 'Controller@addPaymentForms')->name('add_payment_forms');
 Route::post('/add_study_lang', 'Controller@addStudyLang')->name('add_study_lang');
-Route::post('/add_stuff', 'Controller@addStuff')->name('add_stuff');
+Route::post('/add_staff', 'Controller@addStaff')->name('add_staff');
 Route::post('/add_order_type', 'Controller@addOrderType')->name('add_order_type');
 Route::post('/add_user', 'RegController@addUser')->name('add_user');
 

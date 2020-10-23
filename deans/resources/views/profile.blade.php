@@ -19,6 +19,7 @@
     <script defer src="{{asset('js/awesome/all.js')}}"></script>
 </head>
 <body class="hold-transition sidebar-mini">
+
 <div class="wrapper">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -38,7 +39,8 @@
         <!-- SEARCH FORM -->
         <form class="form-inline ml-3">
             <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                       aria-label="Search">
                 <div class="input-group-append">
                     <button class="btn btn-navbar" type="submit">
                         <i class="fas fa-search"></i>
@@ -89,6 +91,7 @@
         </div>
         <!-- /.sidebar -->
     </aside>
+
 
     <div class="content-wrapper">
         <section class="content-header">
@@ -174,15 +177,15 @@
                                     <strong><i class="fas fa-book mr-1"></i> English level</strong>
 
                                     <p class="text-muted">
-                                        {{$user->staff->english_level->description_en}}
+                                        {{$user->staff->english_level->description_ru}}
                                     </p>
                                     <hr>
                                     <strong><i class="fas fa-map-marker-alt mr-1"></i> Academic degree</strong>
-                                    <p class="text-muted">{{$user->staff->academic_degree->title_en}}</p>
+                                    <p class="text-muted">{{$user->staff->academic_degree->title_ru}}</p>
                                     <hr>
                                     <strong><i class="fas fa-pencil-alt mr-1"></i> Academic rank</strong>
                                     <p class="text-muted">
-                                        {{$user->staff->academic_rank->title_en}}
+                                        {{$user->staff->academic_rank->title_ru}}
                                     </p>
                                     <hr>
                                     <strong><i class="far fa-file-alt mr-1"></i> Foreign</strong>
@@ -198,26 +201,26 @@
                         @if($user->student)
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">About Me</h3>
+                                    <h3 class="card-title">Student info</h3>
                                 </div>
                                 <div class="card-body">
                                     <strong>Group</strong>
-                                    <p class="text-muted">{{$user->student->group->title_en}}</p>
+                                    <p class="text-muted">{{$user->student->group->title_ru}}</p>
 
                                     <hr>
 
                                     <strong>Study status</strong>
-                                    <p class="text-muted">{{$user->student->status->description_en}}</p>
+                                    <p class="text-muted">{{$user->student->status->description_ru}}</p>
 
                                     <hr>
 
                                     <strong>Study form</strong>
-                                    <p class="text-muted">{{$user->student->study_form->description_en}}</p>
+                                    <p class="text-muted">{{$user->student->study_form->description_ru}}</p>
 
                                     <hr>
 
                                     <strong>Payment form</strong>
-                                    <p class="text-muted">{{$user->student->payment_form->description_en}}</p>
+                                    <p class="text-muted">{{$user->student->payment_form->description_ru}}</p>
 
                                     <hr>
 
@@ -235,18 +238,27 @@
                         <div class="card">
                             <div class="card-header p-2">
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Process</a>
+                                    <li class="nav-item"><a class="nav-link active" href="#activity"
+                                                            data-toggle="tab">Process</a>
                                     </li>
                                     {{--                                    <li class="nav-item"><a class="nav-link" href="#send_order"--}}
                                     {{--                                                            data-toggle="tab">Send order</a></li>--}}
                                     <li class="nav-item"><a class="nav-link" href="#groups"
                                                             data-toggle="tab">My groups</a></li>
+
+
                                     <li class="nav-item"><a class="nav-link" href="#add_student"
                                                             data-toggle="tab">Add student</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#add_stuff"
-                                                            data-toggle="tab">Add stuff</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#add_order_type"
-                                                            data-toggle="tab">Add process type</a></li>
+
+
+                                    @if (auth()->user()->isAdmin())
+                                        <li class="nav-item"><a class="nav-link" href="#add_staff"
+                                                                data-toggle="tab">Add staff</a></li>
+
+
+                                        <li class="nav-item"><a class="nav-link" href="#add_order_type"
+                                                                data-toggle="tab">Add process type</a></li>
+                                    @endif
                                 </ul>
                             </div><!-- /.card-header -->
                             <div class="card-body">
@@ -261,13 +273,14 @@
                                                 <span class="username ml-0">
                                                         <a href="#">{{$order->user->name}}</a>
                                                 </span>
-                                                            <span class="description ml-0">{{$order->created_at}}</span>
+                                                            <span
+                                                                class="description ml-0">{{$order->created_at}}</span>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-6">
                                                         <p>
-                                                            {{$order->cat->description_en}}
+                                                            {{$order->cat->description_ru}}
                                                         </p>
                                                     </div>
 
@@ -303,7 +316,8 @@
                                                 <div class="d-flex w-100">
                                                     <select name="group" id="" class="form-control">
                                                         @foreach(\App\Models\Groups::all() as $group)
-                                                            <option value="{{$group->id}}">{{$group->title_en}}</option>
+                                                            <option
+                                                                value="{{$group->id}}">{{$group->title_ru}}</option>
                                                         @endforeach
                                                     </select>
                                                     <button type="button"
@@ -318,7 +332,7 @@
                                                     <select name="study_form" id="" class="form-control">
                                                         @foreach(\App\Models\StudyForms::all() as $form)
                                                             <option
-                                                                value="{{$form->id}}">{{$form->description_en}}</option>
+                                                                value="{{$form->id}}">{{$form->description_ru}}</option>
                                                         @endforeach
                                                     </select>
                                                     <button type="button"
@@ -332,7 +346,8 @@
                                                 <div class="d-flex w-100">
                                                     <select name="study_lang" id="" class="form-control">
                                                         @foreach(\App\Models\StudyLangs::all() as $langs)
-                                                            <option value="{{$langs->id}}">{{$langs->title_en}}</option>
+                                                            <option
+                                                                value="{{$langs->id}}">{{$langs->title_ru}}</option>
                                                         @endforeach
                                                     </select>
                                                     <button type="button"
@@ -347,7 +362,7 @@
                                                     <select name="payment_form" id="" class="form-control">
                                                         @foreach(\App\Models\PaymentForms::all() as $pay)
                                                             <option
-                                                                value="{{$pay->id}}">{{$pay->description_en}}</option>
+                                                                value="{{$pay->id}}">{{$pay->description_ru}}</option>
                                                         @endforeach
                                                     </select>
                                                     <button type="button"
@@ -360,10 +375,11 @@
 
                                             <div class="input-group mb-3">
                                                 <div class="d-flex w-100">
-                                                    <select name="study_status" id="" class="form-control flex-grow-1">
+                                                    <select name="study_status" id=""
+                                                            class="form-control flex-grow-1">
                                                         @foreach(\App\Models\StudyStatuses::all() as $stat)
                                                             <option
-                                                                value="{{$stat->id}}">{{$stat->description_en}}</option>
+                                                                value="{{$stat->id}}">{{$stat->description_ru}}</option>
                                                         @endforeach
                                                     </select>
                                                     <button type="button"
@@ -387,88 +403,98 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="tab-pane" id="add_stuff">
-                                        <form action="{{route('add_stuff')}}" method="post">
-                                            @csrf
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Enter user login"
-                                                       aria-label="Search" name="login" id="search_user_st">
-                                                <div class="search-res" id="st_user_res_container_st">
-                                                    <ul class="list-group" id="st_user_res_st">
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group">
-                                                <select name="english_level_id" id="" class="form-control">
-                                                    @foreach(\App\Models\EnglishLevels::all() as $lang)
-                                                        <option value="{{$lang->id}}">{{$lang->description_en}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select name="academic_degree_id" id="" class="form-control">
-                                                    @foreach(\App\Models\AcademicDegrees::all() as $deg)
-                                                        <option value="{{$deg->id}}">{{$deg->title_en}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select name="academic_rank_id" id="" class="form-control">
-                                                    @foreach(\App\Models\AcademicRank::all() as $rank)
-                                                        <option value="{{$rank->id}}">{{$rank->title_en}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-check mb-2">
-                                                <input name="is_foreign" id="is_foreign" class="form-check-input"
-                                                       type="checkbox"/>
-                                                <label for="is_foreign" class="form-check-label">Is foreign</label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">add stuff</button>
-                                        </form>
-                                    </div>
                                     <div class="tab-pane" id="groups">
                                         <div class="row">
                                             @foreach($user->my_groups as $group)
                                                 <div class="col-4">
                                                     <div class="group_card">
-                                                        <a class="h3 mb-2" href="{{route('get_group', ['id'=>$group->id])}}">{{$group->title_kk}}</a>
+                                                        <a class="h3 mb-2"
+                                                           href="{{route('get_group', ['id'=>$group->id])}}">{{$group->title_kk}}</a>
                                                         <div class="d-flex">
-                                                            <p class="mb-1"><b class="mr-2">Department:</b> {{$group->departments->title_en}}</p>
+                                                            <p class="mb-1"><b
+                                                                    class="mr-2">Department:</b> {{$group->departments->title_ru}}
+                                                            </p>
                                                         </div>
                                                         <div class="d-flex">
-                                                            <p class="mb-1"><b class="mr-2">Students amount:</b> {{$group->students->count()}}</p>
+                                                            <p class="mb-1"><b class="mr-2">Students
+                                                                    amount:</b> {{$group->students->count()}}</p>
                                                         </div>
 
                                                         <div class="d-flex">
-                                                            <p class="mb-1"><b class="mr-2">Created:</b> {{$group->created_at}}</p>
+                                                            <p class="mb-1"><b
+                                                                    class="mr-2">Created:</b> {{$group->created_at}}
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             @endforeach
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="add_order_type">
-                                        <form class="form-horizontal" action="{{route('add_order_type')}}"
-                                              method="post">
-                                            @csrf
-                                            <div class="form-group">
-                                                <input type="text" name="description_kz" class="form-control"
-                                                       placeholder="Enter description(kz)">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" name="description_ru" class="form-control"
-                                                       placeholder="Enter description(ru)">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" name="description_en" class="form-control"
-                                                       placeholder="Enter description(en)">
-                                            </div>
-                                            <button type="submit" class="btn btn-success">Add</button>
-                                        </form>
-                                    </div>
+                                    @if (auth()->user()->isAdmin())
+                                        <div class="tab-pane" id="add_staff">
+                                            <form action="{{route('add_staff')}}" method="post">
+                                                @csrf
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Enter user login"
+                                                           aria-label="Search" name="login" id="search_user_st">
+                                                    <div class="search-res" id="st_user_res_container_st">
+                                                        <ul class="list-group" id="st_user_res_st">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <select name="english_level_id" id="" class="form-control">
+                                                        @foreach(\App\Models\EnglishLevels::all() as $lang)
+                                                            <option
+                                                                value="{{$lang->id}}">{{$lang->description_ru}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select name="academic_degree_id" id="" class="form-control">
+                                                        @foreach(\App\Models\AcademicDegrees::all() as $deg)
+                                                            <option value="{{$deg->id}}">{{$deg->title_ru}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select name="academic_rank_id" id="" class="form-control">
+                                                        @foreach(\App\Models\AcademicRank::all() as $rank)
+                                                            <option value="{{$rank->id}}">{{$rank->title_ru}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input name="is_foreign" id="is_foreign" class="form-check-input"
+                                                           type="checkbox"/>
+                                                    <label for="is_foreign" class="form-check-label">Is foreign</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">add staff</button>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane" id="add_order_type">
+                                            <form class="form-horizontal" action="{{route('add_order_type')}}"
+                                                  method="post">
+                                                @csrf
+                                                <div class="form-group">
+                                                    <input type="text" name="description_kz" class="form-control"
+                                                           placeholder="Enter description(kz)">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" name="description_ru" class="form-control"
+                                                           placeholder="Enter description(ru)">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" name="description_ru" class="form-control"
+                                                           placeholder="Enter description(en)">
+                                                </div>
+                                                <button type="submit" class="btn btn-success">Add</button>
+                                            </form>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -477,6 +503,7 @@
             </div>
         </section>
     </div>
+
 
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
@@ -528,7 +555,7 @@
                                 <select name="gender" id="g" placeholder="Gender" class="form-control">
                                     @foreach(\App\Models\Gender::all() as $g)
                                         <option value="{{$g->id}}"
-                                                @if($user->gender->id == $g->id)selected @endif>{{$g->title_en}}</option>
+                                                @if($user->gender->id == $g->id)selected @endif>{{$g->title_ru}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -574,7 +601,7 @@
                     <form action="{{route('add_group')}}" method="post">
                         @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (en)" name="title_en">
+                            <input type="text" class="form-control" placeholder="Group name (en)" name="title_ru">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Group name (ru)" name="title_ru">
@@ -585,7 +612,7 @@
                         <div class="form-group">
                             <select name="dep_id" id="" class="form-control">
                                 @foreach(\App\Models\Departments::all() as $dep)
-                                    <option value="{{$dep->id}}">{{$dep->title_en}}</option>
+                                    <option value="{{$dep->id}}">{{$dep->title_ru}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -614,20 +641,20 @@
                         <div class="form-group">
                             <select name="degree_id" class="form-control">
                                 @foreach(\App\Models\DegreeTypes::all() as $degree)
-                                    <option value="{{$degree->id}}">{{$degree->title_en}}</option>
+                                    <option value="{{$degree->id}}">{{$degree->title_ru}}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="form-group">
                             <select name="department_type_id" class="form-control">
                                 @foreach(\App\Models\DepartmentTypes::all() as $dep)
-                                    <option value="{{$dep->id}}">{{$dep->description_en}}</option>
+                                    <option value="{{$dep->id}}">{{$dep->description_ru}}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Description (en)"
-                                   name="description_en">
+                                   name="description_ru">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Description (ru)"
@@ -662,7 +689,7 @@
                     <form action="{{route('add_study_lang')}}" method="post">
                         @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Language (en)" name="title_en">
+                            <input type="text" class="form-control" placeholder="Language (en)" name="title_ru">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Language (ru)" name="title_ru">
@@ -692,7 +719,7 @@
                         @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Description (en)"
-                                   name="description_en">
+                                   name="description_ru">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Description (ru)"
@@ -724,7 +751,7 @@
                         @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Description (en)"
-                                   name="description_en">
+                                   name="description_ru">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Description (ru)"
@@ -779,7 +806,7 @@
                             <div class="input-group mb-3">
                                 <select name="gender" id="g" placeholder="Gender" class="form-control">
                                     @foreach(\App\Models\Gender::all() as $g)
-                                        <option value="{{$g->id}}">{{$g->title_en}}</option>
+                                        <option value="{{$g->id}}">{{$g->title_ru}}</option>
                                     @endforeach
                                 </select>
                             </div>
