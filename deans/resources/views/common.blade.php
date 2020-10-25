@@ -103,9 +103,11 @@
             </ul>
         </div>
     </nav>
+
+    @yield('content')
 </div>
 
-@yield('content')
+
 <aside class="control-sidebar control-sidebar-dark">
     <div class="p-3">
         <div class="d-flex border-bottom pb-2">
@@ -123,10 +125,12 @@
                 </div>
             @endif
         </div>
-        @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
-            <div class="pt-2 pb-2">
-                <a href="{{route('profile')}}">Profile</a>
-            </div>
+        @if(auth()->check())
+            @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
+                <div class="pt-2 pb-2">
+                    <a href="{{route('profile')}}">Profile</a>
+                </div>
+            @endif
         @endif
     </div>
 

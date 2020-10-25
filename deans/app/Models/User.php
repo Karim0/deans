@@ -76,4 +76,9 @@ class User extends Authenticatable
     {
         return $this->roles()->allRelatedIds()->contains(1);
     }
+
+//    public function hasRole($roles){
+//        if ($this->roles()->)
+//        return
+//    }
 }

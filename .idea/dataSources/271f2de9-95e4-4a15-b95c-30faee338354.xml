@@ -46,7 +46,7 @@ false Africa/Brazzaville
 false Africa/Bujumbura
 false Africa/Cairo
 false Africa/Casablanca
-true Africa/Ceuta
+false Africa/Ceuta
 false Africa/Conakry
 false Africa/Dakar
 false Africa/Dar_es_Salaam
@@ -108,7 +108,7 @@ true America/Asuncion
 false America/Atikokan
 true America/Atka
 false America/Bahia
-true America/Bahia_Banderas
+false America/Bahia_Banderas
 false America/Barbados
 false America/Belem
 false America/Belize
@@ -146,7 +146,7 @@ false America/Fort_Nelson
 true America/Fort_Wayne
 false America/Fortaleza
 true America/Glace_Bay
-true America/Godthab
+false America/Godthab
 true America/Goose_Bay
 true America/Grand_Turk
 false America/Grenada
@@ -189,12 +189,12 @@ true America/Matamoros
 true America/Mazatlan
 false America/Mendoza
 true America/Menominee
-true America/Merida
+false America/Merida
 true America/Metlakatla
-true America/Mexico_City
+false America/Mexico_City
 true America/Miquelon
 true America/Moncton
-true America/Monterrey
+false America/Monterrey
 false America/Montevideo
 true America/Montreal
 false America/Montserrat
@@ -206,7 +206,7 @@ false America/Noronha
 true America/North_Dakota/Beulah
 true America/North_Dakota/Center
 true America/North_Dakota/New_Salem
-true America/Nuuk
+false America/Nuuk
 true America/Ojinaga
 false America/Panama
 true America/Pangnirtung
@@ -230,7 +230,7 @@ false America/Santarem
 true America/Santiago
 false America/Santo_Domingo
 false America/Sao_Paulo
-true America/Scoresbysund
+false America/Scoresbysund
 true America/Shiprock
 true America/Sitka
 false America/St_Barthelemy
@@ -262,9 +262,9 @@ false Antarctica/Palmer
 false Antarctica/Rothera
 true Antarctica/South_Pole
 false Antarctica/Syowa
-true Antarctica/Troll
+false Antarctica/Troll
 false Antarctica/Vostok
-true Arctic/Longyearbyen
+false Arctic/Longyearbyen
 false Asia/Aden
 false Asia/Almaty
 true Asia/Amman
@@ -279,7 +279,7 @@ false Asia/Bahrain
 false Asia/Baku
 false Asia/Bangkok
 false Asia/Barnaul
-true Asia/Beirut
+false Asia/Beirut
 false Asia/Bishkek
 false Asia/Brunei
 false Asia/Calcutta
@@ -294,7 +294,7 @@ false Asia/Dhaka
 false Asia/Dili
 false Asia/Dubai
 false Asia/Dushanbe
-true Asia/Famagusta
+false Asia/Famagusta
 true Asia/Gaza
 false Asia/Harbin
 true Asia/Hebron
@@ -305,7 +305,7 @@ false Asia/Irkutsk
 false Asia/Istanbul
 false Asia/Jakarta
 false Asia/Jayapura
-true Asia/Jerusalem
+false Asia/Jerusalem
 false Asia/Kabul
 false Asia/Kamchatka
 false Asia/Karachi
@@ -324,7 +324,7 @@ false Asia/Magadan
 false Asia/Makassar
 false Asia/Manila
 false Asia/Muscat
-true Asia/Nicosia
+false Asia/Nicosia
 false Asia/Novokuznetsk
 false Asia/Novosibirsk
 false Asia/Omsk
@@ -348,7 +348,7 @@ false Asia/Taipei
 false Asia/Tashkent
 false Asia/Tbilisi
 false Asia/Tehran
-true Asia/Tel_Aviv
+false Asia/Tel_Aviv
 false Asia/Thimbu
 false Asia/Thimphu
 false Asia/Tokyo
@@ -364,14 +364,14 @@ false Asia/Yakutsk
 false Asia/Yangon
 false Asia/Yekaterinburg
 false Asia/Yerevan
-true Atlantic/Azores
+false Atlantic/Azores
 true Atlantic/Bermuda
-true Atlantic/Canary
+false Atlantic/Canary
 false Atlantic/Cape_Verde
-true Atlantic/Faeroe
-true Atlantic/Faroe
-true Atlantic/Jan_Mayen
-true Atlantic/Madeira
+false Atlantic/Faeroe
+false Atlantic/Faroe
+false Atlantic/Jan_Mayen
+false Atlantic/Madeira
 false Atlantic/Reykjavik
 false Atlantic/South_Georgia
 false Atlantic/St_Helena
@@ -455,7 +455,7 @@ false EGT
 false EST
 true EST5EDT
 false Egypt
-false Eire
+true Eire
 false Etc/GMT
 false Etc/GMT+0
 false Etc/GMT+1
@@ -491,69 +491,69 @@ false Etc/UCT
 false Etc/UTC
 false Etc/Universal
 false Etc/Zulu
-true Europe/Amsterdam
-true Europe/Andorra
+false Europe/Amsterdam
+false Europe/Andorra
 false Europe/Astrakhan
-true Europe/Athens
-true Europe/Belfast
-true Europe/Belgrade
-true Europe/Berlin
-true Europe/Bratislava
-true Europe/Brussels
-true Europe/Bucharest
-true Europe/Budapest
-true Europe/Busingen
-true Europe/Chisinau
-true Europe/Copenhagen
-false Europe/Dublin
-true Europe/Gibraltar
-true Europe/Guernsey
-true Europe/Helsinki
-true Europe/Isle_of_Man
+false Europe/Athens
+false Europe/Belfast
+false Europe/Belgrade
+false Europe/Berlin
+false Europe/Bratislava
+false Europe/Brussels
+false Europe/Bucharest
+false Europe/Budapest
+false Europe/Busingen
+false Europe/Chisinau
+false Europe/Copenhagen
+true Europe/Dublin
+false Europe/Gibraltar
+false Europe/Guernsey
+false Europe/Helsinki
+false Europe/Isle_of_Man
 false Europe/Istanbul
-true Europe/Jersey
+false Europe/Jersey
 false Europe/Kaliningrad
-true Europe/Kiev
+false Europe/Kiev
 false Europe/Kirov
-true Europe/Lisbon
-true Europe/Ljubljana
-true Europe/London
-true Europe/Luxembourg
-true Europe/Madrid
-true Europe/Malta
-true Europe/Mariehamn
+false Europe/Lisbon
+false Europe/Ljubljana
+false Europe/London
+false Europe/Luxembourg
+false Europe/Madrid
+false Europe/Malta
+false Europe/Mariehamn
 false Europe/Minsk
-true Europe/Monaco
+false Europe/Monaco
 false Europe/Moscow
-true Europe/Nicosia
-true Europe/Oslo
-true Europe/Paris
-true Europe/Podgorica
-true Europe/Prague
-true Europe/Riga
-true Europe/Rome
+false Europe/Nicosia
+false Europe/Oslo
+false Europe/Paris
+false Europe/Podgorica
+false Europe/Prague
+false Europe/Riga
+false Europe/Rome
 false Europe/Samara
-true Europe/San_Marino
-true Europe/Sarajevo
+false Europe/San_Marino
+false Europe/Sarajevo
 false Europe/Saratov
 false Europe/Simferopol
-true Europe/Skopje
-true Europe/Sofia
-true Europe/Stockholm
-true Europe/Tallinn
-true Europe/Tirane
-true Europe/Tiraspol
+false Europe/Skopje
+false Europe/Sofia
+false Europe/Stockholm
+false Europe/Tallinn
+false Europe/Tirane
+false Europe/Tiraspol
 false Europe/Ulyanovsk
-true Europe/Uzhgorod
-true Europe/Vaduz
-true Europe/Vatican
-true Europe/Vienna
-true Europe/Vilnius
+false Europe/Uzhgorod
+false Europe/Vaduz
+false Europe/Vatican
+false Europe/Vienna
+false Europe/Vilnius
 false Europe/Volgograd
-true Europe/Warsaw
-true Europe/Zagreb
-true Europe/Zaporozhye
-true Europe/Zurich
+false Europe/Warsaw
+false Europe/Zagreb
+false Europe/Zaporozhye
+false Europe/Zurich
 false FET
 true FJST
 false FJT
@@ -564,8 +564,8 @@ false FNT
 false Factory
 false GALT
 false GAMT
-true GB
-true GB-Eire
+false GB
+false GB-Eire
 false GEST
 false GET
 false GFT
@@ -599,7 +599,7 @@ false Indian/Mauritius
 false Indian/Mayotte
 false Indian/Reunion
 false Iran
-true Israel
+false Israel
 false JAYT
 false JST
 false Jamaica
@@ -625,7 +625,7 @@ false MAWT
 true MDT
 true MEST
 true MESZ
-true MET
+false MET
 true METDST
 false MEZ
 false MHT
@@ -641,7 +641,7 @@ false MVT
 false MYT
 true Mexico/BajaNorte
 true Mexico/BajaSur
-true Mexico/General
+false Mexico/General
 true NDT
 false NFT
 false NOVST
@@ -718,8 +718,8 @@ false Pacific/Truk
 false Pacific/Wake
 false Pacific/Wallis
 false Pacific/Yap
-true Poland
-true Portugal
+false Poland
+false Portugal
 false RET
 false ROC
 false ROK
@@ -770,7 +770,7 @@ false WAKT
 false WAST
 false WAT
 true WDT
-true WET
+false WET
 true WETDST
 false WFT
 true WGST
@@ -787,20 +787,17 @@ true posixrules
 </TimeZones>
       <StartupTime>1602824745</StartupTime>
     </root>
-    <database id="2" parent="1" name="University">
-      <ObjectId>16900</ObjectId>
-      <Owner>postgres</Owner>
-    </database>
-    <database id="3" parent="1" name="cinema">
+    <database id="2" parent="1" name="cinema">
       <ObjectId>16393</ObjectId>
       <Owner>cinema</Owner>
     </database>
-    <database id="4" parent="1" name="demo">
+    <database id="3" parent="1" name="demo">
       <ObjectId>26446</ObjectId>
       <Owner>demo</Owner>
-      <IntrospectionStateNumber>49724</IntrospectionStateNumber>
+      <IntrospectionStateNumber>60790</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|40908|40910|1
+sequence|table|67441|67443|1
 sequence|table|40824|40826|1
 sequence|table|40846|40848|1
 sequence|table|40444|40446|1
@@ -825,78 +822,70 @@ sequence|table|40684|40686|1
 sequence|table|40712|40714|1
 </Relations>
     </database>
-    <database id="5" parent="1" name="kino.kz">
+    <database id="4" parent="1" name="kino.kz">
       <ObjectId>17123</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <database id="6" parent="1" name="lab6">
+    <database id="5" parent="1" name="lab6">
       <ObjectId>17628</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <database id="7" parent="1" name="lab8">
+    <database id="6" parent="1" name="lab8">
       <ObjectId>17649</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <database id="8" parent="1" name="postgres">
+    <database id="7" parent="1" name="postgres">
       <ObjectId>13318</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
     </database>
-    <database id="9" parent="1" name="shop">
+    <database id="8" parent="1" name="shop">
       <ObjectId>39758</ObjectId>
       <Owner>shop</Owner>
     </database>
-    <database id="10" parent="1" name="stardo">
-      <ObjectId>27045</ObjectId>
-      <Owner>stardo</Owner>
+    <database id="9" parent="1" name="sppsport">
+      <ObjectId>40926</ObjectId>
+      <Owner>sppsport</Owner>
     </database>
-    <database id="11" parent="1" name="stardo_dev">
-      <ObjectId>27214</ObjectId>
-      <Owner>stardo</Owner>
-    </database>
-    <database id="12" parent="1" name="test_stardo_dev">
-      <ObjectId>27383</ObjectId>
-      <Owner>stardo</Owner>
-    </database>
-    <role id="13" parent="1" name="cinema">
+    <role id="10" parent="1" name="cinema">
       <ObjectId>16394</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
       <CanLogin>1</CanLogin>
     </role>
-    <role id="14" parent="1" name="demo">
+    <role id="11" parent="1" name="demo">
       <ObjectId>26445</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
       <CanLogin>1</CanLogin>
     </role>
-    <role id="15" parent="1" name="pg_execute_server_program">
+    <role id="12" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
     </role>
-    <role id="16" parent="1" name="pg_monitor">
+    <role id="13" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
     </role>
-    <role id="17" parent="1" name="pg_read_all_settings">
+    <role id="14" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="18" parent="1" name="pg_read_all_stats">
+    <role id="15" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="19" parent="1" name="pg_read_server_files">
+    <role id="16" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="20" parent="1" name="pg_signal_backend">
+    <role id="17" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="21" parent="1" name="pg_stat_scan_tables">
+    <role id="18" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="22" parent="1" name="pg_write_server_files">
+    <role id="19" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="23" parent="1" name="postgres">
+    <role id="20" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
@@ -905,14 +894,21 @@ sequence|table|40712|40714|1
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
-    <role id="24" parent="1" name="shop">
+    <role id="21" parent="1" name="shop">
       <ObjectId>39757</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
       <CanLogin>1</CanLogin>
     </role>
-    <role id="25" parent="1" name="stardo">
+    <role id="22" parent="1" name="sppsport">
+      <ObjectId>40927</ObjectId>
+      <SuperRole>1</SuperRole>
+      <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
+      <CanLogin>1</CanLogin>
+    </role>
+    <role id="23" parent="1" name="stardo">
       <ObjectId>16395</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
@@ -920,33 +916,33 @@ sequence|table|40712|40714|1
       <CanLogin>1</CanLogin>
       <Replication>1</Replication>
     </role>
-    <schema id="26" parent="4" name="information_schema">
+    <schema id="24" parent="3" name="information_schema">
       <ObjectId>13018</ObjectId>
       <StateNumber>282</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="27" parent="4" name="pg_catalog">
+    <schema id="25" parent="3" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="28" parent="4" name="public">
+    <schema id="26" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>49725</IntrospectionStateNumber>
+      <IntrospectionStateNumber>60791</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
-    <access-method id="29" parent="4" name="heap">
+    <access-method id="27" parent="3" name="heap">
       <ObjectId>2</ObjectId>
       <Comment>heap table access method</Comment>
       <StateNumber>1</StateNumber>
       <Handler>pg_catalog.heap_tableam_handler</Handler>
       <HandlerId>3</HandlerId>
     </access-method>
-    <access-method id="30" parent="4" name="btree">
+    <access-method id="28" parent="3" name="btree">
       <ObjectId>403</ObjectId>
       <Comment>b-tree index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -954,7 +950,7 @@ sequence|table|40712|40714|1
       <HandlerId>330</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="31" parent="4" name="hash">
+    <access-method id="29" parent="3" name="hash">
       <ObjectId>405</ObjectId>
       <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -962,7 +958,7 @@ sequence|table|40712|40714|1
       <HandlerId>331</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="32" parent="4" name="gist">
+    <access-method id="30" parent="3" name="gist">
       <ObjectId>783</ObjectId>
       <Comment>GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -970,7 +966,7 @@ sequence|table|40712|40714|1
       <HandlerId>332</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="33" parent="4" name="gin">
+    <access-method id="31" parent="3" name="gin">
       <ObjectId>2742</ObjectId>
       <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -978,7 +974,7 @@ sequence|table|40712|40714|1
       <HandlerId>333</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="34" parent="4" name="spgist">
+    <access-method id="32" parent="3" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -986,7 +982,7 @@ sequence|table|40712|40714|1
       <HandlerId>334</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="35" parent="4" name="brin">
+    <access-method id="33" parent="3" name="brin">
       <ObjectId>3580</ObjectId>
       <Comment>block range index (BRIN) access method</Comment>
       <StateNumber>1</StateNumber>
@@ -994,7 +990,7 @@ sequence|table|40712|40714|1
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <extension id="36" parent="4" name="plpgsql">
+    <extension id="34" parent="3" name="plpgsql">
       <ObjectId>13304</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>437</StateNumber>
@@ -1002,269 +998,280 @@ sequence|table|40712|40714|1
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <language id="37" parent="4" name="c"/>
-    <language id="38" parent="4" name="internal"/>
-    <language id="39" parent="4" name="plpgsql"/>
-    <language id="40" parent="4" name="sql"/>
-    <sequence id="41" parent="28" name="academic_degrees_id_seq">
+    <language id="35" parent="3" name="c"/>
+    <language id="36" parent="3" name="internal"/>
+    <language id="37" parent="3" name="plpgsql"/>
+    <language id="38" parent="3" name="sql"/>
+    <sequence id="39" parent="26" name="academic_degrees_id_seq">
       <ObjectId>40575</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49586</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="42" parent="28" name="academic_ranks_id_seq">
+    <sequence id="40" parent="26" name="academic_ranks_id_seq">
       <ObjectId>40586</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49588</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="43" parent="28" name="degree_types_id_seq">
+    <sequence id="41" parent="26" name="degree_types_id_seq">
       <ObjectId>40652</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49600</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="44" parent="28" name="department_types_id_seq">
+    <sequence id="42" parent="26" name="department_types_id_seq">
       <ObjectId>40630</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49596</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="45" parent="28" name="department_users_id_seq">
+    <sequence id="43" parent="26" name="department_users_id_seq">
       <ObjectId>40846</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49704</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="46" parent="28" name="departments_id_seq">
+    <sequence id="44" parent="26" name="departments_id_seq">
       <ObjectId>40824</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49685</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="47" parent="28" name="english_levels_id_seq">
+    <sequence id="45" parent="26" name="english_levels_id_seq">
       <ObjectId>40597</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49590</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="48" parent="28" name="failed_jobs_id_seq">
+    <sequence id="46" parent="26" name="failed_jobs_id_seq">
       <ObjectId>40481</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49572</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="49" parent="28" name="genders_id_seq">
+    <sequence id="47" parent="26" name="genders_id_seq">
       <ObjectId>40452</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49568</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="50" parent="28" name="group_users_id_seq">
+    <sequence id="48" parent="26" name="group_staff_id_seq">
+      <ObjectId>67441</ObjectId>
+      <Owner>demo</Owner>
+      <StateNumber>60788</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <sequence id="49" parent="26" name="group_users_id_seq">
       <ObjectId>40908</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49722</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="51" parent="28" name="groups_id_seq">
+    <sequence id="50" parent="26" name="groups_id_seq">
       <ObjectId>40641</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49598</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="52" parent="28" name="migrations_id_seq">
+    <sequence id="51" parent="26" name="migrations_id_seq">
       <ObjectId>40444</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49567</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="53" parent="28" name="payment_forms_id_seq">
+    <sequence id="52" parent="26" name="payment_forms_id_seq">
       <ObjectId>40608</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49592</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="54" parent="28" name="roles_id_seq">
+    <sequence id="53" parent="26" name="roles_id_seq">
       <ObjectId>40493</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49574</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="55" parent="28" name="staff_id_seq">
+    <sequence id="54" parent="26" name="staff_id_seq">
       <ObjectId>40684</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49604</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="56" parent="28" name="student_order_categories_id_seq">
+    <sequence id="55" parent="26" name="student_order_categories_id_seq">
       <ObjectId>40504</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49576</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="57" parent="28" name="student_order_statuses_id_seq">
+    <sequence id="56" parent="26" name="student_order_statuses_id_seq">
       <ObjectId>40515</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49578</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="58" parent="28" name="student_orders_id_seq">
+    <sequence id="57" parent="26" name="student_orders_id_seq">
       <ObjectId>40526</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49580</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="59" parent="28" name="students_id_seq">
+    <sequence id="58" parent="26" name="students_id_seq">
       <ObjectId>40712</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49606</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="60" parent="28" name="study_forms_id_seq">
+    <sequence id="59" parent="26" name="study_forms_id_seq">
       <ObjectId>40663</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49602</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="61" parent="28" name="study_langs_id_seq">
+    <sequence id="60" parent="26" name="study_langs_id_seq">
       <ObjectId>40619</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49594</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="62" parent="28" name="study_statuses_id_seq">
+    <sequence id="61" parent="26" name="study_statuses_id_seq">
       <ObjectId>40549</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49582</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="63" parent="28" name="users_id_seq">
+    <sequence id="62" parent="26" name="users_id_seq">
       <ObjectId>40463</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49570</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="64" parent="28" name="academic_degrees">
+    <table id="63" parent="26" name="academic_degrees">
       <ObjectId>40577</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49604</StateNumber>
     </table>
-    <table id="65" parent="28" name="academic_ranks">
+    <table id="64" parent="26" name="academic_ranks">
       <ObjectId>40588</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49604</StateNumber>
     </table>
-    <table id="66" parent="28" name="degree_types">
+    <table id="65" parent="26" name="degree_types">
       <ObjectId>40654</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49602</StateNumber>
     </table>
-    <table id="67" parent="28" name="department_types">
+    <table id="66" parent="26" name="department_types">
       <ObjectId>40632</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49602</StateNumber>
     </table>
-    <table id="68" parent="28" name="department_users">
+    <table id="67" parent="26" name="department_users">
       <ObjectId>40848</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49704</StateNumber>
     </table>
-    <table id="69" parent="28" name="departments">
+    <table id="68" parent="26" name="departments">
       <ObjectId>40826</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49685</StateNumber>
     </table>
-    <table id="70" parent="28" name="english_levels">
+    <table id="69" parent="26" name="english_levels">
       <ObjectId>40599</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49604</StateNumber>
     </table>
-    <table id="71" parent="28" name="failed_jobs">
+    <table id="70" parent="26" name="failed_jobs">
       <ObjectId>40483</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49572</StateNumber>
     </table>
-    <table id="72" parent="28" name="genders">
+    <table id="71" parent="26" name="genders">
       <ObjectId>40454</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49570</StateNumber>
     </table>
-    <table id="73" parent="28" name="group_users">
+    <table id="72" parent="26" name="group_staff">
+      <ObjectId>67443</ObjectId>
+      <Owner>demo</Owner>
+      <StateNumber>60788</StateNumber>
+    </table>
+    <table id="73" parent="26" name="group_users">
       <ObjectId>40910</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49722</StateNumber>
     </table>
-    <table id="74" parent="28" name="groups">
+    <table id="74" parent="26" name="groups">
       <ObjectId>40643</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49699</StateNumber>
     </table>
-    <table id="75" parent="28" name="migrations">
+    <table id="75" parent="26" name="migrations">
       <ObjectId>40446</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49567</StateNumber>
     </table>
-    <table id="76" parent="28" name="payment_forms">
+    <table id="76" parent="26" name="payment_forms">
       <ObjectId>40610</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49606</StateNumber>
     </table>
-    <table id="77" parent="28" name="roles">
+    <table id="77" parent="26" name="roles">
       <ObjectId>40495</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49584</StateNumber>
     </table>
-    <table id="78" parent="28" name="staff">
+    <table id="78" parent="26" name="staff">
       <ObjectId>40686</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49604</StateNumber>
     </table>
-    <table id="79" parent="28" name="student_order_categories">
+    <table id="79" parent="26" name="student_order_categories">
       <ObjectId>40506</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49580</StateNumber>
     </table>
-    <table id="80" parent="28" name="student_order_statuses">
+    <table id="80" parent="26" name="student_order_statuses">
       <ObjectId>40517</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49580</StateNumber>
     </table>
-    <table id="81" parent="28" name="student_orders">
+    <table id="81" parent="26" name="student_orders">
       <ObjectId>40528</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49580</StateNumber>
     </table>
-    <table id="82" parent="28" name="students">
+    <table id="82" parent="26" name="students">
       <ObjectId>40714</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49606</StateNumber>
     </table>
-    <table id="83" parent="28" name="study_forms">
+    <table id="83" parent="26" name="study_forms">
       <ObjectId>40665</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49602</StateNumber>
     </table>
-    <table id="84" parent="28" name="study_langs">
+    <table id="84" parent="26" name="study_langs">
       <ObjectId>40621</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49606</StateNumber>
     </table>
-    <table id="85" parent="28" name="study_statuses">
+    <table id="85" parent="26" name="study_statuses">
       <ObjectId>40551</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49606</StateNumber>
     </table>
-    <table id="86" parent="28" name="users">
+    <table id="86" parent="26" name="users">
       <ObjectId>40465</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49570</StateNumber>
     </table>
-    <table id="87" parent="28" name="users_role">
+    <table id="87" parent="26" name="users_role">
       <ObjectId>40560</ObjectId>
       <Owner>demo</Owner>
       <StateNumber>49584</StateNumber>
     </table>
-    <column id="88" parent="64" name="id">
+    <column id="88" parent="63" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1272,61 +1279,61 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;academic_degrees_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="89" parent="64" name="sort_order">
+    <column id="89" parent="63" name="sort_order">
       <Position>2</Position>
       <DataType>smallint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49586</StateNumber>
       <TypeId>21</TypeId>
     </column>
-    <column id="90" parent="64" name="title_kk">
+    <column id="90" parent="63" name="title_kk">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49586</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="91" parent="64" name="title_ru">
+    <column id="91" parent="63" name="title_ru">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49586</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="92" parent="64" name="title_en">
+    <column id="92" parent="63" name="title_en">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49586</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="93" parent="64" name="created_at">
+    <column id="93" parent="63" name="created_at">
       <Position>6</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49586</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="94" parent="64" name="updated_at">
+    <column id="94" parent="63" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49586</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="95" parent="64" name="academic_degrees_pkey">
+    <index id="95" parent="63" name="academic_degrees_pkey">
       <ObjectId>40584</ObjectId>
       <StateNumber>49586</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="96" parent="64" name="academic_degrees_pkey">
+    <key id="96" parent="63" name="academic_degrees_pkey">
       <ObjectId>40585</ObjectId>
       <StateNumber>49586</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>academic_degrees_pkey</UnderlyingIndexName>
     </key>
-    <column id="97" parent="65" name="id">
+    <column id="97" parent="64" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1334,61 +1341,61 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;academic_ranks_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="98" parent="65" name="sort_order">
+    <column id="98" parent="64" name="sort_order">
       <Position>2</Position>
       <DataType>smallint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49588</StateNumber>
       <TypeId>21</TypeId>
     </column>
-    <column id="99" parent="65" name="title_kk">
+    <column id="99" parent="64" name="title_kk">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49588</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="100" parent="65" name="title_ru">
+    <column id="100" parent="64" name="title_ru">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49588</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="101" parent="65" name="title_en">
+    <column id="101" parent="64" name="title_en">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49588</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="102" parent="65" name="created_at">
+    <column id="102" parent="64" name="created_at">
       <Position>6</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49588</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="103" parent="65" name="updated_at">
+    <column id="103" parent="64" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49588</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="104" parent="65" name="academic_ranks_pkey">
+    <index id="104" parent="64" name="academic_ranks_pkey">
       <ObjectId>40595</ObjectId>
       <StateNumber>49588</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="105" parent="65" name="academic_ranks_pkey">
+    <key id="105" parent="64" name="academic_ranks_pkey">
       <ObjectId>40596</ObjectId>
       <StateNumber>49588</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>academic_ranks_pkey</UnderlyingIndexName>
     </key>
-    <column id="106" parent="66" name="id">
+    <column id="106" parent="65" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1396,54 +1403,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;degree_types_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="107" parent="66" name="created_at">
+    <column id="107" parent="65" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49600</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="108" parent="66" name="updated_at">
+    <column id="108" parent="65" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49600</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="109" parent="66" name="title_kk">
+    <column id="109" parent="65" name="title_kk">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49600</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="110" parent="66" name="title_ru">
+    <column id="110" parent="65" name="title_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49600</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="111" parent="66" name="title_en">
+    <column id="111" parent="65" name="title_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49600</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="112" parent="66" name="degree_types_pkey">
+    <index id="112" parent="65" name="degree_types_pkey">
       <ObjectId>40661</ObjectId>
       <StateNumber>49600</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="113" parent="66" name="degree_types_pkey">
+    <key id="113" parent="65" name="degree_types_pkey">
       <ObjectId>40662</ObjectId>
       <StateNumber>49600</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>degree_types_pkey</UnderlyingIndexName>
     </key>
-    <column id="114" parent="67" name="id">
+    <column id="114" parent="66" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1451,54 +1458,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;department_types_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="115" parent="67" name="created_at">
+    <column id="115" parent="66" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49596</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="116" parent="67" name="updated_at">
+    <column id="116" parent="66" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49596</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="117" parent="67" name="description_kz">
+    <column id="117" parent="66" name="description_kz">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49596</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="118" parent="67" name="description_ru">
+    <column id="118" parent="66" name="description_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49596</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="119" parent="67" name="description_en">
+    <column id="119" parent="66" name="description_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49596</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="120" parent="67" name="department_types_pkey">
+    <index id="120" parent="66" name="department_types_pkey">
       <ObjectId>40639</ObjectId>
       <StateNumber>49596</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="121" parent="67" name="department_types_pkey">
+    <key id="121" parent="66" name="department_types_pkey">
       <ObjectId>40640</ObjectId>
       <StateNumber>49596</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>department_types_pkey</UnderlyingIndexName>
     </key>
-    <column id="122" parent="68" name="id">
+    <column id="122" parent="67" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1506,47 +1513,47 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;department_users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="123" parent="68" name="created_at">
+    <column id="123" parent="67" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49704</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="124" parent="68" name="updated_at">
+    <column id="124" parent="67" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49704</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="125" parent="68" name="user_id">
+    <column id="125" parent="67" name="user_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49704</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="126" parent="68" name="department_id">
+    <column id="126" parent="67" name="department_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49704</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="127" parent="68" name="department_users_pkey">
+    <index id="127" parent="67" name="department_users_pkey">
       <ObjectId>40852</ObjectId>
       <StateNumber>49704</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="128" parent="68" name="department_users_pkey">
+    <key id="128" parent="67" name="department_users_pkey">
       <ObjectId>40853</ObjectId>
       <StateNumber>49704</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>department_users_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="129" parent="68" name="department_users_user_id_foreign">
+    <foreign-key id="129" parent="67" name="department_users_user_id_foreign">
       <ObjectId>40854</ObjectId>
       <StateNumber>49704</StateNumber>
       <ColNames>user_id</ColNames>
@@ -1557,7 +1564,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="130" parent="68" name="department_users_department_id_foreign">
+    <foreign-key id="130" parent="67" name="department_users_department_id_foreign">
       <ObjectId>40859</ObjectId>
       <StateNumber>49704</StateNumber>
       <ColNames>department_id</ColNames>
@@ -1568,7 +1575,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="131" parent="69" name="id">
+    <column id="131" parent="68" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1576,95 +1583,95 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;departments_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="132" parent="69" name="created_at">
+    <column id="132" parent="68" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49685</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="133" parent="69" name="updated_at">
+    <column id="133" parent="68" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49685</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="134" parent="69" name="parent_id">
+    <column id="134" parent="68" name="parent_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <StateNumber>49685</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="135" parent="69" name="department_type_id">
+    <column id="135" parent="68" name="department_type_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="136" parent="69" name="title_kk">
+    <column id="136" parent="68" name="title_kk">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="137" parent="69" name="title_ru">
+    <column id="137" parent="68" name="title_ru">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="138" parent="69" name="title_en">
+    <column id="138" parent="68" name="title_en">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="139" parent="69" name="title_short_kk">
+    <column id="139" parent="68" name="title_short_kk">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="140" parent="69" name="title_short_ru">
+    <column id="140" parent="68" name="title_short_ru">
       <Position>10</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="141" parent="69" name="title_short_en">
+    <column id="141" parent="68" name="title_short_en">
       <Position>11</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="142" parent="69" name="include_staff">
+    <column id="142" parent="68" name="include_staff">
       <Position>12</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49685</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="143" parent="69" name="departments_pkey">
+    <index id="143" parent="68" name="departments_pkey">
       <ObjectId>40833</ObjectId>
       <StateNumber>49685</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="144" parent="69" name="departments_pkey">
+    <key id="144" parent="68" name="departments_pkey">
       <ObjectId>40834</ObjectId>
       <StateNumber>49685</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>departments_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="145" parent="69" name="departments_parent_id_foreign">
+    <foreign-key id="145" parent="68" name="departments_parent_id_foreign">
       <ObjectId>40835</ObjectId>
       <StateNumber>49685</StateNumber>
       <ColNames>parent_id</ColNames>
@@ -1675,7 +1682,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="146" parent="69" name="departments_department_type_id_foreign">
+    <foreign-key id="146" parent="68" name="departments_department_type_id_foreign">
       <ObjectId>40840</ObjectId>
       <StateNumber>49685</StateNumber>
       <ColNames>department_type_id</ColNames>
@@ -1686,7 +1693,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="147" parent="70" name="id">
+    <column id="147" parent="69" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1694,68 +1701,68 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;english_levels_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="148" parent="70" name="sort_order">
+    <column id="148" parent="69" name="sort_order">
       <Position>2</Position>
       <DataType>smallint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49590</StateNumber>
       <TypeId>21</TypeId>
     </column>
-    <column id="149" parent="70" name="name">
+    <column id="149" parent="69" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49590</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="150" parent="70" name="description_kk">
+    <column id="150" parent="69" name="description_kk">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49590</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="151" parent="70" name="description_ru">
+    <column id="151" parent="69" name="description_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49590</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="152" parent="70" name="description_en">
+    <column id="152" parent="69" name="description_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49590</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="153" parent="70" name="created_at">
+    <column id="153" parent="69" name="created_at">
       <Position>7</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49590</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="154" parent="70" name="updated_at">
+    <column id="154" parent="69" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49590</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="155" parent="70" name="english_levels_pkey">
+    <index id="155" parent="69" name="english_levels_pkey">
       <ObjectId>40606</ObjectId>
       <StateNumber>49590</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="156" parent="70" name="english_levels_pkey">
+    <key id="156" parent="69" name="english_levels_pkey">
       <ObjectId>40607</ObjectId>
       <StateNumber>49590</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>english_levels_pkey</UnderlyingIndexName>
     </key>
-    <column id="157" parent="71" name="id">
+    <column id="157" parent="70" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1763,35 +1770,35 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;failed_jobs_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="158" parent="71" name="connection">
+    <column id="158" parent="70" name="connection">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49572</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="159" parent="71" name="queue">
+    <column id="159" parent="70" name="queue">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49572</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="160" parent="71" name="payload">
+    <column id="160" parent="70" name="payload">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49572</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="161" parent="71" name="exception">
+    <column id="161" parent="70" name="exception">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49572</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="162" parent="71" name="failed_at">
+    <column id="162" parent="70" name="failed_at">
       <Position>6</Position>
       <DataType>timestamp(0)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1799,21 +1806,21 @@ sequence|table|40712|40714|1
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
-    <index id="163" parent="71" name="failed_jobs_pkey">
+    <index id="163" parent="70" name="failed_jobs_pkey">
       <ObjectId>40491</ObjectId>
       <StateNumber>49572</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="164" parent="71" name="failed_jobs_pkey">
+    <key id="164" parent="70" name="failed_jobs_pkey">
       <ObjectId>40492</ObjectId>
       <StateNumber>49572</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>failed_jobs_pkey</UnderlyingIndexName>
     </key>
-    <column id="165" parent="72" name="id">
+    <column id="165" parent="71" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1821,54 +1828,124 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;genders_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="166" parent="72" name="created_at">
+    <column id="166" parent="71" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49568</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="167" parent="72" name="updated_at">
+    <column id="167" parent="71" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49568</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="168" parent="72" name="title_ru">
+    <column id="168" parent="71" name="title_ru">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49568</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="169" parent="72" name="title_en">
+    <column id="169" parent="71" name="title_en">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49568</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="170" parent="72" name="title_kk">
+    <column id="170" parent="71" name="title_kk">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49568</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="171" parent="72" name="genders_pkey">
+    <index id="171" parent="71" name="genders_pkey">
       <ObjectId>40461</ObjectId>
       <StateNumber>49568</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="172" parent="72" name="genders_pkey">
+    <key id="172" parent="71" name="genders_pkey">
       <ObjectId>40462</ObjectId>
       <StateNumber>49568</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>genders_pkey</UnderlyingIndexName>
     </key>
-    <column id="173" parent="73" name="id">
+    <column id="173" parent="72" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>60788</StateNumber>
+      <DefaultExpression>nextval(&apos;group_staff_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="174" parent="72" name="created_at">
+      <Position>2</Position>
+      <DataType>timestamp(0)|0s</DataType>
+      <StateNumber>60788</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="175" parent="72" name="updated_at">
+      <Position>3</Position>
+      <DataType>timestamp(0)|0s</DataType>
+      <StateNumber>60788</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="176" parent="72" name="staff_id">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>60788</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="177" parent="72" name="group_id">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>60788</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="178" parent="72" name="group_staff_pkey">
+      <ObjectId>67447</ObjectId>
+      <StateNumber>60788</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="179" parent="72" name="group_staff_pkey">
+      <ObjectId>67448</ObjectId>
+      <StateNumber>60788</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>group_staff_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="180" parent="72" name="group_staff_staff_id_foreign">
+      <ObjectId>67454</ObjectId>
+      <StateNumber>60788</StateNumber>
+      <ColNames>staff_id</ColNames>
+      <RefTableId>40686</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>staff</RefTableName>
+      <RefKeyName>staff_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="181" parent="72" name="group_staff_group_id_foreign">
+      <ObjectId>67449</ObjectId>
+      <StateNumber>60788</StateNumber>
+      <ColNames>group_id</ColNames>
+      <RefTableId>40643</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>groups_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="182" parent="73" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1876,47 +1953,47 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;group_users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="174" parent="73" name="created_at">
+    <column id="183" parent="73" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49722</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="175" parent="73" name="updated_at">
+    <column id="184" parent="73" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49722</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="176" parent="73" name="user_id">
+    <column id="185" parent="73" name="user_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49722</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="177" parent="73" name="groups_id">
+    <column id="186" parent="73" name="groups_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49722</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="178" parent="73" name="group_users_pkey">
+    <index id="187" parent="73" name="group_users_pkey">
       <ObjectId>40914</ObjectId>
       <StateNumber>49722</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="179" parent="73" name="group_users_pkey">
+    <key id="188" parent="73" name="group_users_pkey">
       <ObjectId>40915</ObjectId>
       <StateNumber>49722</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>group_users_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="180" parent="73" name="group_users_user_id_foreign">
+    <foreign-key id="189" parent="73" name="group_users_user_id_foreign">
       <ObjectId>40916</ObjectId>
       <StateNumber>49722</StateNumber>
       <ColNames>user_id</ColNames>
@@ -1927,7 +2004,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="181" parent="73" name="group_users_groups_id_foreign">
+    <foreign-key id="190" parent="73" name="group_users_groups_id_foreign">
       <ObjectId>40921</ObjectId>
       <StateNumber>49722</StateNumber>
       <ColNames>groups_id</ColNames>
@@ -1938,7 +2015,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="182" parent="74" name="id">
+    <column id="191" parent="74" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1946,60 +2023,60 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;groups_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="183" parent="74" name="created_at">
+    <column id="192" parent="74" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49598</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="184" parent="74" name="updated_at">
+    <column id="193" parent="74" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49598</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="185" parent="74" name="title_kk">
+    <column id="194" parent="74" name="title_kk">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49598</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="186" parent="74" name="title_ru">
+    <column id="195" parent="74" name="title_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49598</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="187" parent="74" name="title_en">
+    <column id="196" parent="74" name="title_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49598</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="188" parent="74" name="dep_id">
+    <column id="197" parent="74" name="dep_id">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>49699</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="189" parent="74" name="groups_pkey">
+    <index id="198" parent="74" name="groups_pkey">
       <ObjectId>40650</ObjectId>
       <StateNumber>49598</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="190" parent="74" name="groups_pkey">
+    <key id="199" parent="74" name="groups_pkey">
       <ObjectId>40651</ObjectId>
       <StateNumber>49598</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>groups_pkey</UnderlyingIndexName>
     </key>
-    <column id="191" parent="75" name="id">
+    <column id="200" parent="75" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -2007,35 +2084,35 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;migrations_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="192" parent="75" name="migration">
+    <column id="201" parent="75" name="migration">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49567</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="193" parent="75" name="batch">
+    <column id="202" parent="75" name="batch">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49567</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="194" parent="75" name="migrations_pkey">
+    <index id="203" parent="75" name="migrations_pkey">
       <ObjectId>40450</ObjectId>
       <StateNumber>49567</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="195" parent="75" name="migrations_pkey">
+    <key id="204" parent="75" name="migrations_pkey">
       <ObjectId>40451</ObjectId>
       <StateNumber>49567</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>migrations_pkey</UnderlyingIndexName>
     </key>
-    <column id="196" parent="76" name="id">
+    <column id="205" parent="76" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2043,54 +2120,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;payment_forms_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="197" parent="76" name="created_at">
+    <column id="206" parent="76" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49592</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="198" parent="76" name="updated_at">
+    <column id="207" parent="76" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49592</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="199" parent="76" name="description_kk">
+    <column id="208" parent="76" name="description_kk">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49592</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="200" parent="76" name="description_ru">
+    <column id="209" parent="76" name="description_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49592</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="201" parent="76" name="description_en">
+    <column id="210" parent="76" name="description_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49592</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="202" parent="76" name="payment_forms_pkey">
+    <index id="211" parent="76" name="payment_forms_pkey">
       <ObjectId>40617</ObjectId>
       <StateNumber>49592</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="203" parent="76" name="payment_forms_pkey">
+    <key id="212" parent="76" name="payment_forms_pkey">
       <ObjectId>40618</ObjectId>
       <StateNumber>49592</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>payment_forms_pkey</UnderlyingIndexName>
     </key>
-    <column id="204" parent="77" name="id">
+    <column id="213" parent="77" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2098,47 +2175,47 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;roles_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="205" parent="77" name="role_name">
+    <column id="214" parent="77" name="role_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49574</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="206" parent="77" name="description">
+    <column id="215" parent="77" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49574</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="207" parent="77" name="created_at">
+    <column id="216" parent="77" name="created_at">
       <Position>4</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49574</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="208" parent="77" name="updated_at">
+    <column id="217" parent="77" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49574</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="209" parent="77" name="roles_pkey">
+    <index id="218" parent="77" name="roles_pkey">
       <ObjectId>40502</ObjectId>
       <StateNumber>49574</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="210" parent="77" name="roles_pkey">
+    <key id="219" parent="77" name="roles_pkey">
       <ObjectId>40503</ObjectId>
       <StateNumber>49574</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>roles_pkey</UnderlyingIndexName>
     </key>
-    <column id="211" parent="78" name="id">
+    <column id="220" parent="78" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2146,68 +2223,68 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;staff_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="212" parent="78" name="english_level_id">
+    <column id="221" parent="78" name="english_level_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49604</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="213" parent="78" name="user_id">
+    <column id="222" parent="78" name="user_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49604</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="214" parent="78" name="academic_degree_id">
+    <column id="223" parent="78" name="academic_degree_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49604</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="215" parent="78" name="academic_rank_id">
+    <column id="224" parent="78" name="academic_rank_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49604</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="216" parent="78" name="is_foreign">
+    <column id="225" parent="78" name="is_foreign">
       <Position>6</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49604</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <column id="217" parent="78" name="created_at">
+    <column id="226" parent="78" name="created_at">
       <Position>7</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49604</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="218" parent="78" name="updated_at">
+    <column id="227" parent="78" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49604</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="219" parent="78" name="staff_pkey">
+    <index id="228" parent="78" name="staff_pkey">
       <ObjectId>40690</ObjectId>
       <StateNumber>49604</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="220" parent="78" name="staff_pkey">
+    <key id="229" parent="78" name="staff_pkey">
       <ObjectId>40691</ObjectId>
       <StateNumber>49604</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>staff_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="221" parent="78" name="staff_english_level_id_foreign">
+    <foreign-key id="230" parent="78" name="staff_english_level_id_foreign">
       <ObjectId>40697</ObjectId>
       <StateNumber>49604</StateNumber>
       <ColNames>english_level_id</ColNames>
@@ -2218,7 +2295,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="222" parent="78" name="staff_user_id_foreign">
+    <foreign-key id="231" parent="78" name="staff_user_id_foreign">
       <ObjectId>40692</ObjectId>
       <StateNumber>49604</StateNumber>
       <ColNames>user_id</ColNames>
@@ -2229,7 +2306,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="223" parent="78" name="staff_academic_degree_id_foreign">
+    <foreign-key id="232" parent="78" name="staff_academic_degree_id_foreign">
       <ObjectId>40702</ObjectId>
       <StateNumber>49604</StateNumber>
       <ColNames>academic_degree_id</ColNames>
@@ -2240,7 +2317,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="224" parent="78" name="staff_academic_rank_id_foreign">
+    <foreign-key id="233" parent="78" name="staff_academic_rank_id_foreign">
       <ObjectId>40707</ObjectId>
       <StateNumber>49604</StateNumber>
       <ColNames>academic_rank_id</ColNames>
@@ -2251,7 +2328,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="225" parent="79" name="id">
+    <column id="234" parent="79" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2259,54 +2336,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;student_order_categories_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="226" parent="79" name="created_at">
+    <column id="235" parent="79" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49576</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="227" parent="79" name="updated_at">
+    <column id="236" parent="79" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49576</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="228" parent="79" name="description_kz">
+    <column id="237" parent="79" name="description_kz">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="229" parent="79" name="description_ru">
+    <column id="238" parent="79" name="description_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="230" parent="79" name="description_en">
+    <column id="239" parent="79" name="description_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="231" parent="79" name="student_order_categories_pkey">
+    <index id="240" parent="79" name="student_order_categories_pkey">
       <ObjectId>40513</ObjectId>
       <StateNumber>49576</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="232" parent="79" name="student_order_categories_pkey">
+    <key id="241" parent="79" name="student_order_categories_pkey">
       <ObjectId>40514</ObjectId>
       <StateNumber>49576</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>student_order_categories_pkey</UnderlyingIndexName>
     </key>
-    <column id="233" parent="80" name="id">
+    <column id="242" parent="80" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2314,54 +2391,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;student_order_statuses_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="234" parent="80" name="created_at">
+    <column id="243" parent="80" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49578</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="235" parent="80" name="updated_at">
+    <column id="244" parent="80" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49578</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="236" parent="80" name="description_kz">
+    <column id="245" parent="80" name="description_kz">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49578</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="237" parent="80" name="description_ru">
+    <column id="246" parent="80" name="description_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49578</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="238" parent="80" name="description_en">
+    <column id="247" parent="80" name="description_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49578</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="239" parent="80" name="student_order_statuses_pkey">
+    <index id="248" parent="80" name="student_order_statuses_pkey">
       <ObjectId>40524</ObjectId>
       <StateNumber>49578</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="240" parent="80" name="student_order_statuses_pkey">
+    <key id="249" parent="80" name="student_order_statuses_pkey">
       <ObjectId>40525</ObjectId>
       <StateNumber>49578</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>student_order_statuses_pkey</UnderlyingIndexName>
     </key>
-    <column id="241" parent="81" name="id">
+    <column id="250" parent="81" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2369,54 +2446,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;student_orders_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="242" parent="81" name="created_at">
+    <column id="251" parent="81" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49580</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="243" parent="81" name="updated_at">
+    <column id="252" parent="81" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49580</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="244" parent="81" name="user_id">
+    <column id="253" parent="81" name="user_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49580</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="245" parent="81" name="order_cat_id">
+    <column id="254" parent="81" name="order_cat_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49580</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="246" parent="81" name="status_id">
+    <column id="255" parent="81" name="status_id">
       <Position>6</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49580</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="247" parent="81" name="student_orders_pkey">
+    <index id="256" parent="81" name="student_orders_pkey">
       <ObjectId>40532</ObjectId>
       <StateNumber>49580</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="248" parent="81" name="student_orders_pkey">
+    <key id="257" parent="81" name="student_orders_pkey">
       <ObjectId>40533</ObjectId>
       <StateNumber>49580</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>student_orders_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="249" parent="81" name="student_orders_user_id_foreign">
+    <foreign-key id="258" parent="81" name="student_orders_user_id_foreign">
       <ObjectId>40534</ObjectId>
       <StateNumber>49580</StateNumber>
       <ColNames>user_id</ColNames>
@@ -2427,7 +2504,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="250" parent="81" name="student_orders_order_cat_id_foreign">
+    <foreign-key id="259" parent="81" name="student_orders_order_cat_id_foreign">
       <ObjectId>40539</ObjectId>
       <StateNumber>49580</StateNumber>
       <ColNames>order_cat_id</ColNames>
@@ -2438,7 +2515,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="251" parent="81" name="student_orders_status_id_foreign">
+    <foreign-key id="260" parent="81" name="student_orders_status_id_foreign">
       <ObjectId>40544</ObjectId>
       <StateNumber>49580</StateNumber>
       <ColNames>status_id</ColNames>
@@ -2449,7 +2526,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="252" parent="82" name="id">
+    <column id="261" parent="82" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2457,82 +2534,82 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;students_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="253" parent="82" name="study_status_id">
+    <column id="262" parent="82" name="study_status_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="254" parent="82" name="user_id">
+    <column id="263" parent="82" name="user_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="255" parent="82" name="study_form_id">
+    <column id="264" parent="82" name="study_form_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="256" parent="82" name="payment_form_id">
+    <column id="265" parent="82" name="payment_form_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="257" parent="82" name="study_lang_id">
+    <column id="266" parent="82" name="study_lang_id">
       <Position>6</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="258" parent="82" name="group_id">
+    <column id="267" parent="82" name="group_id">
       <Position>7</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="259" parent="82" name="course">
+    <column id="268" parent="82" name="course">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49606</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="260" parent="82" name="created_at">
+    <column id="269" parent="82" name="created_at">
       <Position>9</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49606</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="261" parent="82" name="updated_at">
+    <column id="270" parent="82" name="updated_at">
       <Position>10</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49606</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="262" parent="82" name="students_pkey">
+    <index id="271" parent="82" name="students_pkey">
       <ObjectId>40718</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="263" parent="82" name="students_pkey">
+    <key id="272" parent="82" name="students_pkey">
       <ObjectId>40719</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>students_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="264" parent="82" name="students_study_status_id_foreign">
+    <foreign-key id="273" parent="82" name="students_study_status_id_foreign">
       <ObjectId>40720</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>study_status_id</ColNames>
@@ -2543,7 +2620,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="265" parent="82" name="students_user_id_foreign">
+    <foreign-key id="274" parent="82" name="students_user_id_foreign">
       <ObjectId>40725</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>user_id</ColNames>
@@ -2554,7 +2631,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="266" parent="82" name="students_study_form_id_foreign">
+    <foreign-key id="275" parent="82" name="students_study_form_id_foreign">
       <ObjectId>40730</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>study_form_id</ColNames>
@@ -2565,7 +2642,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="267" parent="82" name="students_payment_form_id_foreign">
+    <foreign-key id="276" parent="82" name="students_payment_form_id_foreign">
       <ObjectId>40735</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>payment_form_id</ColNames>
@@ -2576,7 +2653,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="268" parent="82" name="students_study_lang_id_foreign">
+    <foreign-key id="277" parent="82" name="students_study_lang_id_foreign">
       <ObjectId>40740</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>study_lang_id</ColNames>
@@ -2587,7 +2664,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="269" parent="82" name="students_group_id_foreign">
+    <foreign-key id="278" parent="82" name="students_group_id_foreign">
       <ObjectId>40745</ObjectId>
       <StateNumber>49606</StateNumber>
       <ColNames>group_id</ColNames>
@@ -2598,7 +2675,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="270" parent="83" name="id">
+    <column id="279" parent="83" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2606,75 +2683,75 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;study_forms_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="271" parent="83" name="created_at">
+    <column id="280" parent="83" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49602</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="272" parent="83" name="updated_at">
+    <column id="281" parent="83" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49602</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="273" parent="83" name="degree_id">
+    <column id="282" parent="83" name="degree_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49602</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="274" parent="83" name="department_type_id">
+    <column id="283" parent="83" name="department_type_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49602</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="275" parent="83" name="description_kz">
+    <column id="284" parent="83" name="description_kz">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49602</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="83" name="description_ru">
+    <column id="285" parent="83" name="description_ru">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49602</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="277" parent="83" name="description_en">
+    <column id="286" parent="83" name="description_en">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49602</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="83" name="course_count">
+    <column id="287" parent="83" name="course_count">
       <Position>9</Position>
       <DataType>smallint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49602</StateNumber>
       <TypeId>21</TypeId>
     </column>
-    <index id="279" parent="83" name="study_forms_pkey">
+    <index id="288" parent="83" name="study_forms_pkey">
       <ObjectId>40672</ObjectId>
       <StateNumber>49602</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="280" parent="83" name="study_forms_pkey">
+    <key id="289" parent="83" name="study_forms_pkey">
       <ObjectId>40673</ObjectId>
       <StateNumber>49602</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>study_forms_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="281" parent="83" name="study_forms_degree_id_foreign">
+    <foreign-key id="290" parent="83" name="study_forms_degree_id_foreign">
       <ObjectId>40674</ObjectId>
       <StateNumber>49602</StateNumber>
       <ColNames>degree_id</ColNames>
@@ -2685,7 +2762,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="282" parent="83" name="study_forms_department_type_id_foreign">
+    <foreign-key id="291" parent="83" name="study_forms_department_type_id_foreign">
       <ObjectId>40679</ObjectId>
       <StateNumber>49602</StateNumber>
       <ColNames>department_type_id</ColNames>
@@ -2696,7 +2773,7 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="283" parent="84" name="id">
+    <column id="292" parent="84" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2704,54 +2781,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;study_langs_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="284" parent="84" name="created_at">
+    <column id="293" parent="84" name="created_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49594</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="285" parent="84" name="updated_at">
+    <column id="294" parent="84" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49594</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="286" parent="84" name="title_kk">
+    <column id="295" parent="84" name="title_kk">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="287" parent="84" name="title_ru">
+    <column id="296" parent="84" name="title_ru">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="288" parent="84" name="title_en">
+    <column id="297" parent="84" name="title_en">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49594</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="289" parent="84" name="study_langs_pkey">
+    <index id="298" parent="84" name="study_langs_pkey">
       <ObjectId>40628</ObjectId>
       <StateNumber>49594</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="290" parent="84" name="study_langs_pkey">
+    <key id="299" parent="84" name="study_langs_pkey">
       <ObjectId>40629</ObjectId>
       <StateNumber>49594</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>study_langs_pkey</UnderlyingIndexName>
     </key>
-    <column id="291" parent="85" name="id">
+    <column id="300" parent="85" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2759,54 +2836,54 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;study_statuses_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="292" parent="85" name="description_kz">
+    <column id="301" parent="85" name="description_kz">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49582</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="293" parent="85" name="description_ru">
+    <column id="302" parent="85" name="description_ru">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49582</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="294" parent="85" name="description_en">
+    <column id="303" parent="85" name="description_en">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49582</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="295" parent="85" name="created_at">
+    <column id="304" parent="85" name="created_at">
       <Position>5</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49582</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="296" parent="85" name="updated_at">
+    <column id="305" parent="85" name="updated_at">
       <Position>6</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49582</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="297" parent="85" name="study_statuses_pkey">
+    <index id="306" parent="85" name="study_statuses_pkey">
       <ObjectId>40558</ObjectId>
       <StateNumber>49582</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="298" parent="85" name="study_statuses_pkey">
+    <key id="307" parent="85" name="study_statuses_pkey">
       <ObjectId>40559</ObjectId>
       <StateNumber>49582</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>study_statuses_pkey</UnderlyingIndexName>
     </key>
-    <column id="299" parent="86" name="id">
+    <column id="308" parent="86" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -2814,134 +2891,134 @@ sequence|table|40712|40714|1
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="300" parent="86" name="name">
+    <column id="309" parent="86" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="301" parent="86" name="lastname">
+    <column id="310" parent="86" name="lastname">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="302" parent="86" name="patronymic">
+    <column id="311" parent="86" name="patronymic">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="303" parent="86" name="gender_id">
+    <column id="312" parent="86" name="gender_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="304" parent="86" name="tel">
+    <column id="313" parent="86" name="tel">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="305" parent="86" name="birthdate">
+    <column id="314" parent="86" name="birthdate">
       <Position>7</Position>
       <DataType>timestamp(0)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="306" parent="86" name="registration_address">
+    <column id="315" parent="86" name="registration_address">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="307" parent="86" name="residential_address">
+    <column id="316" parent="86" name="residential_address">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="308" parent="86" name="iin">
+    <column id="317" parent="86" name="iin">
       <Position>10</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="309" parent="86" name="login">
+    <column id="318" parent="86" name="login">
       <Position>11</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="310" parent="86" name="login_verified_at">
+    <column id="319" parent="86" name="login_verified_at">
       <Position>12</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49570</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="311" parent="86" name="password">
+    <column id="320" parent="86" name="password">
       <Position>13</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="312" parent="86" name="remember_token">
+    <column id="321" parent="86" name="remember_token">
       <Position>14</Position>
       <DataType>varchar(100)|0s</DataType>
       <StateNumber>49570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="313" parent="86" name="created_at">
+    <column id="322" parent="86" name="created_at">
       <Position>15</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49570</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="314" parent="86" name="updated_at">
+    <column id="323" parent="86" name="updated_at">
       <Position>16</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49570</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="315" parent="86" name="users_pkey">
+    <index id="324" parent="86" name="users_pkey">
       <ObjectId>40472</ObjectId>
       <StateNumber>49570</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="316" parent="86" name="users_login_unique">
+    <index id="325" parent="86" name="users_login_unique">
       <ObjectId>40479</ObjectId>
       <StateNumber>49570</StateNumber>
       <ColNames>login</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="317" parent="86" name="users_pkey">
+    <key id="326" parent="86" name="users_pkey">
       <ObjectId>40473</ObjectId>
       <StateNumber>49570</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <key id="318" parent="86" name="users_login_unique">
+    <key id="327" parent="86" name="users_login_unique">
       <ObjectId>40480</ObjectId>
       <StateNumber>49570</StateNumber>
       <ColNames>login</ColNames>
       <UnderlyingIndexName>users_login_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="319" parent="86" name="users_gender_id_foreign">
+    <foreign-key id="328" parent="86" name="users_gender_id_foreign">
       <ObjectId>40474</ObjectId>
       <StateNumber>49570</StateNumber>
       <ColNames>gender_id</ColNames>
@@ -2952,33 +3029,33 @@ sequence|table|40712|40714|1
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="320" parent="87" name="created_at">
+    <column id="329" parent="87" name="created_at">
       <Position>1</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49584</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="321" parent="87" name="updated_at">
+    <column id="330" parent="87" name="updated_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>49584</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="322" parent="87" name="user_id">
+    <column id="331" parent="87" name="user_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49584</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="323" parent="87" name="role_id">
+    <column id="332" parent="87" name="role_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>49584</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="324" parent="87" name="users_role_pkey">
+    <index id="333" parent="87" name="users_role_pkey">
       <ObjectId>40573</ObjectId>
       <StateNumber>49584</StateNumber>
       <ColNames>user_id
@@ -2986,7 +3063,7 @@ role_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="325" parent="87" name="users_role_pkey">
+    <key id="334" parent="87" name="users_role_pkey">
       <ObjectId>40574</ObjectId>
       <StateNumber>49584</StateNumber>
       <ColNames>user_id
@@ -2994,7 +3071,7 @@ role_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_role_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="326" parent="87" name="users_role_user_id_foreign">
+    <foreign-key id="335" parent="87" name="users_role_user_id_foreign">
       <ObjectId>40563</ObjectId>
       <StateNumber>49584</StateNumber>
       <ColNames>user_id</ColNames>
@@ -3005,7 +3082,7 @@ role_id</ColNames>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="327" parent="87" name="users_role_role_id_foreign">
+    <foreign-key id="336" parent="87" name="users_role_role_id_foreign">
       <ObjectId>40568</ObjectId>
       <StateNumber>49584</StateNumber>
       <ColNames>role_id</ColNames>

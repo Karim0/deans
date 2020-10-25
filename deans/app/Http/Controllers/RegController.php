@@ -121,6 +121,8 @@ class RegController extends Controller
 
     public function profile()
     {
+
+        $data = ['user' => Auth::user()];
         if (auth()->check()) {
             if (!auth()->user()->isAdvisor() and !auth()->user()->isAdmin()) {
                 abort('403', 'У вас нет прав доступа');
@@ -129,8 +131,21 @@ class RegController extends Controller
             abort('403', 'Вы не авторизованы');
         }
         $orders = StudentOrder::all();
+        $data += ['orders' => $orders];
 
-        return view('profile', ['user' => Auth::user(), 'orders' => $orders]);
+        if (auth()->user()->isAdmin()) {
+//            dd(auth()->user()->my_groups()->allRelatedIds());
+            $dep = DB::table('groups')->select('dep_id')->distinct()->whereIn('id', auth()->user()->my_groups()->allRelatedIds())->get();
+            $dep_id = [];
+            foreach ($dep as $d) {
+//                $dep_id += $d->dep_id;
+                array_push($dep_id, $d->dep_id);
+
+            }
+//            dd(DB::table('departments')->select('*')->whereIn('id', $dep_id)->get());
+            $data += ['departments' => DB::table('departments')->select('*')->distinct()->whereIn('id', $dep_id)->get()];
+        }
+        return view('profile', $data);
     }
 
     public function logout()

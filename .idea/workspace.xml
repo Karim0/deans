@@ -29,10 +29,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/department_page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Departments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/public/css/adminlte.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/deans/public/css/adminlte.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/css/adminlte.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/css/adminlte.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/group_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/group_page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
@@ -49,6 +56,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="savedDocuments">
+              <list>
+                <AnonymousApexSavedDocument>
+                  <option name="name" value="Anonymous Apex 1" />
+                </AnonymousApexSavedDocument>
+              </list>
+            </option>
+          </AnonymousApexSettings>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -165,24 +189,24 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\js" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\css" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\public\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\app\Models" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\app" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\plugins\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\js" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -213,7 +237,9 @@
       <workItem from="1603364299440" duration="11664000" />
       <workItem from="1603418085357" duration="3223000" />
       <workItem from="1603440671731" duration="3113000" />
-      <workItem from="1603443989480" duration="1252000" />
+      <workItem from="1603443989480" duration="1543000" />
+      <workItem from="1603609613840" duration="404000" />
+      <workItem from="1603610032815" duration="10297000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -236,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603378481177</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added restrictions on roles">
+      <created>1603445525006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603445525006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +308,8 @@
     <MESSAGE value="login and reg" />
     <MESSAGE value="adding student, studyForm, payment_form, studyLang etc." />
     <MESSAGE value="added group_page, ability to adding stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="added group_page, ability to adding stuff" />
+    <MESSAGE value="added restrictions on roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added restrictions on roles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
@@ -286,18 +320,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602593611072" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602998710815">
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603627511097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602998710815" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603627511097" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603001693694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603001693694" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603370724122">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603610419083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603370724122" />
+    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603610419083" />
     <state x="838" y="417" key="Github.ShareDialog" timestamp="1602685480657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,18 +348,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602212849497" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1603444032031">
+    <state x="615" y="240" key="RollbackChangesDialog" timestamp="1603620191083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603444032031" />
+    <state x="615" y="240" key="RollbackChangesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603620191083" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1603610422292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603610422292" />
     <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1603163308311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603378504928">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603445528960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603378504928" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603445528960" />
     <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603371165721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
