@@ -30,4 +30,9 @@ class GroupController extends Controller
 
         return view('group_page', ['group' => $group]);
     }
+
+    public function show_group()
+    {
+        return view('admin-panel/show-groups', ['groups'=> Groups::all()]);
+    }
 }

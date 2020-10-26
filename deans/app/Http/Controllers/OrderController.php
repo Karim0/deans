@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\StudentOrder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -24,5 +25,10 @@ class OrderController extends Controller
             [$data['description_kz'], $data['description_ru'], $data['description_en']]);
 
         return redirect()->route('profile');
+    }
+
+    public function Orders()
+    {
+        return view('admin-panel/show-order', ['orders'=> StudentOrder::all()]);
     }
 }

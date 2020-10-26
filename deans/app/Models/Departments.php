@@ -14,7 +14,7 @@ class Departments extends Model
 
     public function type()
     {
-        return $this->hasOne(DepartmentTypes::class, 'department_type_id');
+        return $this->belongsTo(DepartmentTypes::class, 'department_type_id');
     }
 
 }

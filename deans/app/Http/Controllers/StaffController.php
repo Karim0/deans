@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Groups;
+use App\Models\Staff;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -20,5 +22,11 @@ class StaffController extends Controller
                 $data['is_foreign']]);
 
         return redirect()->route('profile');
+    }
+
+
+    public function show_staff()
+    {
+        return view('admin-panel/show-staff', ['staff'=> Staff::all()]);
     }
 }

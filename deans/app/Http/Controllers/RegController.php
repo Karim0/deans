@@ -132,19 +132,6 @@ class RegController extends Controller
         }
         $orders = StudentOrder::all();
         $data += ['orders' => $orders];
-
-        if (auth()->user()->isAdmin()) {
-//            dd(auth()->user()->my_groups()->allRelatedIds());
-            $dep = DB::table('groups')->select('dep_id')->distinct()->whereIn('id', auth()->user()->my_groups()->allRelatedIds())->get();
-            $dep_id = [];
-            foreach ($dep as $d) {
-//                $dep_id += $d->dep_id;
-                array_push($dep_id, $d->dep_id);
-
-            }
-//            dd(DB::table('departments')->select('*')->whereIn('id', $dep_id)->get());
-            $data += ['departments' => DB::table('departments')->select('*')->distinct()->whereIn('id', $dep_id)->get()];
-        }
         return view('profile', $data);
     }
 

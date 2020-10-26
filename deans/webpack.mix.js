@@ -27,4 +27,7 @@ mix.copy('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .copy('resources/css/*', 'public/css')
     .copy('resources/css/awesome/*', 'public/css/awesome')
-    .copy('resources/css/alt/*.css', 'public/css');
+    .copy('resources/css/alt/*.css', 'public/css')
+// plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+
+;

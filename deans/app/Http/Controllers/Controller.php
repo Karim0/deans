@@ -35,8 +35,4 @@ class Controller extends BaseController
         $user = DB::table('users')->select(['login', 'name', 'lastname'])->where('login', 'LIKE', $data['login'] . '%')->get();
         return response()->json(['user' => $user]);
     }
-
-
-
-
 }

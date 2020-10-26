@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/awesome/all.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="icon" href="{{asset('img/logo_icon.png')}}">
 
     <script defer src="{{asset('js/awesome/all.js')}}"></script>
 </head>
@@ -48,7 +49,7 @@
         </form>
 
     </nav>
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 h-100">
         <!-- Brand Logo -->
         <a href="{{route('home')}}" class="brand-link">
             <img src="{{asset('img/logo.png')}}"
@@ -59,7 +60,7 @@
         </a>
 
         <!-- Sidebar -->
-        <div class="sidebar">
+        <div class="sidebar" >
             <!-- Sidebar user (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
@@ -72,29 +73,27 @@
 
             <!-- Sidebar Menu -->
             <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                    data-accordion="false">
-                    <li class="nav-item has-treeview">
-                        <a href="../calendar.html" class="nav-link">
-                            <i class="nav-icon far fa-calendar-alt"></i>
-                            <p>
-                                Calendar
-                                <span class="badge badge-info right">2</span>
-                            </p>
-                        </a>
-                    </li>
-                </ul>
+{{--                <div class="dropdown w-100">--}}
+{{--                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"--}}
+{{--                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--                        Edit data--}}
+{{--                    </button>--}}
+{{--                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">--}}
+{{--                        --}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </nav>
             <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
     </aside>
-    @yield('content')
+    <div class="content-wrapper">
+        @yield('content')
+    </div>
 </div>
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/adminlte.min.js')}}"></script>
-<script src="{{asset('plugins/js/demo.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
 
 </body>
