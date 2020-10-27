@@ -553,44 +553,6 @@
         </div>
     </div>
     <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="add_group">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add group</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form action="{{route('add_group')}}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (en)" name="title_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (ru)" name="title_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (kk)" name="title_kk">
-                        </div>
-                        <div class="form-group">
-                            <select name="dep_id" id="" class="form-control">
-                                @foreach(\App\Models\Departments::all() as $dep)
-                                    <option value="{{$dep->id}}">{{$dep->title_ru}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
-                    </form>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
          id="add_study_form">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">

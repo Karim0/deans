@@ -41,6 +41,9 @@ Route::post('/add_study_lang', 'StudentsController@addStudyLang')->name('add_stu
 
 Route::post('/add_group', 'GroupController@addGroup')->name('add_group');
 Route::get('/panel-group', 'GroupController@show_group')->name('panel-group');
+Route::get('/panel-group/edit/{id}', 'GroupController@edit_group_page')->name('edit-group_page');
+Route::post('/panel-group/edit/{id}', 'GroupController@edit_group')->name('edit-group');
+Route::get('/panel-group/delete/{id}', 'GroupController@delete_group')->name('delete-group');
 Route::get('/group/{id}', 'GroupController@getGroup')->name('get_group');
 
 

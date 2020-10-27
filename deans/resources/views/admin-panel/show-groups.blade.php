@@ -5,6 +5,10 @@
 
 @section('content')
     <div class="container">
+        <div class="row pt-3 mb-3">
+            <button type="button" class="btn btn-primary"
+                    data-toggle="modal" data-target="#add_group">Добавить группу</button>
+        </div>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -26,13 +30,51 @@
                     <td>{{$gr->title_kk}}</td>
                     <td>{{$gr->departments->title_short_ru}}</td>
                     <td>
-                        <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                        <button class="btn btn-danger"><i class="fa fa-window-close"></i></button>
+                        <a class="btn btn-primary" href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger" href="{{route('delete-group', ['id'=>$gr->id])}}"><i class="fa fa-window-close"></i></a>
                     </td>
                 </tr>
             @endforeach
-
             </tbody>
         </table>
+    </div>
+
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="add_group">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="{{route('add_group')}}" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Group name (en)" name="title_en">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Group name (ru)" name="title_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Group name (kk)" name="title_kk">
+                        </div>
+                        <div class="form-group">
+                            <select name="dep_id" id="" class="form-control">
+                                @foreach(\App\Models\Departments::all() as $dep)
+                                    <option value="{{$dep->id}}">{{$dep->title_ru}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 @endsection

@@ -92,8 +92,8 @@
                             <td>{{$gr->title_kk}}</td>
                             <td>{{$gr->departments->title_short_ru}}</td>
                             <td>
-                                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-danger"><i class="fa fa-window-close"></i></button>
+                                <a class="btn btn-primary" href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i class="fa fa-edit"></i></a>
+                                <a class="btn btn-danger" href="{{route('delete-group', ['id'=>$gr->id])}}"><i class="fa fa-window-close"></i></a>
                             </td>
                         </tr>
                     @endforeach

@@ -15,7 +15,7 @@ class DepartmentController extends Controller
     }
 
 
-    public function edit_department_page($id)
+    public function edit_department_page ($id)
     {
         return view('admin-panel/edit-department', ['dep' => Departments::find($id)]);
     }
