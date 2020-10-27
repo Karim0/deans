@@ -48,7 +48,10 @@ Route::post('/add_staff', 'StaffController@addStaff')->name('add_staff');
 Route::get('/panel-staff', 'StaffController@show_staff')->name('panel-staff');
 
 
-
 Route::get('/panel-department', 'DepartmentController@show_departments')->name('panel-department');
+Route::post('/panel-department', 'DepartmentController@add_department')->name('add-department');
+Route::get('/panel-department/edit/{id}', 'DepartmentController@edit_department_page')->name('edit-department_page');
+Route::post('/panel-department/edit/{id}', 'DepartmentController@edit_department')->name('edit-department');
+Route::get('/panel-department/delete/{id}', 'DepartmentController@delete_department')->name('delete-department');
 
 

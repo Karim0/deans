@@ -29,28 +29,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/public/css/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/public/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/GroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Departments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/DepartmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/deans/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,19 +187,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views\admin-panel" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\public\plugins\fontawesome-free\webfonts" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\public\css\webfonts" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\public\css" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\public" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views\admin-panel" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -248,7 +233,8 @@
       <workItem from="1603443989480" duration="1543000" />
       <workItem from="1603609613840" duration="404000" />
       <workItem from="1603610032815" duration="10995000" />
-      <workItem from="1603692226413" duration="9912000" />
+      <workItem from="1603692226413" duration="9971000" />
+      <workItem from="1603774397251" duration="6401000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -285,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603628753493</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added showing departments, groups, staff and student into admin panel">
+      <created>1603707303414</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603707303414</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +319,8 @@
     <MESSAGE value="added group_page, ability to adding stuff" />
     <MESSAGE value="added restrictions on roles" />
     <MESSAGE value="split Controller into other controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="split Controller into other controllers" />
+    <MESSAGE value="added showing departments, groups, staff and student into admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added showing departments, groups, staff and student into admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
@@ -345,10 +339,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603001693694" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603699855499">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603774622563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603699855499" />
+    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603774622563" />
     <state x="838" y="417" key="Github.ShareDialog" timestamp="1602685480657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -377,10 +371,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603628775813">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603707334993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603628775813" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603707334993" />
     <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603692761731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -20,14 +20,14 @@
             </thead>
             <tbody>
 
-            @foreach($staff as $dep)
+            @foreach($staff as $st)
                 <tr>
-                    <th>{{$dep->id}}</th>
-                    <td>{{$dep->user->login}}: {{$dep->user->lastname}} {{$dep->user->name}}</td>
-                    <td>{{$dep->english_level->description_ru}}</td>
-                    <td>{{$dep->academic_degree->title_ru}}</td>
-                    <td>{{$dep->academic_rank->title_ru}}</td>
-                    @if($dep->is_foreign)
+                    <th>{{$st->id}}</th>
+                    <td>{{$st->user->login}}: {{$st->user->lastname}} {{$st->user->name}}</td>
+                    <td>{{$st->english_level->description_ru}}</td>
+                    <td>{{$st->academic_degree->title_ru}}</td>
+                    <td>{{$st->academic_rank->title_ru}}</td>
+                    @if($st->is_foreign)
                         <td class="text-center"><i class="fa fa-check"></i></td>
                     @else
                         <td class="text-center"><i class="fa fa-times"></i></td>
