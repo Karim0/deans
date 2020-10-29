@@ -49,6 +49,9 @@ Route::get('/group/{id}', 'GroupController@getGroup')->name('get_group');
 
 Route::post('/add_staff', 'StaffController@addStaff')->name('add_staff');
 Route::get('/panel-staff', 'StaffController@show_staff')->name('panel-staff');
+Route::get('/panel-staff/edit/{id}', 'StaffController@edit_staff_page')->name('edit-staff_page');
+Route::post('/panel-staff/edit/{id}', 'StaffController@edit_staff')->name('edit-staff');
+Route::get('/panel-staff/delete/{id}', 'StaffController@delete_staff')->name('delete-staff');
 
 
 Route::get('/panel-department', 'DepartmentController@show_departments')->name('panel-department');

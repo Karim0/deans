@@ -347,53 +347,6 @@
                                     </div>
                                 </div>
                                 @if (auth()->user()->isAdmin())
-                                    <div class="tab-pane" id="add_staff">
-                                        <form action="{{route('add_staff')}}" method="post">
-                                            @csrf
-                                            <div class="form-group">
-                                                <input type="text" class="form-control"
-                                                       placeholder="Enter user login"
-                                                       aria-label="Search" name="login" id="search_user_st">
-                                                <div class="search-res" id="st_user_res_container_st">
-                                                    <ul class="list-group" id="st_user_res_st">
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group">
-                                                <select name="english_level_id" id="" class="form-control">
-                                                    @foreach(\App\Models\EnglishLevels::all() as $lang)
-                                                        <option
-                                                            value="{{$lang->id}}">{{$lang->description_ru}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select name="academic_degree_id" id="" class="form-control">
-                                                    @foreach(\App\Models\AcademicDegrees::all() as $deg)
-                                                        <option value="{{$deg->id}}">{{$deg->title_ru}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select name="academic_rank_id" id="" class="form-control">
-                                                    @foreach(\App\Models\AcademicRank::all() as $rank)
-                                                        <option
-                                                            value="{{$rank->id}}">{{$rank->title_ru}}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-check mb-2">
-                                                <input name="is_foreign" id="is_foreign"
-                                                       class="form-check-input"
-                                                       type="checkbox"/>
-                                                <label for="is_foreign" class="form-check-label">Is
-                                                    foreign</label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">add staff</button>
-                                        </form>
-                                    </div>
                                     <div class="tab-pane" id="add_order_type">
                                         <form class="form-horizontal" action="{{route('add_order_type')}}"
                                               method="post">
@@ -468,7 +421,6 @@
             </div>
         </div>
     </section>
-    </div>
 
 
     <footer class="main-footer">

@@ -21,12 +21,36 @@ class StaffController extends Controller
                 $data['academic_rank_id'],
                 $data['is_foreign']]);
 
-        return redirect()->route('profile');
+        return redirect()->route('panel-staff');
     }
 
 
     public function show_staff()
     {
         return view('admin-panel/show-staff', ['staff'=> Staff::all()]);
+    }
+
+    public function edit_staff_page($id)
+    {
+        return view('admin-panel/edit-staff', ['staff' => Staff::find($id)]);
+    }
+
+    public function edit_staff(Request $request, $id)
+    {
+        $data = $request->all();
+        unset($data['_token']);
+
+        $data['user_id'] = DB::table('users')->select('id')->where('login','=', $data['login'])->get()[0]->id;
+        unset($data['login']);
+        DB::table('staff')
+            ->where('id', $id)
+            ->update($data);
+        return redirect()->route('panel-staff');
+    }
+
+    public function delete_staff($id)
+    {
+        DB::table('staff')->delete($id);
+        return redirect()->route('panel-staff');
     }
 }
