@@ -4,15 +4,13 @@
         <div class="row justify-content-center">
             <div class="login-box">
                 <div class="login-logo">
-                    <a href="{{route('home')}}"><b>Deans</b></a>
+                    <a href="{{route('home')}}"><b>Деканат</b></a>
                 </div>
                 @if(isset($_GET['error']))
                     <p class="text-danger">Вы ввели неправильный логин или пароль</p>
                 @endif
                 <div class="card">
                     <div class="card-body login-card-body">
-                        <p class="login-box-msg">Sign in to start your session</p>
-
                         <form action="{{route('post_login')}}" method="post">
                             @csrf
                             <div class="input-group mb-3">
@@ -33,19 +31,18 @@
                             </div>
                             <div class="row justify-content-end">
                                 <div class="col-4">
-                                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                    <button type="submit" class="btn btn-primary btn-block">Войти</button>
                                 </div>
                             </div>
                         </form>
 
                         <p class="mb-1">
-                            <a href="#">I forgot my password</a>
+                            <a href="#">Забыли пароль?</a>
                         </p>
                         <p class="mb-0">
-                            <a href="{{route('register')}}" class="text-center">Register a new membership</a>
+                            <a href="{{route('register')}}" class="text-center">Зарегистрироваться</a>
                         </p>
                     </div>
-                    <!-- /.login-card-body -->
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 @extends('common_admin')
 @section('title')
-    Admin panel
+    Панель администратора
 @endsection
 
 @section('content')
@@ -10,10 +10,10 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Student</th>
-                <th scope="col">Order</th>
-                <th scope="col">Status</th>
-                <th scope="col">Events</th>
+                <th scope="col">ФИО</th>
+                <th scope="col">Справка</th>
+                <th scope="col">Статус</th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>

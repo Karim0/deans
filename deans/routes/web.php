@@ -30,6 +30,11 @@ Route::post('/post_change_user', 'RegController@change_user')->name('post_change
 Route::get('admin_panel/orders', 'OrderController@Orders')->name('panel-orders');
 Route::post('/add_order', 'OrderController@addOrder')->name('add_order');
 Route::post('/add_order_type', 'OrderController@addOrderType')->name('add_order_type');
+Route::get('/panel-order_type', 'OrderController@panelOrderType')->name('panel-order_type');
+Route::get('/panel-order_type/add', 'OrderController@add_order_type')->name('add-order_type');
+Route::get('/panel-order_type/edit/{id}', 'OrderController@edit_order_type_page')->name('edit-order_type_page');
+Route::post('/panel-order_type/edit/{id}', 'OrderController@edit_order_type')->name('edit-order_type');
+Route::get('/panel-order_type/delete/{id}', 'OrderController@delete_order_type')->name('delete-order_type');
 
 
 Route::post('/add_student', 'StudentsController@addStudent')->name('add_student');

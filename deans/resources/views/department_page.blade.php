@@ -1,7 +1,7 @@
 @extends('common_admin')
 
 @section('title')
-    Admin panel - groups
+    Панель администратора - Группы департамента
 @endsection
 @section('content')
 

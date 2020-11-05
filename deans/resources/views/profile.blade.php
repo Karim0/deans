@@ -9,12 +9,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Profile</h1>
+                    <h1>Панель администратора</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                        <li class="breadcrumb-item active">User Profile</li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
+                        <li class="breadcrumb-item active">Панель администратора</li>
                     </ol>
                 </div>
             </div>
@@ -45,65 +45,68 @@
 
                             <ul class="list-group list-group-unbordered mb-3">
                                 <li class="list-group-item">
-                                    <b>Login</b> <a class="float-right">{{$user->login}}</a>
+                                    <b>Логин</b> <a class="float-right">{{$user->login}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Lastname</b> <a class="float-right">{{$user->lastname}}</a>
+                                    <b>Имя</b> <a class="float-right">{{$user->name}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Patronymic</b> <a class="float-right">{{$user->patronymic}}</a>
+                                    <b>Фамилия</b> <a class="float-right">{{$user->lastname}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Gender</b> <a class="float-right">{{$user->gender->title_ru}}</a>
+                                    <b>Отчество</b> <a class="float-right">{{$user->patronymic}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Tel</b> <a class="float-right">{{$user->tel}}</a>
+                                    <b>Пол</b> <a class="float-right">{{$user->gender->title_ru}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Birthdate</b> <a class="float-right">{{$user->birthdate}}</a>
+                                    <b>Телефон</b> <a class="float-right">{{$user->tel}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Registration Address</b> <a
+                                    <b>Дата рождения</b> <a class="float-right">{{$user->birthdate}}</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Адрес регистрации</b> <a
                                         class="float-right">{{$user->registration_address}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Residential_Address</b> <a
+                                    <b>Адрес проживания</b> <a
                                         class="float-right">{{$user->residential_address}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>IIN</b> <a class="float-right">{{$user->iin}}</a>
+                                    <b>ИИН</b> <a class="float-right">{{$user->iin}}</a>
                                 </li>
                             </ul>
 
                             <a href="#" type="button" data-toggle="modal" data-target="#modal_edit"
-                               class="btn btn-primary btn-block"><b>Edit</b></a>
+                               class="btn btn-primary btn-block"><b>Редактировать</b></a>
                         </div>
                     </div>
                     @if($user->staff)
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Staff info</h3>
+                                <h3 class="card-title">Информация работника</h3>
                             </div>
                             <div class="card-body">
-                                <strong><i class="fas fa-book mr-1"></i> English level</strong>
+                                <strong><i class="fas fa-book mr-1"></i> Уровень английского</strong>
 
                                 <p class="text-muted">
                                     {{$user->staff->english_level->description_ru}}
                                 </p>
                                 <hr>
-                                <strong><i class="fas fa-map-marker-alt mr-1"></i> Academic degree</strong>
+                                <strong><i class="fas fa-map-marker-alt mr-1"></i> Ученая степень</strong>
                                 <p class="text-muted">{{$user->staff->academic_degree->title_ru}}</p>
                                 <hr>
-                                <strong><i class="fas fa-pencil-alt mr-1"></i> Academic rank</strong>
+                                <strong><i class="fas fa-pencil-alt mr-1"></i> Учёное звание</strong>
                                 <p class="text-muted">
                                     {{$user->staff->academic_rank->title_ru}}
                                 </p>
                                 <hr>
-                                <strong><i class="far fa-file-alt mr-1"></i> Foreign</strong>
+                                <strong><i class="far fa-file-alt mr-1"></i> Иностранец</strong>
                                 @if($user->staff->is_foreign)
-                                    <p class="text-muted">Yes</p>
+                                    <p class="text-muted">Да</p>
                                 @else
-                                    <p class="text-muted">No</p>
+                                    <p class="text-muted">Нет</p>
                                 @endif
                             </div>
                         </div>
@@ -112,54 +115,51 @@
                     @if($user->student)
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Student info</h3>
+                                <h3 class="card-title">Информация о студенте</h3>
                             </div>
                             <div class="card-body">
-                                <strong>Group</strong>
+                                <strong>Группа</strong>
                                 <p class="text-muted">{{$user->student->group->title_ru}}</p>
 
                                 <hr>
 
-                                <strong>Study status</strong>
+                                <strong>Статус студента</strong>
                                 <p class="text-muted">{{$user->student->status->description_ru}}</p>
 
                                 <hr>
 
-                                <strong>Study form</strong>
+                                <strong>Форма обучения</strong>
                                 <p class="text-muted">{{$user->student->study_form->description_ru}}</p>
 
                                 <hr>
 
-                                <strong>Payment form</strong>
+                                <strong>Форма оплаты</strong>
                                 <p class="text-muted">{{$user->student->payment_form->description_ru}}</p>
 
                                 <hr>
 
-                                <strong>Course</strong>
+                                <strong>Курс</strong>
                                 <p class="text-muted">{{$user->student->course}}</p>
                             </div>
-                            <!-- /.card-body -->
                         </div>
-                @endif
+                    @endif
 
-                <!-- /.card -->
                 </div>
-                <!-- /.col -->
                 <div class="col-md-9">
                     <div class="card">
                         <div class="card-header p-2">
                             <ul class="nav nav-pills">
                                 <li class="nav-item"><a class="nav-link active" href="#activity"
-                                                        data-toggle="tab">Process</a>
+                                                        data-toggle="tab">Запрошенные справки</a>
                                 </li>
                                 {{--                                    <li class="nav-item"><a class="nav-link" href="#send_order"--}}
                                 {{--                                                            data-toggle="tab">Send order</a></li>--}}
                                 <li class="nav-item"><a class="nav-link" href="#groups"
-                                                        data-toggle="tab">My groups</a></li>
+                                                        data-toggle="tab">Мои группы</a></li>
 
 
                                 <li class="nav-item"><a class="nav-link" href="#add_student"
-                                                        data-toggle="tab">Add student</a></li>
+                                                        data-toggle="tab">Добавить студента</a></li>
 
 
                                 @if (auth()->user()->isAdmin())
@@ -173,7 +173,7 @@
                                     {{--                                                                data-toggle="tab">Departments</a></li>--}}
 
                                     <li class="nav-item"><a class="nav-link" href="#panel"
-                                                            data-toggle="tab">Panel</a></li>
+                                                            data-toggle="tab">Редактировать</a></li>
                                 @endif
                             </ul>
                         </div><!-- /.card-header -->
@@ -370,13 +370,13 @@
                                     <div class="tab-pane" id="panel">
                                         <ul class="list-group">
                                             <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-department')}}">Department</a>
+                                               href="{{route('panel-department')}}">Департаменты</a>
                                             <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-group')}}">Groups</a>
+                                               href="{{route('panel-group')}}">Группы</a>
                                             <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-staff')}}">Staff</a>
+                                               href="{{route('panel-staff')}}">Данные о сотрудныке</a>
                                             <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-orders')}}">Orders</a>
+                                               href="{{route('panel-order_type')}}">Справки</a>
                                         </ul>
                                     </div>
 
@@ -497,7 +497,7 @@
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin" value="{{$user->iin}}">
                             </div>
-                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Edit</button>
+                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Редактировать</button>
                         </form>
                     </div>
                 </div>
@@ -710,7 +710,7 @@
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin">
                             </div>
-                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Edit</button>
+                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Редактировать</button>
                         </form>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ class DepartmentController extends Controller
     }
 
 
-    public function edit_department_page ($id)
+    public function edit_department_page($id)
     {
         return view('admin-panel/edit-department', ['dep' => Departments::find($id)]);
     }
@@ -40,6 +40,15 @@ class DepartmentController extends Controller
     }
 
     public function add_department(Request $request)
+    {
+        $data = $request->all();
+        unset($data['_token']);
+        if ($data['parent_id'] == 'null') unset($data['parent_id']);
+        DB::table('departments')->insert($data);
+        return redirect()->route('panel-department');
+    }
+
+    public function addUserToDepartment(Request $request)
     {
         $data = $request->all();
         unset($data['_token']);

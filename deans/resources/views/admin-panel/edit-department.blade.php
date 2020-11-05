@@ -10,42 +10,47 @@
             <div class="col">
                 <form class="col-6 offset-3" action="" method="post">
                     @csrf
+
+                    <input class="form-control" name="title_kk" value="-" hidden>
+                    <input class="form-control" name="title_kk" value="-" hidden>
+                    <input class="form-control" name="title_short_kk" value="-" hidden>
+                    <input class="form-control" name="title_short_en" value="-" hidden>
+
                     <div class="form-group">
-                        <label for="title_ru">Заголовок департамента на русском</label>
+                        <label for="title_ru" class="font-weight-normal">Заголовок департамента</label>
                         <input class="form-control" name="title_ru" id="title_ru" value="{{$dep->title_ru}}">
                     </div>
+                    {{--                    <div class="form-group">--}}
+                    {{--                        <label for="title_en">Заголовок департамента на английском</label>--}}
+                    {{--                        <input class="form-control" name="title_en" id="title_en" value="{{$dep->title_en}}">--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="form-group">--}}
+                    {{--                        <label for="title_kk">Заголовок департамента на казахском</label>--}}
+                    {{--                        <input class="form-control" name="title_kk" id="title_kk" value="{{$dep->title_kk}}">--}}
+                    {{--                    </div>--}}
                     <div class="form-group">
-                        <label for="title_en">Заголовок департамента на английском</label>
-                        <input class="form-control" name="title_en" id="title_en" value="{{$dep->title_en}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="title_kk">Заголовок департамента на казахском</label>
-                        <input class="form-control" name="title_kk" id="title_kk" value="{{$dep->title_kk}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="title_short_ru">Аббревиатура департамента на русском</label>
+                        <label for="title_short_ru" class="font-weight-normal">Аббревиатура департамента</label>
                         <input class="form-control" name="title_short_ru" id="title_short_ru"
                                value="{{$dep->title_short_ru}}">
                     </div>
+                    {{--                    <div class="form-group">--}}
+                    {{--                        <label for="title_short_kk">Аббревиатура департамента на казахском</label>--}}
+                    {{--                        <input class="form-control" name="title_short_kk" id="title_short_kk"--}}
+                    {{--                               value="{{$dep->title_short_kk}}">--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="form-group">--}}
+                    {{--                        <label for="title_short_en">Аббревиатура департамента на английском</label>--}}
+                    {{--                        <input class="form-control" name="title_short_en" id="title_short_en"--}}
+                    {{--                               value="{{$dep->title_short_en}}">--}}
+                    {{--                    </div>--}}
                     <div class="form-group">
-                        <label for="title_short_kk">Аббревиатура департамента на казахском</label>
-                        <input class="form-control" name="title_short_kk" id="title_short_kk"
-                               value="{{$dep->title_short_kk}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="title_short_en">Аббревиатура департамента на английском</label>
-                        <input class="form-control" name="title_short_en" id="title_short_en"
-                               value="{{$dep->title_short_en}}">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="include_staff">Кол-во человек в департаменте</label>
+                        <label for="include_staff" class="font-weight-normal">Кол-во человек в департаменте</label>
                         <input class="form-control" name="include_staff" id="include_staff"
                                value="{{$dep->include_staff}}">
                     </div>
 
                     <div class="form-group">
-                        <label for="dep_type"></label>
+                        <label for="dep_type" class="font-weight-normal">Тип</label>
                         <select name="department_type_id" id="dep_type" class="form-control">
                             @foreach(\App\Models\DepartmentTypes::all() as $type)
                                 <option value="{{$type->id}}"
@@ -54,7 +59,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="parent_id">Parent</label>
+                        <label for="parent_id" class="font-weight-normal">Относится к</label>
                         <select name="parent_id" id="parent_id" class="form-control">
                             <option value="null">Не выбрано</option>
                             @foreach(\App\Models\Departments::all() as $parent)
@@ -64,43 +69,92 @@
                         </select>
                     </div>
 
-                    <button class="btn btn-primary" type="submit">Edit</button>
+                    <button class="btn btn-primary" type="submit">Редактировать</button>
                 </form>
             </div>
         </div>
+        <div class="card mt-3">
+            <div class="card-header p-2">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="#groups"
+                                            data-toggle="tab">Группы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#staff"
+                                            data-toggle="tab">Эдвайзеры</a></li>
+                </ul>
+            </div><!-- /.card-header -->
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="active tab-pane" id="groups">
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Заголовок</th>
+{{--                                        <th scope="col">Заголовок на английском</th>--}}
+{{--                                        <th scope="col">Заголовок на казахском</th>--}}
+                                        <th scope="col">Департамент</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
 
-        <div class="row mt-3">
-            <div class="col">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">title_ru</th>
-                        <th scope="col">title_en</th>
-                        <th scope="col">title_kk</th>
-                        <th scope="col">department</th>
-                        <th scope="col">Events</th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                                    @foreach($dep->groups as $gr)
+                                        <tr>
+                                            <th>{{$gr->id}}</th>
+                                            <td>{{$gr->title_ru}}</td>
+{{--                                            <td>{{$gr->title_en}}</td>--}}
+{{--                                            <td>{{$gr->title_kk}}</td>--}}
+                                            <td>{{$gr->departments->title_short_ru}}</td>
+                                            <td>
+                                                <a class="btn btn-primary"
+                                                   href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i
+                                                        class="fa fa-edit"></i></a>
+                                                <a class="btn btn-danger"
+                                                   href="{{route('delete-group', ['id'=>$gr->id])}}"><i
+                                                        class="fa fa-window-close"></i></a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="staff">
 
-                    @foreach($dep->groups as $gr)
-                        <tr>
-                            <th>{{$gr->id}}</th>
-                            <td>{{$gr->title_ru}}</td>
-                            <td>{{$gr->title_en}}</td>
-                            <td>{{$gr->title_kk}}</td>
-                            <td>{{$gr->departments->title_short_ru}}</td>
-                            <td>
-                                <a class="btn btn-primary" href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i class="fa fa-edit"></i></a>
-                                <a class="btn btn-danger" href="{{route('delete-group', ['id'=>$gr->id])}}"><i class="fa fa-window-close"></i></a>
-                            </td>
-                        </tr>
-                    @endforeach
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Логин</th>
+                                <th scope="col">ФИО</th>
+                                <th scope="col">Редактировать</th>
+                            </tr>
+                            </thead>
+                            <tbody>
 
-                    </tbody>
-                </table>
+                            @foreach($dep->users as $us)
+                                <tr>
+                                    <th>{{$us->id}}</th>
+                                    <th>{{$us->login}}</th>
+                                    <td>{{$us->lastname}} {{$us->name}} {{$us->patronic}}</td>
+                                    <td>
+                                        <a class="btn btn-primary"
+                                           href="{{route('edit-staff_page', ['id'=>$us->staff->id])}}"><i
+                                                class="fa fa-edit"></i></a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <br>
+
     </div>
 @endsection

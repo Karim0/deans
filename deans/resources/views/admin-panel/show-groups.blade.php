@@ -1,10 +1,21 @@
 @extends('common_admin')
 @section('title')
-    Admin panel
+    Панель администратора
 @endsection
 
 @section('content')
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('profile')}}">Панель администратора</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Группы</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
         <div class="row pt-3 mb-3">
             <button type="button" class="btn btn-primary"
                     data-toggle="modal" data-target="#add_group">Добавить группу</button>

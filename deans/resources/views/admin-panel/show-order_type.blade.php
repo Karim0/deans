@@ -11,46 +11,38 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
                         <li class="breadcrumb-item"><a href="{{route('profile')}}">Панель администратора</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Сотрудники</li>
+                        <li class="breadcrumb-item active" aria-current="page">Категории справок</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="row pt-3 mb-3">
             <button type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target="#add_staff">Добавить работника
+                    data-toggle="modal" data-target="#add_order_type">Добавить категорию справок
             </button>
         </div>
         <table class="table table-striped">
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">user</th>
-                <th scope="col">english_level</th>
-                <th scope="col">academic_degree</th>
-                <th scope="col">academic_rank</th>
-                <th scope="col">is_foreign</th>
-                <th scope="col">Events</th>
+                <th scope="col">Описание на английском</th>
+                <th scope="col">Описание на русском</th>
+                <th scope="col">Описание на казахском</th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>
 
-            @foreach($staff as $st)
+            @foreach($order_type as $ot)
                 <tr>
-                    <th>{{$st->id}}</th>
-                    <td>{{$st->user->login}}: {{$st->user->lastname}} {{$st->user->name}}</td>
-                    <td>{{$st->english_level->description_ru}}</td>
-                    <td>{{$st->academic_degree->title_ru}}</td>
-                    <td>{{$st->academic_rank->title_ru}}</td>
-                    @if($st->is_foreign)
-                        <td class="text-center"><i class="fa fa-check"></i></td>
-                    @else
-                        <td class="text-center"><i class="fa fa-times"></i></td>
-                    @endif
+                    <th>{{$ot->id}}</th>
+                    <td>{{$ot->description_en}}</td>
+                    <td>{{$ot->description_ru}}</td>
+                    <td>{{$ot->description_kz}}</td>
                     <td>
-                        <a class="btn btn-primary" href="{{route('edit-staff_page', ['id'=>$st->id])}}"><i
+                        <a class="btn btn-primary" href="{{route('edit-order_type_page', ['id'=>$ot->id])}}"><i
                                 class="fa fa-edit"></i></a>
-                        <a class="btn btn-danger" href="{{route('delete-staff', ['id'=>$st->id])}}"><i
+                        <a class="btn btn-danger" href="{{route('delete-order_type', ['id'=>$ot->id])}}"><i
                                 class="fa fa-window-close"></i></a>
                     </td>
                 </tr>
@@ -61,69 +53,33 @@
     </div>
 
     <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="add_staff">
+         id="add_order_type">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add staff</h5>
+                    <h5 class="modal-title">Добавить категорию справок</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
 
                 <div class="modal-body">
-                    <form action="{{route('add_staff')}}" method="post">
+                    <form action="{{route('add-order_type')}}" method="post">
                         @csrf
-                        <div class="form-group d-flex">
-                            <div class="flex-grow-1">
-                                <input type="text" class="form-control"
-                                       placeholder="Enter user login"
-                                       aria-label="Search" name="login" id="search_user_st">
-                                <div class="search-res" id="st_user_res_container_st">
-                                    <ul class="list-group" id="st_user_res_st">
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <button type="button"
-                                    class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                    data-toggle="modal" data-target="#add_user">
-                                +
-                            </button>
-                        </div>
-
-
                         <div class="form-group">
-                            <select name="english_level_id" id="" class="form-control">
-                                @foreach(\App\Models\EnglishLevels::all() as $lang)
-                                    <option
-                                        value="{{$lang->id}}">{{$lang->description_ru}}</option>
-                                @endforeach
-                            </select>
+                            <label for="description_ru" class="font-weight-normal">Описание на русском</label>
+                            <input type="text" class="form-control" name="description_ru" id="description_ru">
                         </div>
                         <div class="form-group">
-                            <select name="academic_degree_id" id="" class="form-control">
-                                @foreach(\App\Models\AcademicDegrees::all() as $deg)
-                                    <option value="{{$deg->id}}">{{$deg->title_ru}}</option>
-                                @endforeach
-                            </select>
+                            <label for="description_en" class="font-weight-normal">Описание на английском</label>
+                            <input type="text" class="form-control" name="description_en" id="description_en">
                         </div>
                         <div class="form-group">
-                            <select name="academic_rank_id" id="" class="form-control">
-                                @foreach(\App\Models\AcademicRank::all() as $rank)
-                                    <option
-                                        value="{{$rank->id}}">{{$rank->title_ru}}</option>
-                                @endforeach
-                            </select>
+                            <label for="description_kz" class="font-weight-normal">Описание на казахском</label>
+                            <input type="text" class="form-control" name="description_kz" id="description_kz">
                         </div>
-                        <div class="form-check mb-2">
-                            <input name="is_foreign" id="is_foreign"
-                                   class="form-check-input"
-                                   type="checkbox"/>
-                            <label for="is_foreign" class="form-check-label">Is
-                                foreign</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">add staff</button>
+
+                        <button type="submit" class="btn btn-primary">Добавить</button>
                     </form>
                 </div>
 

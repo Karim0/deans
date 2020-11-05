@@ -29,10 +29,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-staff.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/DepartmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Departments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/department_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/department_page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
@@ -182,7 +195,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/views/admin-panel" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -239,7 +252,11 @@
       <workItem from="1603803103821" duration="952000" />
       <workItem from="1603807890958" duration="828000" />
       <workItem from="1603939872633" duration="12000" />
-      <workItem from="1603978066996" duration="7466000" />
+      <workItem from="1603978066996" duration="8116000" />
+      <workItem from="1604023367154" duration="1832000" />
+      <workItem from="1604327944239" duration="1935000" />
+      <workItem from="1604578653423" duration="5065000" />
+      <workItem from="1604585287883" duration="7675000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -297,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603804040292</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="staff CRUD">
+      <created>1603987155383</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603987155383</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +365,8 @@
     <MESSAGE value="added showing departments, groups, staff and student into admin panel" />
     <MESSAGE value="department CRUD" />
     <MESSAGE value="group CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="group CRUD" />
+    <MESSAGE value="staff CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="staff CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
@@ -384,18 +409,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="615" y="240" key="RollbackChangesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603620191083" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1603610422292">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604585272194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603610422292" />
+    <state x="461" y="164" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604585272194" />
     <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1603163308311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603804048819">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603987165024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603804048819" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603987165024" />
     <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603692761731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

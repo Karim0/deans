@@ -28,26 +28,12 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{route('home')}}" class="nav-link">Home</a>
+                <a href="{{route('home')}}" class="nav-link">Главная</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">Контакты</a>
             </li>
         </ul>
-
-        <!-- SEARCH FORM -->
-        <form class="form-inline ml-3">
-            <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                       aria-label="Search">
-                <div class="input-group-append">
-                    <button class="btn btn-navbar" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-
     </nav>
     <aside class="main-sidebar sidebar-dark-primary elevation-4 h-100">
         <!-- Brand Logo -->
@@ -56,7 +42,7 @@
                  alt="Logo"
                  class="brand-image img-circle elevation-3 mt-1"
                  style="opacity: .8; width: 34px; height: auto">
-            <span class="brand-text font-weight-light">Deans</span>
+            <span class="brand-text font-weight-light">Деканат</span>
         </a>
 
         <!-- Sidebar -->
@@ -71,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- Sidebar Menu -->
             <nav class="mt-2">
 {{--                <div class="dropdown w-100">--}}
 {{--                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"--}}
@@ -83,9 +68,7 @@
 {{--                    </div>--}}
 {{--                </div>--}}
             </nav>
-            <!-- /.sidebar-menu -->
         </div>
-        <!-- /.sidebar -->
     </aside>
     <div class="content-wrapper">
         @yield('content')
