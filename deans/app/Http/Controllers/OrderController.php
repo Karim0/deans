@@ -64,6 +64,8 @@ class OrderController extends Controller
 
     public function delete_order_type($id)
     {
+        DB::table('student_order_categories')
+            ->delete($id);
         return redirect()->route('panel-order_type');
     }
 }

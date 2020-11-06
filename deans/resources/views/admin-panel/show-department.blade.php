@@ -79,37 +79,37 @@
                         <form class="col-10 offset-1" action="" method="post">
                             @csrf
                             <div class="form-group">
-                                <label for="title_ru">Заголовок департамента на русском</label>
+                                <label for="title_ru" class="font-weight-normal">Заголовок департамента</label>
                                 <input class="form-control" name="title_ru" id="title_ru">
                             </div>
+                            {{--                            <div class="form-group">--}}
+                            {{--                                <label for="title_en">Заголовок департамента на английском</label>--}}
+                            <input class="form-control" name="title_en" id="title_en" value="-" hidden>
+                            {{--                            </div>--}}
+                            {{--                            <div class="form-group">--}}
+                            {{--                                <label for="title_kk">Заголовок департамента на казахском</label>--}}
+                            <input class="form-control" name="title_kk" id="title_kk" value="-" hidden>
+                            {{--                            </div>--}}
                             <div class="form-group">
-                                <label for="title_en">Заголовок департамента на английском</label>
-                                <input class="form-control" name="title_en" id="title_en">
-                            </div>
-                            <div class="form-group">
-                                <label for="title_kk">Заголовок департамента на казахском</label>
-                                <input class="form-control" name="title_kk" id="title_kk">
-                            </div>
-                            <div class="form-group">
-                                <label for="title_short_ru">Аббревиатура департамента на русском</label>
+                                <label for="title_short_ru" class="font-weight-normal">Аббревиатура департамента</label>
                                 <input class="form-control" name="title_short_ru" id="title_short_ru">
                             </div>
-                            <div class="form-group">
-                                <label for="title_short_kk">Аббревиатура департамента на казахском</label>
-                                <input class="form-control" name="title_short_kk" id="title_short_kk">
-                            </div>
-                            <div class="form-group">
-                                <label for="title_short_en">Аббревиатура департамента на английском</label>
-                                <input class="form-control" name="title_short_en" id="title_short_en">
-                            </div>
+                            {{--                            <div class="form-group">--}}
+                            {{--                                <label for="title_short_kk">Аббревиатура департамента на казахском</label>--}}
+                            <input class="form-control" name="title_short_kk" id="title_short_kk" value="-" hidden>
+                            {{--                            </div>--}}
+                            {{--                            <div class="form-group">--}}
+                            {{--                                <label for="title_short_en">Аббревиатура департамента на английском</label>--}}
+                            <input class="form-control" name="title_short_en" id="title_short_en" value="-" hidden>
+                            {{--                            </div>--}}
 
                             <div class="form-group">
-                                <label for="include_staff">Кол-во человек в департаменте</label>
+                                <label for="include_staff" class="font-weight-normal">Кол-во человек в департаменте</label>
                                 <input class="form-control" name="include_staff" id="include_staff">
                             </div>
 
                             <div class="form-group">
-                                <label for="dep_type"></label>
+                                <label for="dep_type" class="font-weight-normal">Тип</label>
                                 <select name="department_type_id" id="dep_type" class="form-control">
                                     @foreach(\App\Models\DepartmentTypes::all() as $type)
                                         <option value="{{$type->id}}">{{$type->description_ru}}</option>
@@ -117,7 +117,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="parent_id">Parent</label>
+                                <label for="parent_id" class="font-weight-normal">Относится к</label>
                                 <select name="parent_id" id="parent_id" class="form-control">
                                     <option value="null">Не выбрано</option>
                                     @foreach(\App\Models\Departments::all() as $parent)

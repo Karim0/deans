@@ -13,11 +13,11 @@
                                 <div class="form-group flex-grow-1">
                                     <select class="form-control w-100" name="order_cat_id" id="order_cat">
                                         @foreach(\App\Models\StudentOrderCategories::all() as $cat)
-                                            <option value="{{$cat->id}}">{{$cat->description_en}}</option>
+                                            <option value="{{$cat->id}}">{{$cat->description_ru}}</option>
                                         @endforeach
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-primary ml-3">Send</button>
+                                <button type="submit" class="btn btn-primary ml-3">Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
 
                                         <div class="col-6">
                                             <p class="m-0">
-                                                {{$order->cat->description_en}}
+                                                {{$order->cat->description_ru}}
                                             </p>
                                         </div>
 

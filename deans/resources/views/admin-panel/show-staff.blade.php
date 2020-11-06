@@ -25,12 +25,12 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">user</th>
-                <th scope="col">english_level</th>
-                <th scope="col">academic_degree</th>
-                <th scope="col">academic_rank</th>
-                <th scope="col">is_foreign</th>
-                <th scope="col">Events</th>
+                <th scope="col">ФИО</th>
+                <th scope="col">Упрвень английского</th>
+                <th scope="col">Ученая степень</th>
+                <th scope="col">Учёное звание</th>
+                <th scope="col">Иностранец</th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>

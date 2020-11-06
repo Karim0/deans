@@ -18,17 +18,18 @@
         </div>
         <div class="row pt-3 mb-3">
             <button type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target="#add_group">Добавить группу</button>
+                    data-toggle="modal" data-target="#add_group">Добавить группу
+            </button>
         </div>
         <table class="table table-striped">
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">title_ru</th>
-                <th scope="col">title_en</th>
-                <th scope="col">title_kk</th>
-                <th scope="col">department</th>
-                <th scope="col">Events</th>
+                <th scope="col">Название группы</th>
+                {{--                <th scope="col">title_en</th>--}}
+                {{--                <th scope="col">title_kk</th>--}}
+                <th scope="col">Департамент</th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>
@@ -37,12 +38,14 @@
                 <tr>
                     <th>{{$gr->id}}</th>
                     <td>{{$gr->title_ru}}</td>
-                    <td>{{$gr->title_en}}</td>
-                    <td>{{$gr->title_kk}}</td>
+                    {{--                    <td>{{$gr->title_en}}</td>--}}
+                    {{--                    <td>{{$gr->title_kk}}</td>--}}
                     <td>{{$gr->departments->title_short_ru}}</td>
                     <td>
-                        <a class="btn btn-primary" href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i class="fa fa-edit"></i></a>
-                        <a class="btn btn-danger" href="{{route('delete-group', ['id'=>$gr->id])}}"><i class="fa fa-window-close"></i></a>
+                        <a class="btn btn-primary" href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i
+                                class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger" href="{{route('delete-group', ['id'=>$gr->id])}}"><i
+                                class="fa fa-window-close"></i></a>
                     </td>
                 </tr>
             @endforeach
@@ -64,15 +67,15 @@
                 <div class="modal-body">
                     <form action="{{route('add_group')}}" method="post">
                         @csrf
+                        {{--                        <div class="form-group">--}}
+                        <input type="text" class="form-control" placeholder="Group name (en)" name="title_en" hidden value="-">
+                        {{--                        </div>--}}
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (en)" name="title_en">
+                            <input type="text" class="form-control" placeholder="Название группы" name="title_ru" >
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (ru)" name="title_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Group name (kk)" name="title_kk">
-                        </div>
+                        {{--                        <div class="form-group">--}}
+                        <input type="text" class="form-control" placeholder="Group name (kk)" name="title_kk" hidden value="-">
+                        {{--                        </div>--}}
                         <div class="form-group">
                             <select name="dep_id" id="" class="form-control">
                                 @foreach(\App\Models\Departments::all() as $dep)
@@ -80,7 +83,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" class="btn btn-primary">Добавить</button>
                     </form>
                 </div>
 

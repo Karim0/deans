@@ -29,23 +29,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/DepartmentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/Departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Departments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-group.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/department_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/department_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
@@ -256,7 +249,8 @@
       <workItem from="1604023367154" duration="1832000" />
       <workItem from="1604327944239" duration="1935000" />
       <workItem from="1604578653423" duration="5065000" />
-      <workItem from="1604585287883" duration="7675000" />
+      <workItem from="1604585287883" duration="8174000" />
+      <workItem from="1604628125526" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -321,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603987155383</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="translation">
+      <created>1604593614004</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604593614005</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +367,8 @@
     <MESSAGE value="department CRUD" />
     <MESSAGE value="group CRUD" />
     <MESSAGE value="staff CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="staff CRUD" />
+    <MESSAGE value="translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="translation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
@@ -417,10 +419,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603987165024">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604593627345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603987165024" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604593627345" />
     <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603692761731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
