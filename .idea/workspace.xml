@@ -30,7 +30,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094846_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094846_create_groups_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +175,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/views/admin-panel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -243,6 +243,7 @@
       <workItem from="1604628125526" duration="3877000" />
       <workItem from="1604638146956" duration="604000" />
       <workItem from="1605233315507" duration="2097000" />
+      <workItem from="1605258528697" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -321,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604632012659</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1">
+      <created>1605258859802</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605258859802</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,14 +427,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604632017910">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605258897116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604632017909" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605258897116" />
     <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603692761731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603692761731" />
+    <state x="690" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605259482524">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605259482524" />
     <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603369326061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
