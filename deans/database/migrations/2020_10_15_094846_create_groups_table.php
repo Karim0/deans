@@ -19,6 +19,7 @@ class CreateGroupsTable extends Migration
             $table->string('title_kk');
             $table->string('title_ru');
             $table->string('title_en');
+            $table->date('hire_date');
 
             $table->unsignedBigInteger('dep_id');
             $table->foreign('dep_id')->references('id')->on('departments')->onDelete('cascade');
