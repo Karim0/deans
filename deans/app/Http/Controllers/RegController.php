@@ -140,4 +140,32 @@ class RegController extends Controller
         auth()->logout();
         return redirect()->route('home');
     }
+
+    public function reset_password(Request $request)
+    {
+        $request->validate(['new_password' => 'required|min:6', 'new_password2' => 'required|min:6', 'password' => 'required']);
+        $data = $request->all();
+
+        $user = auth()->user();
+
+        if ($data['new_password'] == $data['new_password2'] && Hash::check($data['password'], $user['password'])) {
+            $user['password'] = Hash::make($data['new_password']);
+            $user->save();
+        }
+        return redirect()->route('profile');
+    }
+
+    public function drop_password(Request $request)
+    {
+        $data = $request->all();
+
+        $user = User::query()->where('login', '=', $data['login'])->get()->first();
+        $user['password'] = Hash::make('123456789');
+        $user->save();
+        if ($user == \auth()->user()) {
+            return redirect()->route('logout');
+        } else {
+            return redirect()->route('profile');
+        }
+    }
 }

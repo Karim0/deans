@@ -80,6 +80,9 @@
 
                             <a href="#" type="button" data-toggle="modal" data-target="#modal_edit"
                                class="btn btn-primary btn-block"><b>Редактировать</b></a>
+
+                            <a href="#" type="button" data-toggle="modal" data-target="#reset_password_modal"
+                               class="btn btn-primary btn-block"><b>Сбросить пароль</b></a>
                         </div>
                     </div>
                     @if($user->staff)
@@ -377,8 +380,12 @@
                                                href="{{route('panel-staff')}}">Данные о сотрудныке</a>
                                             <a class="list-group-item list-group-item-action"
                                                href="{{route('panel-order_type')}}">Справки</a>
+                                            <a class="list-group-item list-group-item-action"
+                                               href="#drop_password_modal" type="button" data-toggle="modal">Сбросить
+                                                пароль</a>
                                         </ul>
                                     </div>
+
 
                                 @endif
 
@@ -706,4 +713,62 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="drop_password_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="p-4">
+                        <form action="{{route('drop_password')}}" method="post">
+                            @csrf
+                            <div class="group-control">
+                                <label for="login_reset" class="font-weight-normal">Логин юзера</label>
+                                <input type="search" id="login_reset" class="form-control" name="login">
+                                <div class="search-res w-auto" id="st_user_res_container_login_reset">
+                                    <ul class="list-group" id="st_user_res_login_reset">
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary mt-3">Сбросить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="reset_password_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="p-4">
+                        <form action="{{route('reset_password')}}" method="post" id="reset_password_form">
+                            @csrf
+                            <div class="group-control">
+                                <label for="password" class="font-weight-normal">Старый пароль</label>
+                                <input type="password" id="password" class="form-control" name="password" required>
+                            </div>
+                            <div class="group-control">
+                                <label for="new_password" class="font-weight-normal">Новый пароль</label>
+                                <input type="password" id="new_password" class="form-control" name="new_password"
+                                       required>
+                            </div>
+                            <div class="group-control">
+                                <label for="new_password2" class="font-weight-normal">Повторите пароль</label>
+                                <input type="password" id="new_password2" class="form-control" name="new_password2"
+                                       required>
+                            </div>
+
+                            <button class="btn btn-primary mt-3" id="btn_reset_pass">Сбросить пароль</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
