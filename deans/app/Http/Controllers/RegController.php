@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Validator;
 use App\Models\StudentOrder;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -13,7 +12,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use function GuzzleHttp\Promise\all;
-
 
 class RegController extends Controller
 {
@@ -26,14 +24,11 @@ class RegController extends Controller
     {
         Log::info('login ');
 
-        $validator = Validator::make($request->all(), [
+        $request->validate([
             'login' => 'required',
             'password' => 'required',
         ]);
 
-        if ($validator->fails()) {
-            return redirect()->route('login', ['error']);
-        }
         $credentials = $request->only('login', 'password');
         if (Auth::attempt($credentials)) {
             return redirect()->route('home');
@@ -50,9 +45,9 @@ class RegController extends Controller
     {
         Log::info('registration');
 
-        $validator = Validator::make($request->all(), [
+        $request->validate([
             'name' => 'required',
-            'login' => 'required|login|unique:users',
+            'login' => 'required|string|unique:users',
             'password' => 'required|min:6',
         ]);
         $data = $request->all();
@@ -71,7 +66,7 @@ class RegController extends Controller
             'iin' => $data['iin'],
         ]);
 
-        DB::insert('INSERT INTO users_role(user_id, role_id) VALUES(?, ?)', [$user->id, 12]);
+        DB::insert('INSERT INTO users_role(user_id, role_id) VALUES(?, ?)', [$user->id, 2]);
         Log::info($user);
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
@@ -83,14 +78,12 @@ class RegController extends Controller
 
     public function addUser(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'login' => 'required|login|unique:users'
-        ]);
-        if ($validator->fails()) {
-            return redirect()->route('profile', ['error']);
-        }
-        $data = $request->all();
 
+        $request->validate([
+            'login' => 'required|string|unique:users'
+        ]);
+
+        $data = $request->all();
         $user = User::create([
             'name' => $data['name'],
             'login' => $data['login'],

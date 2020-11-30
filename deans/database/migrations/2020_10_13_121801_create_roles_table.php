@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateRolesTable extends Migration
@@ -19,6 +20,10 @@ class CreateRolesTable extends Migration
             $table->text('description');
             $table->timestamps();
         });
+
+        DB::table('roles')->insert(['role_name'=>'ADMIN', 'description'=>'Администратор системы']);
+        DB::table('roles')->insert(['role_name'=>'ADVISOR', 'description'=>'Администратор системы']);
+        DB::table('roles')->insert(['role_name'=>'STUDENT', 'description'=>'Администратор системы']);
     }
 
     /**

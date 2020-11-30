@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateDepartmentTypesTable extends Migration
@@ -20,6 +21,30 @@ class CreateDepartmentTypesTable extends Migration
             $table->string('description_ru');
             $table->string('description_en');
         });
+
+        DB::table('department_types')->insert([
+            'description_kz'=>'Факультет',
+            'description_ru'=>'Факультет',
+            'description_en'=>'Faculty'
+        ]);
+
+        DB::table('department_types')->insert([
+            'description_kz'=>'Кафедра',
+            'description_ru'=>'Кафедра',
+            'description_en'=>'Cafedra'
+        ]);
+
+        DB::table('department_types')->insert([
+            'description_kz'=>'Департамент',
+            'description_ru'=>'Департамент',
+            'description_en'=>'Department'
+        ]);
+
+        DB::table('department_types')->insert([
+            'description_kz'=>'Отдел',
+            'description_ru'=>'Отдел',
+            'description_en'=>'Division'
+        ]);
     }
 
     /**

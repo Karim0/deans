@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{{asset('plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/awesome/all.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <script defer src="{{asset('js/awesome/all.js')}}"></script>
 </head>
 <body class="hold-transition layout-top-nav">
@@ -44,47 +45,44 @@
                 </ul>
             </div>
 
-            <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
-                            class="fas fa-th-large"></i></a>
-                </li>
-            </ul>
+            <div class="dropdown order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                @if(auth()->check())
+                    <a class="user-login" type="button" id="dropdownMenuButton"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img
+                            src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
+                            alt="">
+                        <p>{{auth()->user()->lastname}} {{auth()->user()->name}}</p>
+                    </a>
+                @else
+                    <button class="btn " type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Войти
+                    </button>
+                @endif
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    @if(auth()->check())
+                        @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
+                            <a class="text-black-50 dropdown-item" href="{{route('profile')}}">Панель администратора</a>
+                        @endif
+
+                        <a class="text-black-50 dropdown-item" href="{{route('logout')}}">Выйти</a>
+                    @else
+                        <div class="dropdown-item">
+                            <a class="text-black-50" href="{{route('login')}}">Авторизоваться</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a class="text-black-50" href="{{route('register')}}">Зарегистрироваться</a>
+                        </div>
+                    @endif
+                </div>
+            </div>
         </div>
     </nav>
 
     @yield('content')
 </div>
-
-
-<aside class="control-sidebar control-sidebar-dark" style="bottom: 0">
-    <div class="p-3">
-        <div class="border-bottom pb-2">
-
-            @if(auth()->user())
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="{{route('logout')}}">Выйти</a>
-                </div>
-            @else
-                <div>
-                    <a href="{{route('login')}}">Авторизоваться</a>
-                </div>
-                <div>
-                    <a href="{{route('register')}}">Зарегистрироваться</a>
-                </div>
-            @endif
-        </div>
-        @if(auth()->check())
-            @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
-                <div class="pt-2 pb-2">
-                    <a href="{{route('profile')}}">Панель администратора</a>
-                </div>
-            @endif
-        @endif
-    </div>
-
-</aside>
 
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

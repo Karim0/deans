@@ -23,7 +23,7 @@ class StudentController extends Controller
     {
         $data = $request->all();
         DB::insert('INSERT INTO study_statuses(description_kz, description_ru, description_en) VALUES(?, ?, ?)',
-            [$data['description_kk'], $data['description_ru'], $data['description_en']]);
+            [$data['description_kz'], $data['description_ru'], $data['description_en']]);
         return redirect()->route('profile');
     }
 
@@ -31,26 +31,24 @@ class StudentController extends Controller
     {
         $data = $request->all();
         DB::insert('INSERT INTO study_forms(degree_id, department_type_id, description_kz, description_ru, description_en, course_count) VALUES(?, ?, ?, ?, ?, ?)',
-            [$data['degree_id'], $data['department_type_id'], $data['description_kk'], $data['description_ru'], $data['description_en'], $data['course_count']]);
+            [$data['degree_id'], $data['department_type_id'], $data['description_kz'], $data['description_ru'], $data['description_en'], $data['course_count']]);
         return redirect()->route('profile');
     }
 
     public function addStudyLang(Request $request)
     {
         $data = $request->all();
-        DB::insert('INSERT INTO study_langs(title_kk, title_ru, title_en) VALUES(?, ?, ?)',
-            [$data['title_kk'], $data['title_ru'], $data['title_en']]);
+        DB::insert('INSERT INTO study_langs(title_kz, title_ru, title_en) VALUES(?, ?, ?)',
+            [$data['title_kz'], $data['title_ru'], $data['title_en']]);
         return redirect()->route('profile');
     }
-
-
 
 
     public function addPaymentForms(Request $request)
     {
         $data = $request->all();
-        DB::insert('INSERT INTO payment_forms(description_kk, description_ru, description_en) VALUES(?, ?, ?)',
-            [$data['description_kk'], $data['description_ru'], $data['description_en']]);
+        DB::insert('INSERT INTO payment_forms(description_kz, description_ru, description_en) VALUES(?, ?, ?)',
+            [$data['description_kz'], $data['description_ru'], $data['description_en']]);
         return redirect()->route('profile');
     }
 

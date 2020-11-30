@@ -39,7 +39,6 @@ class User extends Authenticatable
     public function roles()
     {
         return $this->belongsToMany(Role::class, 'users_role');
-//        return $this->hasMany(Role::class, '_id', '');
     }
 
     public function my_groups()
@@ -72,18 +71,18 @@ class User extends Authenticatable
         return $this->hasMany(StudentOrder::class, 'user_id');
     }
 
-    public function isAdvisor(): bool
-    {
-        return $this->roles()->allRelatedIds()->contains(12);
-    }
-
     public function isAdmin(): bool
     {
         return $this->roles()->allRelatedIds()->contains(1);
     }
 
-//    public function hasRole($roles){
-//        if ($this->roles()->)
-//        return
-//    }
+    public function isAdvisor(): bool
+    {
+        return $this->roles()->allRelatedIds()->contains(2);
+    }
+
+    public function isStudent(): bool
+    {
+        return $this->roles()->allRelatedIds()->contains(3);
+    }
 }

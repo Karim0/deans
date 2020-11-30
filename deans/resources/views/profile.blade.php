@@ -328,7 +328,7 @@
                                             <div class="col-4">
                                                 <div class="group_card">
                                                     <a class="h3 mb-2"
-                                                       href="{{route('get_group', ['id'=>$group->id])}}">{{$group->title_kk}}</a>
+                                                       href="{{route('get_group', ['id'=>$group->id])}}">{{$group->title_kz}}</a>
                                                     <div class="d-flex">
                                                         <p class="mb-1"><b
                                                                 class="mr-2">Department:</b> {{$group->departments->title_ru}}
@@ -572,7 +572,7 @@
                             <input type="text" class="form-control" placeholder="Language (ru)" name="title_ru">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Language (kk)" name="title_kk">
+                            <input type="text" class="form-control" placeholder="Language (kz)" name="title_kz">
                         </div>
                         <button type="submit" class="btn btn-primary">Add</button>
                     </form>

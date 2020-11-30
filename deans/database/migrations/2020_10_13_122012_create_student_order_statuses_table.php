@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateStudentOrderStatusesTable extends Migration
@@ -21,9 +22,16 @@ class CreateStudentOrderStatusesTable extends Migration
             $table->string('description_kz');
             $table->string('description_ru');
             $table->string('description_en');
-
-
         });
+
+        DB::table('student_order_statuses')->insert(['description_kz'=>'В процессе',
+            'description_ru'=>'В процессе',
+            'description_en'=>'In process']);
+
+
+        DB::table('student_order_statuses')->insert(['description_kz'=>'Готово',
+            'description_ru'=>'Готово',
+            'description_en'=>'Done']);
     }
 
     /**

@@ -23,7 +23,7 @@ class Controller extends BaseController
             $orders = StudentOrder::all()->where('user_id', '=', Auth::user()['id']);
             return view('index', ['orders' => $orders]);
         } else {
-            return view('index');
+            return redirect()->route('news');
         }
     }
 

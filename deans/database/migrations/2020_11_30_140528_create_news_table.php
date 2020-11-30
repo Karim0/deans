@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAcademicDegreesTable extends Migration
+class CreateNewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateAcademicDegreesTable extends Migration
      */
     public function up()
     {
-        Schema::create('academic_degrees', function (Blueprint $table) {
+        Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->tinyInteger('sort_order');
-            $table->string('title_kz');
-            $table->string('title_ru');
-            $table->string('title_en');
+            $table->string('title');
+            $table->string('subtitle');
+            $table->text('text');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateAcademicDegreesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('academic_degrees');
+        Schema::dropIfExists('news');
     }
 }

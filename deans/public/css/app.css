@@ -4,3 +4,27 @@
   width: 800px;
 }
 
+.user-login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.user-login img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: #ccc;
+  border-style: solid;
+}
+
+.user-login p {
+  margin: 0 0 0 10px;
+  align-self: center;
+}
+
+.text-black {
+  color: black;
+}
+

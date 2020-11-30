@@ -68,3 +68,4 @@ Route::post('/panel-department/edit/{id}', 'DepartmentController@edit_department
 Route::get('/panel-department/delete/{id}', 'DepartmentController@delete_department')->name('delete-department');
 
 
+Route::get('/news', 'NewsController@news_page')->name('news');
