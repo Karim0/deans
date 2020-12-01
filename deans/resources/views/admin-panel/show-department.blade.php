@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container pb-3">
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb">
@@ -24,16 +24,16 @@
                 </button>
             </div>
         </div>
-        <table class="table table-striped">
+        <table class="table table-striped mb-0">
             <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Заголовок</th>
-                {{--                <th scope="col">Заголовок (en)</th>--}}
-                {{--                <th scope="col">Заголовок (kk)</th>--}}
+                <th scope="col">Заголовок (en)</th>
+                <th scope="col">Заголовок (kz)</th>
                 <th scope="col">Аббревиатура</th>
-                {{--                <th scope="col">Аббревиатура (en)</th>--}}
-                {{--                <th scope="col">Аббревиатура (kk)</th>--}}
+                <th scope="col">Аббревиатура (en)</th>
+                <th scope="col">Аббревиатура (kz)</th>
                 <th scope="col">Кол-во сотрудников</th>
                 <th scope="col">Тип</th>
                 <th scope="col">Относится к</th>
@@ -46,11 +46,11 @@
                 <tr>
                     <th>{{$dep->id}}</th>
                     <td>{{$dep->title_ru}}</td>
-                    {{--                    <td>{{$dep->title_en}}</td>--}}
-                    {{--                    <td>{{$dep->title_kk}}</td>--}}
+                    <td>{{$dep->title_en}}</td>
+                    <td>{{$dep->title_kz}}</td>
                     <td>{{$dep->title_short_ru}}</td>
-                    {{--                    <td>{{$dep->title_short_en}}</td>--}}
-                    {{--                    <td>{{$dep->title_short_kk}}</td>--}}
+                    <td>{{$dep->title_short_en}}</td>
+                    <td>{{$dep->title_short_kz}}</td>
                     <td>{{$dep->include_staff}}</td>
                     <td>{{$dep->type->description_ru}}</td>
                     @if($dep->parent != null)
@@ -82,29 +82,30 @@
                                 <label for="title_ru" class="font-weight-normal">Заголовок департамента</label>
                                 <input class="form-control" name="title_ru" id="title_ru">
                             </div>
-                            {{--                            <div class="form-group">--}}
-                            {{--                                <label for="title_en">Заголовок департамента на английском</label>--}}
-                            <input class="form-control" name="title_en" id="title_en" value="-" hidden>
-                            {{--                            </div>--}}
-                            {{--                            <div class="form-group">--}}
-                            {{--                                <label for="title_kk">Заголовок департамента на казахском</label>--}}
-                            <input class="form-control" name="title_kk" id="title_kk" value="-" hidden>
-                            {{--                            </div>--}}
+                            <div class="form-group">
+                                <label for="title_en" class="font-weight-normal">Заголовок департамента на английском</label>
+                                <input class="form-control" name="title_en" id="title_en" value="-">
+                            </div>
+                            <div class="form-group">
+                                <label for="title_kz" class="font-weight-normal">Заголовок департамента на казахском</label>
+                                <input class="form-control" name="title_kz" id="title_kz" value="-">
+                            </div>
                             <div class="form-group">
                                 <label for="title_short_ru" class="font-weight-normal">Аббревиатура департамента</label>
                                 <input class="form-control" name="title_short_ru" id="title_short_ru">
                             </div>
-                            {{--                            <div class="form-group">--}}
-                            {{--                                <label for="title_short_kk">Аббревиатура департамента на казахском</label>--}}
-                            <input class="form-control" name="title_short_kk" id="title_short_kk" value="-" hidden>
-                            {{--                            </div>--}}
-                            {{--                            <div class="form-group">--}}
-                            {{--                                <label for="title_short_en">Аббревиатура департамента на английском</label>--}}
-                            <input class="form-control" name="title_short_en" id="title_short_en" value="-" hidden>
-                            {{--                            </div>--}}
+                            <div class="form-group">
+                                <label for="title_short_kz" class="font-weight-normal">Аббревиатура департамента на казахском</label>
+                                <input class="form-control" name="title_short_kz" id="title_short_kz" value="-">
+                            </div>
+                            <div class="form-group">
+                                <label for="title_short_en" class="font-weight-normal">Аббревиатура департамента на английском</label>
+                                <input class="form-control" name="title_short_en" id="title_short_en" value="-">
+                            </div>
 
                             <div class="form-group">
-                                <label for="include_staff" class="font-weight-normal">Кол-во человек в департаменте</label>
+                                <label for="include_staff" class="font-weight-normal">Кол-во человек в
+                                    департаменте</label>
                                 <input class="form-control" name="include_staff" id="include_staff">
                             </div>
 

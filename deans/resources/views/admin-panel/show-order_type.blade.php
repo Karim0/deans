@@ -25,9 +25,9 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
-                {{--                <th scope="col">Описание на английском</th>--}}
+                <th scope="col">Описание на английском</th>
                 <th scope="col">Описание на русском</th>
-                {{--                <th scope="col">Описание на казахском</th>--}}
+                <th scope="col">Описание на казахском</th>
                 <th scope="col"></th>
             </tr>
             </thead>
@@ -36,9 +36,9 @@
             @foreach($order_type as $ot)
                 <tr>
                     <th>{{$ot->id}}</th>
-                    {{--                    <td>{{$ot->description_en}}</td>--}}
+                    <td>{{$ot->description_en}}</td>
                     <td>{{$ot->description_ru}}</td>
-                    {{--                    <td>{{$ot->description_kz}}</td>--}}
+                    <td>{{$ot->description_kz}}</td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <a class="btn btn-primary mr-2" href="{{route('edit-order_type_page', ['id'=>$ot->id])}}"><i
@@ -68,22 +68,18 @@
                 <div class="modal-body">
                     <form action="{{route('add-order_type')}}" method="post">
                         @csrf
-                        <input type="text" class="form-control" name="description_kz" id="description_kz" value="-"
-                               hidden>
-                        <input type="text" class="form-control" name="description_en" id="description_en" value="-"
-                               hidden>
                         <div class="form-group">
                             <label for="description_ru" class="font-weight-normal">Описание</label>
                             <input type="text" class="form-control" name="description_ru" id="description_ru">
                         </div>
-                        {{--                        <div class="form-group">--}}
-                        {{--                            <label for="description_en" class="font-weight-normal">Описание на английском</label>--}}
-                        {{--                            <input type="text" class="form-control" name="description_en" id="description_en">--}}
-                        {{--                        </div>--}}
-                        {{--                        <div class="form-group">--}}
-                        {{--                            <label for="description_kz" class="font-weight-normal">Описание на казахском</label>--}}
-                        {{--                            <input type="text" class="form-control" name="description_kz" id="description_kz">--}}
-                        {{--                        </div>--}}
+                        <div class="form-group">
+                            <label for="description_en" class="font-weight-normal">Описание на английском</label>
+                            <input type="text" class="form-control" name="description_en" id="description_en">
+                        </div>
+                        <div class="form-group">
+                            <label for="description_kz" class="font-weight-normal">Описание на казахском</label>
+                            <input type="text" class="form-control" name="description_kz" id="description_kz">
+                        </div>
 
                         <button type="submit" class="btn btn-primary">Добавить</button>
                     </form>

@@ -25,10 +25,11 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Название группы</th>
-                {{--                <th scope="col">title_en</th>--}}
-                {{--                <th scope="col">title_kk</th>--}}
+                <th scope="col">Название группы (ru)</th>
+                <th scope="col">Название группы (kz)</th>
+                <th scope="col">Название группы (en)</th>
                 <th scope="col">Департамент</th>
+                <th scope="col">Дата поступления</th>
                 <th scope="col"></th>
             </tr>
             </thead>
@@ -38,9 +39,10 @@
                 <tr>
                     <th>{{$gr->id}}</th>
                     <td>{{$gr->title_ru}}</td>
-                    {{--                    <td>{{$gr->title_en}}</td>--}}
-                    {{--                    <td>{{$gr->title_kk}}</td>--}}
+                    <td>{{$gr->title_en}}</td>
+                    <td>{{$gr->title_kz}}</td>
                     <td>{{$gr->departments->title_short_ru}}</td>
+                    <td>{{$gr->hire_date}}</td>
                     <td>
                         <a class="btn btn-primary" href="{{route('edit-group_page', ['id'=>$gr->id])}}"><i
                                 class="fa fa-edit"></i></a>
@@ -67,15 +69,15 @@
                 <div class="modal-body">
                     <form action="{{route('add_group')}}" method="post">
                         @csrf
-                        {{--                        <div class="form-group">--}}
-                        <input type="text" class="form-control" placeholder="Group name (en)" name="title_en" hidden value="-">
-                        {{--                        </div>--}}
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Название группы" name="title_ru" >
+                            <input type="text" class="form-control" placeholder="Название группы (en)" name="title_en">
                         </div>
-                        {{--                        <div class="form-group">--}}
-                        <input type="text" class="form-control" placeholder="Group name (kk)" name="title_kk" hidden value="-">
-                        {{--                        </div>--}}
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Название группы (ru)" name="title_ru">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Название группы (kz)" name="title_kz">
+                        </div>
                         <div class="form-group">
                             <select name="dep_id" id="" class="form-control">
                                 @foreach(\App\Models\Departments::all() as $dep)

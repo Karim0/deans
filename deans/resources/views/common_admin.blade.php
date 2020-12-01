@@ -46,7 +46,7 @@
         </a>
 
         <!-- Sidebar -->
-        <div class="sidebar" >
+        <div class="sidebar">
             <!-- Sidebar user (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
@@ -55,23 +55,80 @@
                 <div class="info">
                     <a href="#" class="d-block">{{auth()->user()->lastname}} {{auth()->user()->name}}</a>
                 </div>
-            </div>
 
+            </div>
+            @if (auth()->user()->isAdmin())
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column"
+                        data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" href="#panel" data-toggle="collapse"
+                               aria-expanded="false" aria-controls="panel">
+                                <i class="nav-icon ion ion-wrench"></i>
+                                <span class="brand-text font-weight-light">Редактировать</span>
+                            </a>
+                            <div class="collapse" id="panel">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-department')}}">Департаменты</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-group')}}">Группы</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-staff')}}">Данные о сотрудныке</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-order_type')}}">Справки</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="#drop_password_modal" type="button" data-toggle="modal">Сбросить
+                                            пароль</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+            @endif
             <nav class="mt-2">
-{{--                <div class="dropdown w-100">--}}
-{{--                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton"--}}
-{{--                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
-{{--                        Edit data--}}
-{{--                    </button>--}}
-{{--                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">--}}
-{{--                        --}}
-{{--                    </div>--}}
-{{--                </div>--}}
             </nav>
         </div>
     </aside>
     <div class="content-wrapper">
         @yield('content')
+    </div>
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="drop_password_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="p-4">
+                        <form action="{{route('drop_password')}}" method="post">
+                            @csrf
+                            <div class="group-control">
+                                <label for="login_reset" class="font-weight-normal">Логин юзера</label>
+                                <input type="search" id="login_reset" class="form-control" name="login">
+                                <div class="search-res w-auto" id="st_user_res_container_login_reset">
+                                    <ul class="list-group" id="st_user_res_login_reset">
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary mt-3">Сбросить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>

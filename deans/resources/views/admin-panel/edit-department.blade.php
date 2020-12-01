@@ -10,39 +10,33 @@
             <div class="col">
                 <form class="col-6 offset-3" action="" method="post">
                     @csrf
-
-                    <input class="form-control" name="title_kk" value="-" hidden>
-                    <input class="form-control" name="title_kk" value="-" hidden>
-                    <input class="form-control" name="title_short_kk" value="-" hidden>
-                    <input class="form-control" name="title_short_en" value="-" hidden>
-
                     <div class="form-group">
                         <label for="title_ru" class="font-weight-normal">Заголовок департамента</label>
                         <input class="form-control" name="title_ru" id="title_ru" value="{{$dep->title_ru}}">
                     </div>
-                    {{--                    <div class="form-group">--}}
-                    {{--                        <label for="title_en">Заголовок департамента на английском</label>--}}
-                    {{--                        <input class="form-control" name="title_en" id="title_en" value="{{$dep->title_en}}">--}}
-                    {{--                    </div>--}}
-                    {{--                    <div class="form-group">--}}
-                    {{--                        <label for="title_kk">Заголовок департамента на казахском</label>--}}
-                    {{--                        <input class="form-control" name="title_kk" id="title_kk" value="{{$dep->title_kk}}">--}}
-                    {{--                    </div>--}}
+                    <div class="form-group">
+                        <label for="title_en" class="font-weight-normal">Заголовок департамента на английском</label>
+                        <input class="form-control" name="title_en" id="title_en" value="{{$dep->title_en}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="title_kz" class="font-weight-normal">Заголовок департамента на казахском</label>
+                        <input class="form-control" name="title_kz" id="title_kz" value="{{$dep->title_kz}}">
+                    </div>
                     <div class="form-group">
                         <label for="title_short_ru" class="font-weight-normal">Аббревиатура департамента</label>
                         <input class="form-control" name="title_short_ru" id="title_short_ru"
                                value="{{$dep->title_short_ru}}">
                     </div>
-                    {{--                    <div class="form-group">--}}
-                    {{--                        <label for="title_short_kk">Аббревиатура департамента на казахском</label>--}}
-                    {{--                        <input class="form-control" name="title_short_kk" id="title_short_kk"--}}
-                    {{--                               value="{{$dep->title_short_kk}}">--}}
-                    {{--                    </div>--}}
-                    {{--                    <div class="form-group">--}}
-                    {{--                        <label for="title_short_en">Аббревиатура департамента на английском</label>--}}
-                    {{--                        <input class="form-control" name="title_short_en" id="title_short_en"--}}
-                    {{--                               value="{{$dep->title_short_en}}">--}}
-                    {{--                    </div>--}}
+                    <div class="form-group">
+                        <label for="title_short_kz" class="font-weight-normal">Аббревиатура департамента на казахском</label>
+                        <input class="form-control" name="title_short_kz" id="title_short_kz"
+                               value="{{$dep->title_short_kz}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="title_short_en" class="font-weight-normal">Аббревиатура департамента на английском</label>
+                        <input class="form-control" name="title_short_en" id="title_short_en"
+                               value="{{$dep->title_short_en}}">
+                    </div>
                     <div class="form-group">
                         <label for="include_staff" class="font-weight-normal">Кол-во человек в департаменте</label>
                         <input class="form-control" name="include_staff" id="include_staff"
@@ -92,8 +86,8 @@
                                     <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Заголовок</th>
-{{--                                        <th scope="col">Заголовок на английском</th>--}}
-{{--                                        <th scope="col">Заголовок на казахском</th>--}}
+                                        <th scope="col">Заголовок на английском</th>
+                                        <th scope="col">Заголовок на казахском</th>
                                         <th scope="col">Департамент</th>
                                         <th scope="col"></th>
                                     </tr>
@@ -104,8 +98,8 @@
                                         <tr>
                                             <th>{{$gr->id}}</th>
                                             <td>{{$gr->title_ru}}</td>
-{{--                                            <td>{{$gr->title_en}}</td>--}}
-{{--                                            <td>{{$gr->title_kk}}</td>--}}
+                                            <td>{{$gr->title_en}}</td>
+                                            <td>{{$gr->title_kz}}</td>
                                             <td>{{$gr->departments->title_short_ru}}</td>
                                             <td>
                                                 <a class="btn btn-primary"

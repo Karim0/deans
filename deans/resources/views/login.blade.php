@@ -14,15 +14,15 @@
                         <form action="{{route('post_login')}}" method="post">
                             @csrf
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Login" name="login">
+                                <input type="text" class="form-control" placeholder="Логин" name="login">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
-                                        <span class="fas fa-envelope"></span>
+                                        <span class="fas fa-user"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" placeholder="Password" onchange="ch_search()" name="password">
+                                <input type="password" class="form-control" placeholder="Пароль" onchange="ch_search()" name="password">
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fas fa-lock"></span>
@@ -35,10 +35,6 @@
                                 </div>
                             </div>
                         </form>
-
-                        <p class="mb-1">
-                            <a href="#">Забыли пароль?</a>
-                        </p>
                         <p class="mb-0">
                             <a href="{{route('register')}}" class="text-center">Зарегистрироваться</a>
                         </p>

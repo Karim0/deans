@@ -39,7 +39,10 @@
                         <a href="{{route('home')}}" class="nav-link">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Контакты</a>
+                        <a href="{{route('news')}}" class="nav-link">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('contacts')}}" class="nav-link">Контакты</a>
                     </li>
 
                 </ul>

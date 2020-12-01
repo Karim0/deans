@@ -165,19 +165,7 @@
                                                         data-toggle="tab">Добавить студента</a></li>
 
 
-                                @if (auth()->user()->isAdmin())
-                                    {{--                                        <li class="nav-item"><a class="nav-link" href="#add_staff"--}}
-                                    {{--                                                                data-toggle="tab">Add staff</a></li>--}}
 
-
-                                    {{--                                        <li class="nav-item"><a class="nav-link" href="#add_order_type"--}}
-                                    {{--                                                                data-toggle="tab">Add process type</a></li>--}}
-                                    {{--                                        <li class="nav-item"><a class="nav-link" href="#dep"--}}
-                                    {{--                                                                data-toggle="tab">Departments</a></li>--}}
-
-                                    <li class="nav-item"><a class="nav-link" href="#panel"
-                                                            data-toggle="tab">Редактировать</a></li>
-                                @endif
                             </ul>
                         </div><!-- /.card-header -->
                         <div class="card-body">
@@ -369,24 +357,6 @@
                                             <button type="submit" class="btn btn-success">Add</button>
                                         </form>
                                     </div>
-
-                                    <div class="tab-pane" id="panel">
-                                        <ul class="list-group">
-                                            <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-department')}}">Департаменты</a>
-                                            <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-group')}}">Группы</a>
-                                            <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-staff')}}">Данные о сотрудныке</a>
-                                            <a class="list-group-item list-group-item-action"
-                                               href="{{route('panel-order_type')}}">Справки</a>
-                                            <a class="list-group-item list-group-item-action"
-                                               href="#drop_password_modal" type="button" data-toggle="modal">Сбросить
-                                                пароль</a>
-                                        </ul>
-                                    </div>
-
-
                                 @endif
 
                                 @if(auth()->user()->isAdmin())
@@ -715,30 +685,7 @@
         </div>
     </div>
 
-    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="drop_password_modal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-content">
-                    <div class="p-4">
-                        <form action="{{route('drop_password')}}" method="post">
-                            @csrf
-                            <div class="group-control">
-                                <label for="login_reset" class="font-weight-normal">Логин юзера</label>
-                                <input type="search" id="login_reset" class="form-control" name="login">
-                                <div class="search-res w-auto" id="st_user_res_container_login_reset">
-                                    <ul class="list-group" id="st_user_res_login_reset">
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <button class="btn btn-primary mt-3">Сбросить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
          id="reset_password_modal">

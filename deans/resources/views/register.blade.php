@@ -16,19 +16,14 @@
 
                         <form action="{{route('post_register')}}" method="post">
                             @csrf
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Full name" name="name" required>
-                                <div class="input-group-append">
-                                    <div class="input-group-text">
-                                        <span class="fas fa-user"></span>
-                                    </div>
-                                </div>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="login" class="form-control" placeholder="Login" name="login" required>
                                 <div class="input-group-append">
                                     <div class="input-group-text">
-                                        <span class="fas fa-envelope"></span>
+                                        <span class="fas fa-user"></span>
                                     </div>
                                 </div>
                             </div>
@@ -50,15 +45,15 @@
                                 </div>
                             </div>
 
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Lastname"
                                        name="lastname" required>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Patronymic"
                                        name="patronymic" required>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <select name="gender" class="form-control" required>
                                     @foreach(\App\Models\Gender::all() as $gen)
                                         <option value="{{$gen->id}}">{{$gen->title_en}}</option>
@@ -66,23 +61,23 @@
                                 </select>
 
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Phone number"
                                        name="tel" required>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="date" class="form-control" placeholder="Birthdate"
                                        name="birthdate" required>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Registration Address"
                                        name="registration_address" required>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="Residential Address"
                                        name="residential_address" required>
                             </div>
-                            <div class="input-group mb-3">
+                            <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin" required>
                             </div>

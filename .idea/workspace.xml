@@ -29,38 +29,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/app/Models/News.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/database/migrations/2020_11_30_140528_create_news_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/contacts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2013_10_11_154005_create_genders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2013_10_11_154005_create_genders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_121801_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_121801_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122000_create_student_order_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122000_create_student_order_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122012_create_student_order_statuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122012_create_student_order_statuses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122100_create_study_statuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122100_create_study_statuses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_085127_create_user_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_085127_create_user_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/GroupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_090506_create_academic_degrees_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_090506_create_academic_degrees_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_090738_create_academic_ranks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_090738_create_academic_ranks_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_090919_create_english_levels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_090919_create_english_levels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_091731_create_payment_forms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_091731_create_payment_forms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_091747_create_study_langs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_091747_create_study_langs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_093652_create_department_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_093652_create_department_types_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094845_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094845_create_departments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094846_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_094846_create_groups_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103528_create_degree_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103528_create_degree_types_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103529_create_study_forms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_103529_create_study_forms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/deans/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-group.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,6 +271,8 @@
       <workItem from="1606386790819" duration="9000" />
       <workItem from="1606741144593" duration="60000" />
       <workItem from="1606741256693" duration="14163000" />
+      <workItem from="1606755946121" duration="109000" />
+      <workItem from="1606795344041" duration="6644000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -384,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605527069426</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Filling the database with default values">
+      <created>1606756029374</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606756029374</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +428,8 @@
     <MESSAGE value="translation" />
     <MESSAGE value="1" />
     <MESSAGE value="Reset and drop password" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reset and drop password" />
+    <MESSAGE value="Filling the database with default values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filling the database with default values" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
@@ -488,10 +484,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="242" key="NewPhpClassDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602843439240" />
-    <state x="794" y="442" width="328" height="155" key="NewPhpFileDialog" timestamp="1606745328711">
+    <state x="794" y="442" width="328" height="155" key="NewPhpFileDialog" timestamp="1606796242455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="442" width="328" height="155" key="NewPhpFileDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606745328711" />
+    <state x="794" y="442" width="328" height="155" key="NewPhpFileDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606796242455" />
     <state x="615" y="240" key="RollbackChangesDialog" timestamp="1603620191083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -504,14 +500,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605858598739">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606756040122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605858598739" />
-    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606755670271">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606756040122" />
+    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606804774889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606755670271" />
+    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606804774889" />
     <state x="690" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605259482524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -520,10 +516,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603369326061" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606741956919">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606799350033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606741956919" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606799350033" />
     <state x="321" y="154" width="1294" height="636" key="dock-window-1" timestamp="1603367140314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

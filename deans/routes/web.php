@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Controller@home')->name('home');
 Route::get('/get_search_login', 'Controller@getSearchLogin')->name('get_search_login');
+Route::get('/contacts', 'Controller@contacts')->name('contacts');
 
 
 Route::get('/login', 'RegController@login_page')->name('login');

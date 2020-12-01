@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Groups;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\DateFactory;
 use Illuminate\Support\Facades\DB;
 
 class GroupController extends Controller
@@ -11,8 +13,8 @@ class GroupController extends Controller
     public function addGroup(Request $request)
     {
         $data = $request->all();
-        DB::insert('INSERT INTO groups(title_kk, title_ru, title_en, dep_id) VALUES(?, ?, ?, ?)',
-            [$data['title_kk'], $data['title_ru'], $data['title_en'], $data['dep_id']]);
+        DB::insert('INSERT INTO groups(title_kz, title_ru, title_en, dep_id, hire_date) VALUES(?, ?, ?, ?, ?)',
+            [$data['title_kz'], $data['title_ru'], $data['title_en'], $data['dep_id'], Carbon::now()]);
         return redirect()->route('panel-group');
     }
 
