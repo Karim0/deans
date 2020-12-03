@@ -70,3 +70,54 @@ Route::get('/panel-department/delete/{id}', 'DepartmentController@delete_departm
 
 
 Route::get('/news', 'NewsController@news_page')->name('news');
+
+
+Route::get('/panel-academic_degree', 'AcademicDegreeController@show_academic_degrees')->name('panel-academic_degree');
+Route::post('/panel-academic_degree', 'AcademicDegreeController@add_academic_degree')->name('add-academic_degree');
+Route::get('/panel-academic_degree/edit/{id}', 'AcademicDegreeController@edit_academic_degree_page')->name('edit-academic_degree_page');
+Route::post('/panel-academic_degree/edit/{id}', 'AcademicDegreeController@edit_academic_degree')->name('edit-academic_degree');
+Route::get('/panel-academic_degree/delete/{id}', 'AcademicDegreeController@delete_academic_degree')->name('delete-academic_degree');
+
+Route::get('/panel-academic_rank', 'AcademicRankController@show_academic_ranks')->name('panel-academic_rank');
+Route::post('/panel-academic_rank', 'AcademicRankController@add_academic_rank')->name('add-academic_rank');
+Route::get('/panel-academic_rank/edit/{id}', 'AcademicRankController@edit_academic_rank_page')->name('edit-academic_rank_page');
+Route::post('/panel-academic_rank/edit/{id}', 'AcademicRankController@edit_academic_rank')->name('edit-academic_rank');
+Route::get('/panel-academic_rank/delete/{id}', 'AcademicRankController@delete_academic_rank')->name('delete-academic_rank');
+
+Route::get('/panel-degree_type', 'DegreeTypeController@show_degree_types')->name('panel-degree_type');
+Route::post('/panel-degree_type', 'DegreeTypeController@add_degree_type')->name('add-degree_type');
+Route::get('/panel-degree_type/edit/{id}', 'DegreeTypeController@edit_degree_type_page')->name('edit-degree_type_page');
+Route::post('/panel-degree_type/edit/{id}', 'DegreeTypeController@edit_degree_type')->name('edit-degree_type');
+Route::get('/panel-degree_type/delete/{id}', 'DegreeTypeController@delete_degree_type')->name('delete-degree_type');
+
+
+Route::get('/panel-department_type', 'DepartmentTypeController@show_department_types')->name('panel-department_type');
+Route::post('/panel-department_type', 'DepartmentTypeController@add_department_type')->name('add-department_type');
+Route::get('/panel-department_type/edit/{id}', 'DepartmentTypeController@edit_department_type_page')->name('edit-department_type_page');
+Route::post('/panel-department_type/edit/{id}', 'DepartmentTypeController@edit_department_type')->name('edit-department_type');
+Route::get('/panel-department_type/delete/{id}', 'DepartmentTypeController@delete_department_type')->name('delete-department_type');
+
+
+Route::get('/panel-english_level', 'EnglishLevelController@show_english_levels')->name('panel-english_level');
+Route::post('/panel-english_level', 'EnglishLevelController@add_english_level')->name('add-english_level');
+Route::get('/panel-english_level/edit/{id}', 'EnglishLevelController@edit_english_level_page')->name('edit-english_level_page');
+Route::post('/panel-english_level/edit/{id}', 'EnglishLevelController@edit_english_level')->name('edit-english_level');
+Route::get('/panel-english_level/delete/{id}', 'EnglishLevelController@delete_english_level')->name('delete-english_level');
+
+Route::get('/panel-payment_form', 'PaymentFormController@show_payment_forms')->name('panel-payment_form');
+Route::post('/panel-payment_form', 'PaymentFormController@add_payment_form')->name('add-payment_form');
+Route::get('/panel-payment_form/edit/{id}', 'PaymentFormController@edit_payment_form_page')->name('edit-payment_form_page');
+Route::post('/panel-payment_form/edit/{id}', 'PaymentFormController@edit_payment_form')->name('edit-payment_form');
+Route::get('/panel-payment_form/delete/{id}', 'PaymentFormController@delete_payment_form')->name('delete-payment_form');
+
+Route::get('/panel-study_lang', 'StudyLangController@show_study_langs')->name('panel-study_lang');
+Route::post('/panel-study_lang', 'StudyLangController@add_study_lang')->name('add-study_lang');
+Route::get('/panel-study_lang/edit/{id}', 'StudyLangController@edit_study_lang_page')->name('edit-study_lang_page');
+Route::post('/panel-study_lang/edit/{id}', 'StudyLangController@edit_study_lang')->name('edit-study_lang');
+Route::get('/panel-study_lang/delete/{id}', 'StudyLangController@delete_study_lang')->name('delete-study_lang');
+
+Route::get('/panel-study_form', 'StudyFormController@show_study_forms')->name('panel-study_form');
+Route::post('/panel-study_form', 'StudyFormController@add_study_form')->name('add-study_form');
+Route::get('/panel-study_form/edit/{id}', 'StudyFormController@edit_study_form_page')->name('edit-study_form_page');
+Route::post('/panel-study_form/edit/{id}', 'StudyFormController@edit_study_form')->name('edit-study_form');
+Route::get('/panel-study_form/delete/{id}', 'StudyFormController@delete_study_form')->name('delete-study_form');

@@ -85,6 +85,47 @@
                                         <a class="text-white"
                                            href="{{route('panel-order_type')}}">Справки</a>
                                     </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-academic_degree')}}">Ученая степень</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-academic_rank')}}">Академические звания</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-english_level')}}">Уровень английского</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-payment_form')}}">Форма оплаты</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-study_lang')}}">Язык обучения</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-department_type')}}">Тип департаментов</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-degree_type')}}">Степень</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="{{route('panel-study_form')}}">Форма обучения</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="#">Новости</a>
+                                    </li>
+
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
                                            href="#drop_password_modal" type="button" data-toggle="modal">Сбросить

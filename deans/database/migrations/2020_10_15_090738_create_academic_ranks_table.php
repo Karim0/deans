@@ -23,25 +23,25 @@ class CreateAcademicRanksTable extends Migration
             $table->timestamps();
         });
 
-        DB::table('academic_ranks')->insert(['id'=>1,
+        DB::table('academic_ranks')->insert([
             'sort_order'=>1,
             'title_kz'=>'Жоқ',
             'title_ru'=>'Не имеет',
             'title_en'=>'None']);
 
-        DB::table('academic_ranks')->insert(['id'=>2,
+        DB::table('academic_ranks')->insert([
             'sort_order'=>2,
             'title_kz'=>'Доцент',
             'title_ru'=>'Доцент',
             'title_en'=>'Доцент']);
 
-        DB::table('academic_ranks')->insert(['id'=>3,
+        DB::table('academic_ranks')->insert([
             'sort_order'=>3,
             'title_kz'=>'Ассоциированный профессор',
             'title_ru'=>'Ассоциированный профессор',
             'title_en'=>'Ассоциированный профессор']);
 
-        DB::table('academic_ranks')->insert(['id'=>4,
+        DB::table('academic_ranks')->insert([
             'sort_order'=>4,
             'title_kz'=>'Профессор',
             'title_ru'=>'Профессор',
