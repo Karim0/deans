@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -12,69 +14,42 @@ class NewsController extends Controller
         return view('news', ['news' => News::all()->sortByDesc('created_at')]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+
+    public function panel_edit()
     {
-        //
+        return view('admin-panel.show-news', ['news'=>News::all()->sortBy('created_at')]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+
+    public function panel_add_news(Request $request)
     {
-        //
+        $data = $request->all();
+        unset($data['_token']);
+
+        $data['created_at'] = Carbon::now();
+
+        DB::table('news')->insert($data);
+        return redirect()->route('panel-news');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
-    public function show(News $news)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
     public function edit(News $news)
     {
-        //
+        return view('admin-panel.edit-news', compact('news'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, News $news)
     {
-        //
-    }
+        $data = $request->all();
+        unset($data['_token']);
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\News  $news
-     * @return \Illuminate\Http\Response
-     */
+        DB::table('news')->where('id', $news->id)
+            ->update($data);
+        return redirect()->route('panel-news');
+    }
     public function destroy(News $news)
     {
-        //
+        $news->delete();
+//        dd($news->delete());
+        return redirect()->route('panel-news');
     }
 }

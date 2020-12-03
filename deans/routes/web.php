@@ -121,3 +121,10 @@ Route::post('/panel-study_form', 'StudyFormController@add_study_form')->name('ad
 Route::get('/panel-study_form/edit/{id}', 'StudyFormController@edit_study_form_page')->name('edit-study_form_page');
 Route::post('/panel-study_form/edit/{id}', 'StudyFormController@edit_study_form')->name('edit-study_form');
 Route::get('/panel-study_form/delete/{id}', 'StudyFormController@delete_study_form')->name('delete-study_form');
+
+
+Route::get('/panel-news', 'NewsController@panel_edit')->name('panel-news');
+Route::post('/panel-add_news', 'NewsController@panel_add_news')->name('panel-add_news');
+Route::get('/panel-delete_news/{news}', 'NewsController@destroy')->name('panel-delete_news');
+Route::get('/panel-edit_news/{news}', 'NewsController@edit')->name('panel-edit_page_news');
+Route::post('/panel-edit_news/{news}', 'NewsController@update')->name('panel-edit_news');

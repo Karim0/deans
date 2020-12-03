@@ -125,6 +125,7 @@ class RegController extends Controller
         }
         $orders = StudentOrder::all();
         $data += ['orders' => $orders];
+//        dd($data);
         return view('profile', $data);
     }
 

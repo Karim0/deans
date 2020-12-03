@@ -123,7 +123,7 @@
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="#">Новости</a>
+                                           href="{{route('panel-news')}}">Новости</a>
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">

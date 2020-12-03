@@ -12,7 +12,9 @@
                             <div class="card p-3">
                                 <div class="d-flex justify-content-between">
                                     <h5 class="text-black">{{$n->title}}</h5>
-                                    <span>{{$n->created_at->locale('ru_RU')->diffForHumans()}}</span>
+                                    @if(isset($n->created_at))
+                                        <span>{{$n->created_at->locale('ru_RU')->diffForHumans()}}</span>
+                                    @endif
                                 </div>
                                 <h6 class="text-black">{{ $n->subtitle }}</h6>
 {{--                                <h6 class="text-black">{{$n->subtitle->diffForHumans()}}</h6>--}}

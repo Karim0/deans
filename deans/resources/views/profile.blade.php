@@ -165,9 +165,8 @@
                                                         data-toggle="tab">Добавить студента</a></li>
 
 
-
                             </ul>
-                        </div><!-- /.card-header -->
+                        </div>
                         <div class="card-body">
                             <div class="tab-content">
                                 <div class="active tab-pane" id="activity">
@@ -220,68 +219,64 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex w-100 align-items-center">
                                                 <select name="group" id="" class="form-control">
                                                     @foreach(\App\Models\Groups::all() as $group)
                                                         <option
                                                             value="{{$group->id}}">{{$group->title_ru}}</option>
                                                     @endforeach
                                                 </select>
-                                                <button type="button"
-                                                        class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                        data-toggle="modal" data-target="#add_group">
+                                                <a href="{{route('panel-group')}}"
+                                                   class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
                                                     +
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex w-100 align-items-center">
                                                 <select name="study_form" id="" class="form-control">
                                                     @foreach(\App\Models\StudyForms::all() as $form)
                                                         <option
                                                             value="{{$form->id}}">{{$form->description_ru}}</option>
                                                     @endforeach
                                                 </select>
-                                                <button type="button"
-                                                        class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                        data-toggle="modal" data-target="#add_study_form">
+                                                <a href="{{route('panel-study_form')}}"
+                                                   class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
                                                     +
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex w-100 align-items-center">
                                                 <select name="study_lang" id="" class="form-control">
                                                     @foreach(\App\Models\StudyLangs::all() as $langs)
                                                         <option
                                                             value="{{$langs->id}}">{{$langs->title_ru}}</option>
                                                     @endforeach
                                                 </select>
-                                                <button type="button"
-                                                        class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                        data-toggle="modal" data-target="#study_lang">
+                                                <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                   href="{{route('panel-study_lang')}}">
                                                     +
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex w-100 align-items-center">
                                                 <select name="payment_form" id="" class="form-control">
                                                     @foreach(\App\Models\PaymentForms::all() as $pay)
                                                         <option
                                                             value="{{$pay->id}}">{{$pay->description_ru}}</option>
                                                     @endforeach
                                                 </select>
-                                                <button type="button"
-                                                        class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                        data-toggle="modal" data-target="#payment_form">
+                                                <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                   href="{{route('panel-payment_form')}}">
                                                     +
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
 
                                         <div class="input-group mb-3">
-                                            <div class="d-flex w-100">
+                                            <div class="d-flex w-100 align-items-center">
                                                 <select name="study_status" id=""
                                                         class="form-control flex-grow-1">
                                                     @foreach(\App\Models\StudyStatuses::all() as $stat)
@@ -289,11 +284,9 @@
                                                             value="{{$stat->id}}">{{$stat->description_ru}}</option>
                                                     @endforeach
                                                 </select>
-                                                <button type="button"
-                                                        class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                        data-toggle="modal" data-target="#study_statuses">
+                                                <a  class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
                                                     +
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
 
@@ -471,150 +464,6 @@
             </div>
         </div>
     </div>
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="add_study_form">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add study form</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form action="{{route('add_study_form')}}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <select name="degree_id" class="form-control">
-                                @foreach(\App\Models\DegreeTypes::all() as $degree)
-                                    <option value="{{$degree->id}}">{{$degree->title_ru}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select name="department_type_id" class="form-control">
-                                @foreach(\App\Models\DepartmentTypes::all() as $dep)
-                                    <option value="{{$dep->id}}">{{$dep->description_ru}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (en)"
-                                   name="description_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (ru)"
-                                   name="description_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (kk)"
-                                   name="description_kk">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="number" class="form-control" placeholder="course" name="course_count">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="study_lang">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add study language</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form action="{{route('add_study_lang')}}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Language (en)" name="title_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Language (ru)" name="title_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Language (kz)" name="title_kz">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="payment_form">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add payment form</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form action="{{route('add_payment_forms')}}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (en)"
-                                   name="description_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (ru)"
-                                   name="description_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (kk)"
-                                   name="description_kk">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-         id="study_statuses">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Add study status</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form action="{{route('add_study_status')}}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (en)"
-                                   name="description_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (ru)"
-                                   name="description_ru">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Description (kk)"
-                                   name="description_kk">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
          id="add_user">
