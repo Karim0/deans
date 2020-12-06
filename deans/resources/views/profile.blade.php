@@ -29,9 +29,14 @@
                     <div class="card card-primary card-outline">
                         <div class="card-body box-profile">
                             <div class="text-center">
-                                <img class="profile-user-img img-fluid img-circle"
-                                     src="{{asset('img/def_user.png')}}"
-                                     alt="User profile picture">
+                                <a href="#upload_image_modal" type="button" data-toggle="modal"
+                                   data-target="#upload_image_modal">
+                                    <img class="profile-user-img img-fluid img-circle profile-user-img-custom"
+                                         src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
+                                         alt="User profile picture" style="">
+
+
+                                </a>
                             </div>
 
                             <h3 class="profile-username text-center">{{$user->name}}</h3>
@@ -284,7 +289,7 @@
                                                             value="{{$stat->id}}">{{$stat->description_ru}}</option>
                                                     @endforeach
                                                 </select>
-                                                <a  class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
+                                                <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
                                                     +
                                                 </a>
                                             </div>
@@ -566,5 +571,42 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="upload_image_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="p-4">
+                        <form action="{{route('upload_image')}}" method="post" id="upload_image_form"
+                              enctype="multipart/form-data">
+                            @csrf
+
+                            <div class="d-flex justify-content-center">
+                                <img id="img_output" class="img-fluid img-circle profile-user-img-modal "
+                                     src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
+                                     alt="img">
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" id="image"  class="custom-file-input" name="image" onchange="loadFile(event)" required>
+                                <label for="image" class="custom-file-label">Выберите фотку</label>
+                            </div>
+
+                            <input type="number" name="user_id" value="{{auth()->user()->id}}" hidden>
+
+                            <button class="btn btn-primary mt-3" id="upload_image">Изменить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('img_output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
 
 @endsection

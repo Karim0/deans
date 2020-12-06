@@ -28,3 +28,24 @@
   color: black;
 }
 
+.profile-user-img-custom {
+  height: 100px !important;
+  width: 100px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-user-img-menu-custom {
+  height: 45px !important;
+  width: 45px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-user-img-modal {
+  height: 150px !important;
+  width: 150px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+

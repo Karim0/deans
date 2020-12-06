@@ -128,3 +128,7 @@ Route::post('/panel-add_news', 'NewsController@panel_add_news')->name('panel-add
 Route::get('/panel-delete_news/{news}', 'NewsController@destroy')->name('panel-delete_news');
 Route::get('/panel-edit_news/{news}', 'NewsController@edit')->name('panel-edit_page_news');
 Route::post('/panel-edit_news/{news}', 'NewsController@update')->name('panel-edit_news');
+
+
+
+Route::post('/upload_image', 'UploadFilesController@imageUpload')->name('upload_image');

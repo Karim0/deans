@@ -55,6 +55,7 @@
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img
                             src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
+                            class="profile-user-img-menu-custom"
                             alt="">
                         <p>{{auth()->user()->lastname}} {{auth()->user()->name}}</p>
                     </a>

@@ -29,13 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-news.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/UploadFilesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/public/users_images/1607258109.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/deans/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
@@ -268,7 +267,11 @@
       <workItem from="1606968550966" duration="81000" />
       <workItem from="1606970406673" duration="4000" />
       <workItem from="1606987993181" duration="10103000" />
-      <workItem from="1607005555972" duration="6685000" />
+      <workItem from="1607005555972" duration="7136000" />
+      <workItem from="1607047336340" duration="3231000" />
+      <workItem from="1607145895355" duration="620000" />
+      <workItem from="1607146694535" duration="17000" />
+      <workItem from="1607230387001" duration="7445000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -389,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606998722840</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="news crud">
+      <created>1607012732622</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607012732622</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,112 +450,7 @@
     <MESSAGE value="Filling the database with default values" />
     <MESSAGE value="1" />
     <MESSAGE value="Added CRUD for tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CRUD for tables" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602169816214">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602169816214" />
-    <state x="765" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602593611072">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602593611072" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607010191513">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1607010191513" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603001693694">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603001693694" />
-    <state x="628" y="298" key="EditFileWatcherDialog" timestamp="1606745963025">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="628" y="298" key="EditFileWatcherDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606745963025" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1606991923515">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606991923515" />
-    <state x="838" y="417" key="Github.ShareDialog" timestamp="1602685480657">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="838" y="417" key="Github.ShareDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602685480657" />
-    <state x="678" y="224" key="Github.UntrackedFilesDialog" timestamp="1602685490602">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="678" y="224" key="Github.UntrackedFilesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602685490602" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1605261461468">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605261461468" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1605261461467">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605261461467" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1605261461467">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605261461467" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1605261461468">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605261461468" />
-    <state x="679" y="242" key="NewPhpClassDialog" timestamp="1602843439240">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="679" y="242" key="NewPhpClassDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602843439240" />
-    <state x="794" y="442" width="328" height="155" key="NewPhpFileDialog" timestamp="1606989337501">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="442" width="328" height="155" key="NewPhpFileDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606989337501" />
-    <state x="615" y="240" key="RollbackChangesDialog" timestamp="1603620191083">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="615" y="240" key="RollbackChangesDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603620191083" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1604585272194">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1604585272194" />
-    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1603163308311">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="681" y="261" width="540" height="524" key="StructurePopup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603163308311" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606805745550">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606805745550" />
-    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606804774889">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="778" y="176" width="316" height="310" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606804774889" />
-    <state x="690" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605259482524">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1605259482524" />
-    <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603369326061">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="610" y="205" width="874" height="595" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603369326061" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606799350033">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606799350033" />
-    <state x="321" y="154" width="1294" height="636" key="dock-window-1" timestamp="1603367140314">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="321" y="154" width="1294" height="636" key="dock-window-1/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1603367140314" />
-    <state x="1851" y="19" width="1294" height="733" key="dock-window-2" timestamp="1602839575387">
-      <screen x="1920" y="0" width="1280" height="693" />
-    </state>
-    <state x="1851" y="19" width="1294" height="733" key="dock-window-2/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1602839575387" />
-    <state x="1096" y="242" key="run.anything.popup" timestamp="1606990543499">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1096" y="242" key="run.anything.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606990543499" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606752596796">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1606752596796" />
+    <MESSAGE value="news crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="news crud" />
   </component>
 </project>
