@@ -1,6 +1,6 @@
 @extends('common_admin')
 @section('title')
-    Admin panel
+    @lang('messages.admin_panel')
 @endsection
 
 @section('content')
@@ -9,12 +9,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Панель администратора</h1>
+                    <h1>@lang('messages.admin_panel')</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
-                        <li class="breadcrumb-item active">Панель администратора</li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">@lang('messages.home')</a></li>
+                        <li class="breadcrumb-item active">@lang('messages.admin_panel')</li>
                     </ol>
                 </div>
             </div>
@@ -50,71 +50,71 @@
 
                             <ul class="list-group list-group-unbordered mb-3">
                                 <li class="list-group-item">
-                                    <b>Логин</b> <a class="float-right">{{$user->login}}</a>
+                                    <b>@lang('messages.login')</b> <a class="float-right">{{$user->login}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Имя</b> <a class="float-right">{{$user->name}}</a>
+                                    <b>@lang('messages.name')</b> <a class="float-right">{{$user->name}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Фамилия</b> <a class="float-right">{{$user->lastname}}</a>
+                                    <b>@lang('messages.lastname')</b> <a class="float-right">{{$user->lastname}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Отчество</b> <a class="float-right">{{$user->patronymic}}</a>
+                                    <b>@lang('messages.patronymic')</b> <a class="float-right">{{$user->patronymic}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Пол</b> <a class="float-right">{{$user->gender->title_ru}}</a>
+                                    <b>@lang('messages.gender')</b> <a class="float-right">{{$user->gender['title_'.App::getLocale()]}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Телефон</b> <a class="float-right">{{$user->tel}}</a>
+                                    <b>@lang('messages.phone')</b> <a class="float-right">{{$user->tel}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Дата рождения</b> <a class="float-right">{{$user->birthdate}}</a>
+                                    <b>@lang('messages.birthday')</b> <a class="float-right">{{$user->birthdate}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Адрес регистрации</b> <a
+                                    <b>@lang('messages.address_reg')</b> <a
                                         class="float-right">{{$user->registration_address}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>Адрес проживания</b> <a
+                                    <b>@lang('messages.address_res')</b> <a
                                         class="float-right">{{$user->residential_address}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>ИИН</b> <a class="float-right">{{$user->iin}}</a>
+                                    <b>@lang('messages.iin')</b> <a class="float-right">{{$user->iin}}</a>
                                 </li>
                             </ul>
 
                             <a href="#" type="button" data-toggle="modal" data-target="#modal_edit"
-                               class="btn btn-primary btn-block"><b>Редактировать</b></a>
+                               class="btn btn-primary btn-block"><b>@lang('messages.edit')</b></a>
 
                             <a href="#" type="button" data-toggle="modal" data-target="#reset_password_modal"
-                               class="btn btn-primary btn-block"><b>Сбросить пароль</b></a>
+                               class="btn btn-primary btn-block"><b>@lang('messages.reset_pass')</b></a>
                         </div>
                     </div>
                     @if($user->staff)
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Информация работника</h3>
+                                <h3 class="card-title">@lang('messages.staff_info')</h3>
                             </div>
                             <div class="card-body">
-                                <strong><i class="fas fa-book mr-1"></i> Уровень английского</strong>
+                                <strong><i class="fas fa-book mr-1"></i> @lang('messages.english_level')</strong>
 
                                 <p class="text-muted">
-                                    {{$user->staff->english_level->description_ru}}
+                                    {{$user->staff->english_level['description_'.App::getLocale()]}}
                                 </p>
                                 <hr>
-                                <strong><i class="fas fa-map-marker-alt mr-1"></i> Ученая степень</strong>
-                                <p class="text-muted">{{$user->staff->academic_degree->title_ru}}</p>
+                                <strong><i class="fas fa-map-marker-alt mr-1"></i> @lang('messages.academic_degree')</strong>
+                                <p class="text-muted">{{$user->staff->academic_degree['title_'.App::getLocale()]}}</p>
                                 <hr>
-                                <strong><i class="fas fa-pencil-alt mr-1"></i> Учёное звание</strong>
+                                <strong><i class="fas fa-pencil-alt mr-1"></i> @lang('messages.academic_rank')</strong>
                                 <p class="text-muted">
-                                    {{$user->staff->academic_rank->title_ru}}
+                                    {{$user->staff->academic_rank['title_'.App::getLocale()]}}
                                 </p>
                                 <hr>
-                                <strong><i class="far fa-file-alt mr-1"></i> Иностранец</strong>
+                                <strong><i class="far fa-file-alt mr-1"></i> @lang('messages.foreign')</strong>
                                 @if($user->staff->is_foreign)
-                                    <p class="text-muted">Да</p>
+                                    <p class="text-muted">@lang('messages.yes')</p>
                                 @else
-                                    <p class="text-muted">Нет</p>
+                                    <p class="text-muted">@lang('messages.no')</p>
                                 @endif
                             </div>
                         </div>
@@ -123,30 +123,30 @@
                     @if($user->student)
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Информация о студенте</h3>
+                                <h3 class="card-title">@lang('messages.student_info')</h3>
                             </div>
                             <div class="card-body">
-                                <strong>Группа</strong>
-                                <p class="text-muted">{{$user->student->group->title_ru}}</p>
+                                <strong>@lang('messages.group')</strong>
+                                <p class="text-muted">{{$user->student->group['title_'.App::getLocale()]}}</p>
 
                                 <hr>
 
-                                <strong>Статус студента</strong>
-                                <p class="text-muted">{{$user->student->status->description_ru}}</p>
+                                <strong>@lang('messages.student_status')</strong>
+                                <p class="text-muted">{{$user->student->status['description_'.App::getLocale()]}}</p>
 
                                 <hr>
 
-                                <strong>Форма обучения</strong>
-                                <p class="text-muted">{{$user->student->study_form->description_ru}}</p>
+                                <strong>@lang('messages.study_form')</strong>
+                                <p class="text-muted">{{$user->student->study_form['description_'.App::getLocale()]}}</p>
 
                                 <hr>
 
-                                <strong>Форма оплаты</strong>
-                                <p class="text-muted">{{$user->student->payment_form->description_ru}}</p>
+                                <strong>@lang('messages.payment_form')</strong>
+                                <p class="text-muted">{{$user->student->payment_form['description_'.App::getLocale()]}}</p>
 
                                 <hr>
 
-                                <strong>Курс</strong>
+                                <strong>@lang('messages.course')</strong>
                                 <p class="text-muted">{{$user->student->course}}</p>
                             </div>
                         </div>
@@ -158,16 +158,16 @@
                         <div class="card-header p-2">
                             <ul class="nav nav-pills">
                                 <li class="nav-item"><a class="nav-link active" href="#activity"
-                                                        data-toggle="tab">Запрошенные справки</a>
+                                                        data-toggle="tab">@lang('messages.req_ref')</a>
                                 </li>
                                 {{--                                    <li class="nav-item"><a class="nav-link" href="#send_order"--}}
                                 {{--                                                            data-toggle="tab">Send order</a></li>--}}
                                 <li class="nav-item"><a class="nav-link" href="#groups"
-                                                        data-toggle="tab">Мои группы</a></li>
+                                                        data-toggle="tab">@lang('messages.my_group')</a></li>
 
 
                                 <li class="nav-item"><a class="nav-link" href="#add_student"
-                                                        data-toggle="tab">Добавить студента</a></li>
+                                                        data-toggle="tab">@lang('messages.add_student')</a></li>
 
 
                             </ul>
@@ -191,12 +191,14 @@
 
                                                 <div class="col-6">
                                                     <p>
-                                                        {{$order->cat->description_ru}}
+                                                        {{$order->cat['description_'.App::getLocale()]}}
                                                     </p>
                                                 </div>
 
                                                 <div class="col-3">
-                                                    <a href="#" class="btn btn-success">Load document</a>
+                                                    <button class="btn btn-success" type="button"
+                                                            onclick="showUploadFileModal({{$order->id}})">@lang('messages.load_doc')
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,7 +230,7 @@
                                                 <select name="group" id="" class="form-control">
                                                     @foreach(\App\Models\Groups::all() as $group)
                                                         <option
-                                                            value="{{$group->id}}">{{$group->title_ru}}</option>
+                                                            value="{{$group->id}}">{{$group['title_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
                                                 <a href="{{route('panel-group')}}"
@@ -242,7 +244,7 @@
                                                 <select name="study_form" id="" class="form-control">
                                                     @foreach(\App\Models\StudyForms::all() as $form)
                                                         <option
-                                                            value="{{$form->id}}">{{$form->description_ru}}</option>
+                                                            value="{{$form->id}}">{{$form['description_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
                                                 <a href="{{route('panel-study_form')}}"
@@ -256,7 +258,7 @@
                                                 <select name="study_lang" id="" class="form-control">
                                                     @foreach(\App\Models\StudyLangs::all() as $langs)
                                                         <option
-                                                            value="{{$langs->id}}">{{$langs->title_ru}}</option>
+                                                            value="{{$langs->id}}">{{$langs['title_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
                                                 <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
@@ -270,7 +272,7 @@
                                                 <select name="payment_form" id="" class="form-control">
                                                     @foreach(\App\Models\PaymentForms::all() as $pay)
                                                         <option
-                                                            value="{{$pay->id}}">{{$pay->description_ru}}</option>
+                                                            value="{{$pay->id}}">{{$pay['description_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
                                                 <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
@@ -286,7 +288,7 @@
                                                         class="form-control flex-grow-1">
                                                     @foreach(\App\Models\StudyStatuses::all() as $stat)
                                                         <option
-                                                            value="{{$stat->id}}">{{$stat->description_ru}}</option>
+                                                            value="{{$stat->id}}">{{$stat['description_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
                                                 <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
@@ -302,7 +304,7 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <button type="submit" class="btn btn-primary btn-block">
-                                                    add student
+                                                    @lang('messages.add')
                                                 </button>
                                             </div>
                                         </div>
@@ -314,20 +316,19 @@
                                             <div class="col-4">
                                                 <div class="group_card">
                                                     <a class="h3 mb-2"
-                                                       href="{{route('get_group', ['id'=>$group->id])}}">{{$group->title_kz}}</a>
+                                                       href="{{route('get_group', ['id'=>$group->id])}}">{{$group['title_'.App::getLocale()]}}</a>
                                                     <div class="d-flex">
                                                         <p class="mb-1"><b
-                                                                class="mr-2">Department:</b> {{$group->departments->title_ru}}
+                                                                class="mr-2">@lang('messages.department'):</b> {{$group->departments['title_'.App::getLocale()]}}
                                                         </p>
                                                     </div>
                                                     <div class="d-flex">
-                                                        <p class="mb-1"><b class="mr-2">Students
-                                                                amount:</b> {{$group->students->count()}}</p>
+                                                        <p class="mb-1"><b class="mr-2">@lang('messages.students_amount'):</b> {{$group->students->count()}}</p>
                                                     </div>
 
                                                     <div class="d-flex">
                                                         <p class="mb-1"><b
-                                                                class="mr-2">Created:</b> {{$group->created_at}}
+                                                                class="mr-2">@lang('messages.created'):</b> {{$group->created_at}}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -352,42 +353,9 @@
                                                 <input type="text" name="description_en" class="form-control"
                                                        placeholder="Enter description(en)">
                                             </div>
-                                            <button type="submit" class="btn btn-success">Add</button>
+                                            <button type="submit" class="btn btn-success">@lang('messages.add')</button>
                                         </form>
                                     </div>
-                                @endif
-
-                                @if(auth()->user()->isAdmin())
-                                    {{--                                        <div class="tab-pane" id="dep">--}}
-                                    {{--                                            <div class="row">--}}
-                                    {{--                                                @foreach($user->departments as $dep)--}}
-                                    {{--                                                    <div class="col-4">--}}
-                                    {{--                                                        <div class="group_card">--}}
-                                    {{--                                                            <a class="h3 mb-2"--}}
-                                    {{--                                                               href="">{{$dep->title_short_ru}}</a>--}}
-                                    {{--                                                            <div class="d-flex">--}}
-                                    {{--                                                                <p class="mb-1"><b--}}
-                                    {{--                                                                        class="mr-2">Department:</b> {{$dep->title_ru}}--}}
-                                    {{--                                                                </p>--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                            <div class="d-flex">--}}
-                                    {{--                                                                <p class="mb-1"><b class="mr-2">Department type:</b> {{$dep->type->description_ru}}</p>--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                            <div class="d-flex">--}}
-                                    {{--                                                                <p class="mb-1"><b class="mr-2">Staff--}}
-                                    {{--                                                                        amount:</b> {{$dep->include_staff}}</p>--}}
-                                    {{--                                                            </div>--}}
-
-                                    {{--                                                            <div class="d-flex">--}}
-                                    {{--                                                                <p class="mb-1"><b--}}
-                                    {{--                                                                        class="mr-2">Created:</b> {{$group->created_at}}--}}
-                                    {{--                                                                </p>--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                @endforeach--}}
-                                    {{--                                            </div>--}}
-                                    {{--                                        </div>--}}
                                 @endif
                             </div>
                         </div>
@@ -438,7 +406,7 @@
                                 <select name="gender" id="g" placeholder="Gender" class="form-control">
                                     @foreach(\App\Models\Gender::all() as $g)
                                         <option value="{{$g->id}}"
-                                                @if($user->gender->id == $g->id)selected @endif>{{$g->title_ru}}</option>
+                                                @if($user->gender->id == $g->id)selected @endif>{{$g['title_'.App::getLocale()]}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -462,7 +430,7 @@
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin" value="{{$user->iin}}">
                             </div>
-                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Редактировать</button>
+                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
                         </form>
                     </div>
                 </div>
@@ -507,7 +475,7 @@
                             <div class="input-group mb-3">
                                 <select name="gender" id="g" placeholder="Gender" class="form-control">
                                     @foreach(\App\Models\Gender::all() as $g)
-                                        <option value="{{$g->id}}">{{$g->title_ru}}</option>
+                                        <option value="{{$g->id}}">{{$g['title_'.App::getLocale()]}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -531,7 +499,7 @@
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin">
                             </div>
-                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">Редактировать</button>
+                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
                         </form>
                     </div>
                 </div>
@@ -550,21 +518,21 @@
                         <form action="{{route('reset_password')}}" method="post" id="reset_password_form">
                             @csrf
                             <div class="group-control">
-                                <label for="password" class="font-weight-normal">Старый пароль</label>
+                                <label for="password" class="font-weight-normal">@lang('messages.old_pass')</label>
                                 <input type="password" id="password" class="form-control" name="password" required>
                             </div>
                             <div class="group-control">
-                                <label for="new_password" class="font-weight-normal">Новый пароль</label>
+                                <label for="new_password" class="font-weight-normal">@lang('messages.new_pass')</label>
                                 <input type="password" id="new_password" class="form-control" name="new_password"
                                        required>
                             </div>
                             <div class="group-control">
-                                <label for="new_password2" class="font-weight-normal">Повторите пароль</label>
+                                <label for="new_password2" class="font-weight-normal">@lang('messages.repeat_pass')</label>
                                 <input type="password" id="new_password2" class="form-control" name="new_password2"
                                        required>
                             </div>
 
-                            <button class="btn btn-primary mt-3" id="btn_reset_pass">Сбросить пароль</button>
+                            <button class="btn btn-primary mt-3" id="btn_reset_pass">@lang('messages.reset_pass')</button>
                         </form>
                     </div>
                 </div>
@@ -588,13 +556,38 @@
                                      alt="img">
                             </div>
                             <div class="custom-file">
-                                <input type="file" id="image"  class="custom-file-input" name="image" onchange="loadFile(event)" required>
-                                <label for="image" class="custom-file-label">Выберите фотку</label>
+                                <input type="file" id="image" class="custom-file-input" name="image"
+                                       onchange="loadFile(event)" required>
+                                <label for="image" class="custom-file-label">@lang('messages.choose_image')</label>
                             </div>
 
                             <input type="number" name="user_id" value="{{auth()->user()->id}}" hidden>
 
-                            <button class="btn btn-primary mt-3" id="upload_image">Изменить</button>
+                            <button class="btn btn-primary mt-3" id="upload_image">@lang('messages.change')</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+         id="upload_file_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-content">
+                    <div class="p-4">
+                        <form action="{{route('upload_file')}}" method="post" id="upload_file_form"
+                              enctype="multipart/form-data">
+                            @csrf
+
+                            <div class="custom-file">
+                                <input type="file" id="file" class="custom-file-input" name="file" required>
+                                <label for="file" class="custom-file-label">@lang('messages.choose_file')</label>
+                            </div>
+
+                            <input type="number" name="order_id" id="modal_order_id" hidden>
+
+                            <button class="btn btn-primary mt-3" id="upload_file">@lang('messages.load')</button>
                         </form>
                     </div>
                 </div>
@@ -602,11 +595,19 @@
         </div>
     </div>
 
+
+@endsection
+
+@section('script')
     <script>
-        var loadFile = function(event) {
+        var loadFile = function (event) {
             var image = document.getElementById('img_output');
             image.src = URL.createObjectURL(event.target.files[0]);
         };
-    </script>
 
+        function showUploadFileModal(order_id) {
+            $('#modal_order_id').val(order_id);
+            $('#upload_file_modal').modal('show');
+        }
+    </script>
 @endsection

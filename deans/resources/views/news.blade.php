@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row mt-3">
                     <div class="p-3 w-100">
-                        <h2 class="mb-2">Новости</h2>
+                        <h2 class="mb-2">@lang('messages.news')</h2>
                         @foreach($news as $n)
                             <div class="card p-3">
                                 <div class="d-flex justify-content-between">
@@ -17,8 +17,6 @@
                                     @endif
                                 </div>
                                 <h6 class="text-black">{{ $n->subtitle }}</h6>
-{{--                                <h6 class="text-black">{{$n->subtitle->diffForHumans()}}</h6>--}}
-
                                 <p>{{$n->text}}</p>
                             </div>
                         @endforeach

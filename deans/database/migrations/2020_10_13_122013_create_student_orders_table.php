@@ -19,6 +19,7 @@ class CreateStudentOrdersTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('order_cat_id');
             $table->unsignedBigInteger('status_id');
+            $table->string('file_path', 2048)->nullable();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('order_cat_id')->references('id')->on('student_order_categories')->onDelete('cascade');

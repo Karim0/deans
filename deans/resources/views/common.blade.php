@@ -24,7 +24,7 @@
                 <img src="{{asset('img/logo.png')}}" alt="Logo"
                      class="brand-image"
                      style="opacity: .8">
-                <span class="brand-text font-weight-light">Деканат</span>
+                <span class="brand-text font-weight-light">@lang('messages.deans')</span>
             </a>
 
             <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -36,19 +36,30 @@
                 <!-- Left navbar links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="{{route('home')}}" class="nav-link">Главная</a>
+                        <a href="{{route('home')}}" class="nav-link">@lang('messages.home')</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('news')}}" class="nav-link">Новости</a>
+                        <a href="{{route('news')}}" class="nav-link">@lang('messages.news')</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{route('contacts')}}" class="nav-link">Контакты</a>
+                        <a href="{{route('contacts')}}" class="nav-link">@lang('messages.contact')</a>
                     </li>
 
                 </ul>
             </div>
 
 
+            <div class="order-1 order-md-3 mr-2">
+                <form action="{{route('change-lang')}}" method="post" id="lang_form">
+                    @csrf
+{{--                    {{App::getLocale()}}--}}
+                    <select name="lang" id="lang" onchange="langSend()" class="form-control">
+                        <option value="ru" {{ App::isLocale('ru') ? 'selected': ''}}>Русский язык</option>
+                        <option value="en" {{App::isLocale('en') ? 'selected': ''}}>English</option>
+                        <option value="kz" {{App::isLocale('kz') ? 'selected': ''}}>Қазақ</option>
+                    </select>
+                </form>
+            </div>
             <div class="dropdown order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
                 @if(auth()->check())
                     <a class="user-login" type="button" id="dropdownMenuButton"
@@ -68,16 +79,16 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     @if(auth()->check())
                         @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
-                            <a class="text-black-50 dropdown-item" href="{{route('profile')}}">Панель администратора</a>
+                            <a class="text-black-50 dropdown-item" href="{{route('profile')}}">@lang('messages.admin_panel')</a>
                         @endif
 
-                        <a class="text-black-50 dropdown-item" href="{{route('logout')}}">Выйти</a>
+                        <a class="text-black-50 dropdown-item" href="{{route('logout')}}">@lang('messages.exit')</a>
                     @else
                         <div class="dropdown-item">
-                            <a class="text-black-50" href="{{route('login')}}">Авторизоваться</a>
+                            <a class="text-black-50" href="{{route('login')}}">@lang('messages.authorization')</a>
                         </div>
                         <div class="dropdown-item">
-                            <a class="text-black-50" href="{{route('register')}}">Зарегистрироваться</a>
+                            <a class="text-black-50" href="{{route('register')}}">@lang('messages.registration')</a>
                         </div>
                     @endif
                 </div>
@@ -91,5 +102,11 @@
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/adminlte.min.js')}}"></script>
+
+<script>
+    function langSend(){
+        $('#lang_form').submit();
+    }
+</script>
 </body>
 </html>

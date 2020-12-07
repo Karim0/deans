@@ -123,7 +123,7 @@ class RegController extends Controller
         } else {
             abort('403', 'Вы не авторизованы');
         }
-        $orders = StudentOrder::all();
+        $orders = StudentOrder::where('status_id', 1)->get();
         $data += ['orders' => $orders];
 //        dd($data);
         return view('profile', $data);

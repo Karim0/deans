@@ -20,34 +20,39 @@
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-    <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-        <!-- Left navbar links -->
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{route('home')}}" class="nav-link">Главная</a>
+                <a href="{{route('home')}}" class="nav-link">@lang('messages.home')</a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="#" class="nav-link">Контакты</a>
+                <a href="{{route('contacts')}}" class="nav-link">@lang('messages.contact')</a>
+            </li>
+            <li>
+                <form action="{{route('change-lang')}}" method="post" id="lang_form">
+                    @csrf
+                    <select name="lang" id="lang" onchange="langSend()" class="form-control">
+                        <option value="ru" {{ App::isLocale('ru') ? 'selected': ''}}>Русский язык</option>
+                        <option value="en" {{App::isLocale('en') ? 'selected': ''}}>English</option>
+                        <option value="kz" {{App::isLocale('kz') ? 'selected': ''}}>Қазақ</option>
+                    </select>
+                </form>
             </li>
         </ul>
     </nav>
     <aside class="main-sidebar sidebar-dark-primary elevation-4 h-100">
-        <!-- Brand Logo -->
         <a href="{{route('home')}}" class="brand-link">
             <img src="{{asset('img/logo.png')}}"
                  alt="Logo"
                  class="brand-image img-circle elevation-3 mt-1"
                  style="opacity: .8; width: 34px; height: auto">
-            <span class="brand-text font-weight-light">Деканат</span>
+            <span class="brand-text font-weight-light">@lang('messages.deans')</span>
         </a>
 
-        <!-- Sidebar -->
         <div class="sidebar">
-            <!-- Sidebar user (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
                     <img src="{{asset('img/def_user.png')}}" class="img-circle elevation-2" alt="User Image">
@@ -65,71 +70,70 @@
                             <a class="nav-link" href="#panel" data-toggle="collapse"
                                aria-expanded="false" aria-controls="panel">
                                 <i class="nav-icon ion ion-wrench"></i>
-                                <span class="brand-text font-weight-light">Редактировать</span>
+                                <span class="brand-text font-weight-light">@lang('messages.edit')</span>
                             </a>
                             <div class="collapse" id="panel">
                                 <ul class="list-group">
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-department')}}">Департаменты</a>
+                                           href="{{route('panel-department')}}">@lang('messages.departments')</a>
                                     </li>
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-group')}}">Группы</a>
+                                           href="{{route('panel-group')}}">@lang('messages.groups')</a>
                                     </li>
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-staff')}}">Данные о сотрудныке</a>
+                                           href="{{route('panel-staff')}}">@lang('messages.staff_info')</a>
                                     </li>
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-order_type')}}">Справки</a>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white"
-                                           href="{{route('panel-academic_degree')}}">Ученая степень</a>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white" href="{{route('panel-academic_rank')}}">Академические звания</a>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white" href="{{route('panel-english_level')}}">Уровень английского</a>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white" href="{{route('panel-payment_form')}}">Форма оплаты</a>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white" href="{{route('panel-study_lang')}}">Язык обучения</a>
-                                    </li>
-
-                                    <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white" href="{{route('panel-department_type')}}">Тип департаментов</a>
+                                           href="{{route('panel-order_type')}}">@lang('messages.references')</a>
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-degree_type')}}">Степень</a>
+                                           href="{{route('panel-academic_degree')}}">@lang('messages.academic_degree')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-academic_rank')}}">@lang('messages.academic_rank')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-english_level')}}">@lang('messages.english_level')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-payment_form')}}">@lang('messages.payment_form')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-study_lang')}}">@lang('messages.payment_form')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white" href="{{route('panel-department_type')}}">@lang('messages.department_type')</a>
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-study_form')}}">Форма обучения</a>
+                                           href="{{route('panel-degree_type')}}">@lang('messages.degree_type')</a>
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="{{route('panel-news')}}">Новости</a>
+                                           href="{{route('panel-study_form')}}">@lang('messages.study_form')</a>
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
-                                           href="#drop_password_modal" type="button" data-toggle="modal">Сбросить
-                                            пароль</a>
+                                           href="{{route('panel-news')}}">@lang('messages.news')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
+                                           href="#drop_password_modal" type="button" data-toggle="modal">@lang('messages.drop_pass')</a>
                                     </li>
                                 </ul>
                             </div>
@@ -156,7 +160,7 @@
                         <form action="{{route('drop_password')}}" method="post">
                             @csrf
                             <div class="group-control">
-                                <label for="login_reset" class="font-weight-normal">Логин юзера</label>
+                                <label for="login_reset" class="font-weight-normal">@lang('messages.student_login')</label>
                                 <input type="search" id="login_reset" class="form-control" name="login">
                                 <div class="search-res w-auto" id="st_user_res_container_login_reset">
                                     <ul class="list-group" id="st_user_res_login_reset">
@@ -164,7 +168,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-primary mt-3">Сбросить</button>
+                            <button class="btn btn-primary mt-3">@lang('messages.drop_pass')</button>
                         </form>
                     </div>
                 </div>
@@ -176,6 +180,11 @@
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/adminlte.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
-
+@yield('script')
+<script>
+    function langSend(){
+        $('#lang_form').submit();
+    }
+</script>
 </body>
 </html>
