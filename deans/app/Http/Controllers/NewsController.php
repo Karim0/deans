@@ -17,7 +17,7 @@ class NewsController extends Controller
 
     public function panel_edit()
     {
-        return view('admin-panel.show-news', ['news'=>News::all()->sortBy('created_at')]);
+        return view('admin-panel.show-news', ['news'=>News::all()->sortByDesc('created_at')]);
     }
 
 

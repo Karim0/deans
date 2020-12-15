@@ -29,27 +29,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/app/Http/Middleware/Localization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/database/migrations/2020_12_07_065743_create_cache_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/database/migrations/2020_12_07_070918_create_sessions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/public/upload_files/1607318095.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/public/upload_files/1607318995.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/public/upload_files/1607530225.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deans.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deans.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/UploadFilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/UploadFilesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122013_create_student_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_13_122013_create_student_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_085127_create_user_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_10_15_085127_create_user_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2020_11_30_140528_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2020_11_30_140528_create_news_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +193,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/lang/ru" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/123" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -286,7 +279,16 @@
       <workItem from="1607145895355" duration="620000" />
       <workItem from="1607146694535" duration="17000" />
       <workItem from="1607230387001" duration="8227000" />
-      <workItem from="1607315526904" duration="14250000" />
+      <workItem from="1607315526904" duration="14485000" />
+      <workItem from="1607352295210" duration="383000" />
+      <workItem from="1607419696483" duration="71000" />
+      <workItem from="1607530079449" duration="224000" />
+      <workItem from="1607531964700" duration="26000" />
+      <workItem from="1607597146286" duration="5328000" />
+      <workItem from="1607653493903" duration="645000" />
+      <workItem from="1607690741422" duration="25000" />
+      <workItem from="1607783609192" duration="607000" />
+      <workItem from="1608048415049" duration="3981000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -421,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607258303592</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Localization">
+      <created>1607337089828</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607337089828</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,6 +483,7 @@
     <MESSAGE value="Added CRUD for tables" />
     <MESSAGE value="news crud" />
     <MESSAGE value="loading profile image" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading profile image" />
+    <MESSAGE value="Localization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Localization" />
   </component>
 </project>

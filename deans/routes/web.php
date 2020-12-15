@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\Localization;
 use Illuminate\Support\Facades\Route;
 
@@ -13,17 +14,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware([Localization::class])->group(function () {
-    Route::get('/', 'Controller@home')->name('home');
+Route::middleware([Localization::class, Authenticate::class])->group(function () {
+    Route::get('/', 'Controller@home')->name('home')->withoutMiddleware([Authenticate::class]);;
     Route::get('/get_search_login', 'Controller@getSearchLogin')->name('get_search_login');
-    Route::get('/contacts', 'Controller@contacts')->name('contacts');
+    Route::get('/contacts', 'Controller@contacts')->name('contacts')->withoutMiddleware([Authenticate::class]);;
 
 
-    Route::get('/login', 'RegController@login_page')->name('login');
-    Route::post('/login', 'RegController@login')->name('post_login');
-    Route::get('/regist', 'RegController@registration_page')->name('register');
-    Route::post('/regist', 'RegController@registration')->name('post_register');
-    Route::get('/logout', 'RegController@logout')->name('logout');
+    Route::get('/login', 'RegController@login_page')->name('login')->withoutMiddleware([Authenticate::class]);
+    Route::post('/login', 'RegController@login')->name('post_login')->withoutMiddleware([Authenticate::class]);
+    Route::get('/regist', 'RegController@registration_page')->name('register')->withoutMiddleware([Authenticate::class]);;
+    Route::post('/regist', 'RegController@registration')->name('post_register')->withoutMiddleware([Authenticate::class]);;
+    Route::get('/logout', 'RegController@logout')->name('logout')->withoutMiddleware([Authenticate::class]);;
     Route::get('/profile', 'RegController@profile')->name('profile');
     Route::post('/add_user', 'RegController@addUser')->name('add_user');
     Route::post('/post_change_user', 'RegController@change_user')->name('post_change_user');
@@ -70,7 +71,7 @@ Route::middleware([Localization::class])->group(function () {
     Route::get('/panel-department/delete/{id}', 'DepartmentController@delete_department')->name('delete-department');
 
 
-    Route::get('/news', 'NewsController@news_page')->name('news');
+    Route::get('/news', 'NewsController@news_page')->name('news')->withoutMiddleware([Authenticate::class]);;
 
 
     Route::get('/panel-academic_degree', 'AcademicDegreeController@show_academic_degrees')->name('panel-academic_degree');

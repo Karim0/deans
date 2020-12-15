@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="{{asset('css/awesome/all.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="icon" href="{{asset('img/logo_icon.png')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    {{--    <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/balloon/ckeditor.js"></script>--}}
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
 
     <script defer src="{{asset('js/awesome/all.js')}}"></script>
 </head>
@@ -180,6 +183,8 @@
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('js/adminlte.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
+<script src="http://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<link rel="icon" href="http://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
 @yield('script')
 <script>
     function langSend(){

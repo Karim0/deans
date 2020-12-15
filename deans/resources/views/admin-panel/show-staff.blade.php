@@ -21,7 +21,7 @@
                     data-toggle="modal" data-target="#add_staff">Добавить работника
             </button>
         </div>
-        <table class="table table-striped">
+        <table class="table table-striped" id="dataTable">
             <thead>
             <tr>
                 <th scope="col">#</th>
@@ -198,4 +198,13 @@
                 </div>
             </div>
         </div>
+    </div>
+@endsection
+
+@section('script')
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
+    </script>
 @endsection

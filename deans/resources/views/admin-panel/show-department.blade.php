@@ -4,7 +4,8 @@
 @endsection
 
 @section('content')
-    <div class="container pb-3">
+    <div class="container-fluid">
+{{--        container--}}
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb">
@@ -24,7 +25,7 @@
                 </button>
             </div>
         </div>
-        <table class="table table-striped mb-0">
+        <table class="table table-striped mb-0" id="dataTable">
             <thead>
             <tr>
                 <th scope="col">#</th>
@@ -134,4 +135,12 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
+    </script>
 @endsection

@@ -26,10 +26,10 @@
             @foreach($news as $n)
                 <div class="card">
                     <div class="card-body">
-                        <h5>{{$n->title}}</h5>
-                        <h6>{{$n->subtitle}}</h6>
+                        <h5>{!!$n->title!!}</h5>
+                        <h6>{!!$n->subtitle!!}</h6>
 
-                        <p>{{$n->text}}</p>
+                        <p>{!! $n->text !!}</p>
 
                         <div class="d-flex justify-content-end">
                             <a class="btn btn-primary mr-2" href="{{route('panel-edit_page_news', ['news'=>$n])}}"><i
@@ -80,4 +80,14 @@
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#text'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 @endsection

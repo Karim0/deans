@@ -17,7 +17,7 @@
                                     @endif
                                 </div>
                                 <h6 class="text-black">{{ $n->subtitle }}</h6>
-                                <p>{{$n->text}}</p>
+                                <p>{!! $n->text !!}</p>
                             </div>
                         @endforeach
                     </div>

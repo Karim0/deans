@@ -24,8 +24,6 @@ class GroupController extends Controller
             if (!auth()->user()->isAdvisor() and !auth()->user()->isAdmin()) {
                 abort('403', 'У вас нет прав доступа');
             }
-        } else {
-            abort('403', 'Вы не авторизованы');
         }
 
         $group = Groups::find($id);
