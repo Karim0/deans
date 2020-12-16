@@ -5,6 +5,17 @@
 
 @section('content')
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">@lang('messages.home')</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('profile')}}">@lang('messages.admin_panel')</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('messages.order')</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
 
         <table class="table table-striped">
             <thead>

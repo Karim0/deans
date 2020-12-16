@@ -79,6 +79,10 @@
                                 <ul class="list-group">
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
+                                           href="{{route('panel-user')}}">@lang('messages.users')</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
                                            href="{{route('panel-department')}}">@lang('messages.departments')</a>
                                     </li>
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
@@ -184,7 +188,9 @@
 <script src="{{asset('js/adminlte.min.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
 <script src="http://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-<link rel="icon" href="http://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.10.22/dataRender/datetime.js"></script>
+{{--<link rel="icon" href="http://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">--}}
 @yield('script')
 <script>
     function langSend(){

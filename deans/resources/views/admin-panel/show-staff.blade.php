@@ -9,9 +9,9 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('profile')}}">Панель администратора</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Сотрудники</li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">@lang('messages.home')</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('profile')}}">@lang('messages.admin_panel')</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('messages.staff_info')</li>
                     </ol>
                 </nav>
             </div>

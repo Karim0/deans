@@ -14,6 +14,8 @@ class StaffController extends Controller
         $data = $request->all();
         $user = DB::select('SELECT * FROM users WHERE  login = ?', [$data['login']])[0];
 
+        if (!isset($data['is_foreign'])) $data['is_foreign'] = false;
+
         DB::insert('INSERT INTO staff(english_level_id, user_id, academic_degree_id, academic_rank_id, is_foreign) VALUES(?, ?, ?, ?, ?)',
             [$data['english_level_id'],
                 $user->id,
@@ -27,7 +29,7 @@ class StaffController extends Controller
 
     public function show_staff()
     {
-        return view('admin-panel/show-staff', ['staff'=> Staff::all()]);
+        return view('admin-panel/show-staff', ['staff' => Staff::all()]);
     }
 
     public function edit_staff_page($id)
@@ -40,7 +42,7 @@ class StaffController extends Controller
         $data = $request->all();
         unset($data['_token']);
 
-        $data['user_id'] = DB::table('users')->select('id')->where('login','=', $data['login'])->get()[0]->id;
+        $data['user_id'] = DB::table('users')->select('id')->where('login', '=', $data['login'])->get()[0]->id;
         unset($data['login']);
         DB::table('staff')
             ->where('id', $id)

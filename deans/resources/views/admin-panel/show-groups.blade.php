@@ -9,27 +9,27 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('profile')}}">Панель администратора</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Группы</li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">@lang('messages.home')</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('profile')}}">@lang('messages.admin_panel')</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('messages.groups')</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="row pt-3 mb-3">
             <button type="button" class="btn btn-primary"
-                    data-toggle="modal" data-target="#add_group">Добавить группу
+                    data-toggle="modal" data-target="#add_group">@lang('messages.add')
             </button>
         </div>
         <table class="table table-striped">
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Название группы (ru)</th>
-                <th scope="col">Название группы (kz)</th>
-                <th scope="col">Название группы (en)</th>
-                <th scope="col">Департамент</th>
-                <th scope="col">Дата поступления</th>
+                <th scope="col">@lang('messages.title_ru')</th>
+                <th scope="col">@lang('messages.title_kz')</th>
+                <th scope="col">@lang('messages.title_en')</th>
+                <th scope="col">@lang('messages.department')</th>
+                <th scope="col">@lang('messages.receipt_date')</th>
                 <th scope="col"></th>
             </tr>
             </thead>
@@ -70,22 +70,22 @@
                     <form action="{{route('add_group')}}" method="post">
                         @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Название группы (en)" name="title_en">
+                            <input type="text" class="form-control" placeholder="@lang('messages.title_en')" name="title_en">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Название группы (ru)" name="title_ru">
+                            <input type="text" class="form-control" placeholder="@lang('messages.title_ru')" name="title_ru">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Название группы (kz)" name="title_kz">
+                            <input type="text" class="form-control" placeholder="@lang('messages.title_kz')" name="title_kz">
                         </div>
                         <div class="form-group">
                             <select name="dep_id" id="" class="form-control">
                                 @foreach(\App\Models\Departments::all() as $dep)
-                                    <option value="{{$dep->id}}">{{$dep->title_ru}}</option>
+                                    <option value="{{$dep->id}}">{{$dep['title_'.App::getLocale()]}}</option>
                                 @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Добавить</button>
+                        <button type="submit" class="btn btn-primary">@lang('messages.add')</button>
                     </form>
                 </div>
 

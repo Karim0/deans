@@ -62,6 +62,7 @@ return [
     'study_form' => 'Study form',
     'payment_form' => 'Payment form',
     'course' => 'Course',
+    'study_lang' => 'Study language',
     'student_info' => 'Student Information',
     'yes' => 'Yes',
     'no' => 'No',
@@ -73,4 +74,19 @@ return [
     'references' => 'References',
     'degree_type' => 'Degree type',
     'student_login' => 'Student login',
+
+    'description_en' => 'Description in English',
+    'description_ru' => 'Description in Russian',
+    'description_kz' => 'Description in Kazakh',
+    'title_en' => 'Title in English',
+    'title_ru' => 'Title in Russian',
+    'title_kz' => 'Title in Kazakh',
+    'abbreviation_en' => 'English abbreviation',
+    'abbreviation_ru' => 'Abbreviation in Russian',
+    'abbreviation_kz' => 'Abbreviation in Kazakh',
+    'receipt_date' => 'Receipt date',
+    'staff_amount' => 'Number of employees',
+    'type' => 'Type',
+    'refers_to' => 'Refers to',
+    'users'=>'Users'
 ];

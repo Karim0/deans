@@ -10,9 +10,9 @@
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('profile')}}">Панель администратора</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Департаменты</li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">@lang('messages.home')</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('profile')}}">@lang('messages.admin_panel')</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('messages.departments')</li>
                     </ol>
                 </nav>
             </div>
@@ -29,15 +29,15 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Заголовок</th>
-                <th scope="col">Заголовок (en)</th>
-                <th scope="col">Заголовок (kz)</th>
-                <th scope="col">Аббревиатура</th>
-                <th scope="col">Аббревиатура (en)</th>
-                <th scope="col">Аббревиатура (kz)</th>
-                <th scope="col">Кол-во сотрудников</th>
-                <th scope="col">Тип</th>
-                <th scope="col">Относится к</th>
+                <th scope="col">@lang('messages.title_ru')</th>
+                <th scope="col">@lang('messages.title_en')</th>
+                <th scope="col">@lang('messages.title_kz')</th>
+                <th scope="col">@lang('messages.description_ru')</th>
+                <th scope="col">@lang('messages.description_en')</th>
+                <th scope="col">@lang('messages.description_kz')</th>
+                <th scope="col">@lang('messages.staff_amount')</th>
+                <th scope="col">@lang('messages.type')</th>
+                <th scope="col">@lang('messages.refers_to')</th>
                 <th scope="col"></th>
             </tr>
             </thead>
@@ -114,7 +114,7 @@
                                 <label for="dep_type" class="font-weight-normal">Тип</label>
                                 <select name="department_type_id" id="dep_type" class="form-control">
                                     @foreach(\App\Models\DepartmentTypes::all() as $type)
-                                        <option value="{{$type->id}}">{{$type->description_ru}}</option>
+                                        <option value="{{$type->id}}">{{$type['description_'.App::getLocale()]}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -123,7 +123,7 @@
                                 <select name="parent_id" id="parent_id" class="form-control">
                                     <option value="null">Не выбрано</option>
                                     @foreach(\App\Models\Departments::all() as $parent)
-                                        <option value="{{$parent->id}}">{{$parent->title_ru}}</option>
+                                        <option value="{{$parent->id}}">{{$parent['title_'.App::getLocale()]}}</option>
                                     @endforeach
                                 </select>
                             </div>

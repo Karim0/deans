@@ -30,6 +30,8 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
     Route::post('/post_change_user', 'RegController@change_user')->name('post_change_user');
     Route::post('/reset_password', 'RegController@reset_password')->name('reset_password');
     Route::post('/drop_password', 'RegController@drop_password')->name('drop_password');
+    Route::get('/user_list', 'RegController@user_list')->name('user-list');
+    Route::get('/panel-user', 'RegController@panel_user')->name('panel-user');
 
 
     Route::get('admin_panel/orders', 'OrderController@Orders')->name('panel-orders');

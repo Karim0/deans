@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 namespace App\Http\Controllers;
 
+use App\Models\Gender;
 use App\Models\StudentOrder;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -98,7 +99,7 @@ class RegController extends Controller
             'iin' => $data['iin'],
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->back();
     }
 
     public function change_user(Request $request)
@@ -109,7 +110,7 @@ class RegController extends Controller
             [$data['name'], $data['login'], $data['lastname'], $data['patronymic'], $data['gender'], $data['tel'], $data['birthdate'],
                 $data['registration_address'], $data['residential_address'], $data['iin'], $data['id']]);
 
-        return redirect()->route('profile');
+        return redirect()->back();
     }
 
     public function profile()
@@ -146,7 +147,7 @@ class RegController extends Controller
             $user['password'] = Hash::make($data['new_password']);
             $user->save();
         }
-        return redirect()->route('profile');
+        return redirect()->back();
     }
 
     public function drop_password(Request $request)
@@ -159,7 +160,48 @@ class RegController extends Controller
         if ($user == \auth()->user()) {
             return redirect()->route('logout');
         } else {
-            return redirect()->route('profile');
+            return redirect()->back();
         }
+    }
+
+    public function user_list(Request $request)
+    {
+        Log::info($request);
+        $columns = ['id', 'login', 'name', 'lastname', 'patronymic', 'gender_id', 'birthdate', 'registration_address', 'residential_address', 'iin'];
+        $data = User::with(['gender']);
+
+        if (isset($request['order'])) {
+            if ($request['order'][0]['column'] < sizeof($columns)){
+                $data = $data->orderBy($columns[$request['order'][0]['column']], $request['order'][0]['dir']);
+            }
+        }
+
+        if (isset($request['search'])) {
+            foreach ($columns as $col) {
+                $data = $data->orWhere($col, 'like', "%" . $request['search']['value'] . "%");
+            }
+        }
+        $res = [];
+
+        if (isset($request['start']) && isset($request['length'])) {
+            $p = $request['start'] / $request['length'];
+//            $res['page'] = [$p, $request['start'], $request['length']];
+            $res["recordsFiltered"] = $data->count();
+            $data = $data->paginate($request['length'], ['*'], 'page', $p + 1)->items();
+            $res['data'] = $data;
+        } else {
+        $res['data'] = $data->get();
+        $res["recordsFiltered"] = $data->count();
+        }
+
+//        $res["draw"]
+        $res["recordsTotal"] = User::count();
+
+        return $res;
+    }
+
+    public function panel_user()
+    {
+        return view('admin-panel.show-user');
     }
 }
