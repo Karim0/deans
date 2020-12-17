@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware([Localization::class, Authenticate::class])->group(function () {
     Route::get('/', 'Controller@home')->name('home')->withoutMiddleware([Authenticate::class]);;
     Route::get('/get_search_login', 'Controller@getSearchLogin')->name('get_search_login');
-    Route::get('/contacts', 'Controller@contacts')->name('contacts')->withoutMiddleware([Authenticate::class]);;
+    Route::get('/contacts', 'ContactController@contacts')->name('contacts')->withoutMiddleware([Authenticate::class]);;
 
 
     Route::get('/login', 'RegController@login_page')->name('login')->withoutMiddleware([Authenticate::class]);

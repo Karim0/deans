@@ -29,30 +29,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/public/users_images/1608111855.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deans.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deans.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/app/Models/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/database/factories/NewsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/database/migrations/2020_12_17_090200_create_contacts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/database/seeds/NewsSeed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-academic_degree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-academic_degree.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-academic_rank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-academic_rank.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-degree_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-degree_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-department_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-english_level.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-english_level.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-groups.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-order_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-payment_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-payment_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-staff.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-study_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-study_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-study_lang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-study_lang.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/contacts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/contacts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/news.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -299,7 +288,8 @@
       <workItem from="1607690741422" duration="25000" />
       <workItem from="1607783609192" duration="607000" />
       <workItem from="1608048415049" duration="4055000" />
-      <workItem from="1608109424573" duration="16095000" />
+      <workItem from="1608109424573" duration="16226000" />
+      <workItem from="1608190893695" duration="4376000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -448,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608052741124</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added DataTable(ordering, searching)">
+      <created>1608137634444</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608137634444</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,6 +499,7 @@
     <MESSAGE value="loading profile image" />
     <MESSAGE value="Localization" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="added DataTable(ordering, searching)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DataTable(ordering, searching)" />
   </component>
 </project>

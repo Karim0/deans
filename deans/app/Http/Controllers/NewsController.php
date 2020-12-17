@@ -9,9 +9,15 @@ use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
-    public function news_page()
+    public function news_page(Request $request)
     {
-        return view('news', ['news' => News::all()->sortByDesc('created_at')]);
+//        if (isset($request['page'])){
+//            $news = News::paginate(10, ['*'], 'Page', $request['page']);
+//        }else{
+            $news = News::orderBy('created_at', 'desc')->paginate(10);
+//        }
+
+        return view('news', ['news' =>$news]);
     }
 
 

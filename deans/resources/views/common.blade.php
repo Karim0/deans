@@ -46,22 +46,21 @@
                     <li class="nav-item">
                         <a href="{{route('contacts')}}" class="nav-link">@lang('messages.contact')</a>
                     </li>
+                    <li class="nav-item order-1 order-md-3 mr-2">
 
+                            <form action="{{route('change-lang')}}" method="post" id="lang_form">
+                                @csrf
+                                <select name="lang" id="lang" onchange="langSend()" class="form-control">
+                                    <option value="ru" {{ App::isLocale('ru') ? 'selected': ''}}>Русский язык</option>
+                                    <option value="en" {{App::isLocale('en') ? 'selected': ''}}>English</option>
+                                    <option value="kz" {{App::isLocale('kz') ? 'selected': ''}}>Қазақ</option>
+                                </select>
+                            </form>
+                    </li>
                 </ul>
             </div>
 
 
-            <div class="order-1 order-md-3 mr-2">
-                <form action="{{route('change-lang')}}" method="post" id="lang_form">
-                    @csrf
-{{--                    {{App::getLocale()}}--}}
-                    <select name="lang" id="lang" onchange="langSend()" class="form-control">
-                        <option value="ru" {{ App::isLocale('ru') ? 'selected': ''}}>Русский язык</option>
-                        <option value="en" {{App::isLocale('en') ? 'selected': ''}}>English</option>
-                        <option value="kz" {{App::isLocale('kz') ? 'selected': ''}}>Қазақ</option>
-                    </select>
-                </form>
-            </div>
             <div class="dropdown order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
                 @if(auth()->check())
                     <a class="user-login" type="button" id="dropdownMenuButton"

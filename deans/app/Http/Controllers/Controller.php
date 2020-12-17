@@ -28,12 +28,6 @@ class Controller extends BaseController
         }
     }
 
-    public function contacts()
-    {
-        return view('contacts');
-    }
-
-
     public function getSearchLogin(Request $request)
     {
         $data = $request->all();

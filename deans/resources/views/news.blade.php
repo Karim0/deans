@@ -1,7 +1,6 @@
 @extends('common')
 
 @section('content')
-
     <div class="content-wrapper pt-3  m-0">
         <div class="content">
             <div class="container">
@@ -21,6 +20,9 @@
                             </div>
                         @endforeach
                     </div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    {{$news->links()}}
                 </div>
             </div>
         </div>
