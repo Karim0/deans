@@ -171,7 +171,7 @@ class RegController extends Controller
         $data = User::with(['gender']);
 
         if (isset($request['order'])) {
-            if ($request['order'][0]['column'] < sizeof($columns)){
+            if ($request['order'][0]['column'] < sizeof($columns)) {
                 $data = $data->orderBy($columns[$request['order'][0]['column']], $request['order'][0]['dir']);
             }
         }
@@ -190,8 +190,8 @@ class RegController extends Controller
             $data = $data->paginate($request['length'], ['*'], 'page', $p + 1)->items();
             $res['data'] = $data;
         } else {
-        $res['data'] = $data->get();
-        $res["recordsFiltered"] = $data->count();
+            $res['data'] = $data->get();
+            $res["recordsFiltered"] = $data->count();
         }
 
 //        $res["draw"]
@@ -203,5 +203,44 @@ class RegController extends Controller
     public function panel_user()
     {
         return view('admin-panel.show-user');
+    }
+
+    public function panel_edit_user_page($id)
+    {
+        return view('admin-panel/edit-user', ['user' => User::find($id)]);
+    }
+
+    public function panel_edit_user(Request $request, $id)
+    {
+        $data = $request->all();
+//        dd($data);
+        unset($data['_token']);
+        DB::table('users')
+            ->where('id', $id)
+            ->update($data);
+
+
+        return redirect()->route('panel-user');
+    }
+
+    public function panel_delete_user($id)
+    {
+        DB::table('users')->delete($id);
+        return redirect()->route('panel-user');
+    }
+
+    public function add_role(Request $request)
+    {
+        $data = $request->all();
+//        dd($data);
+        unset($data['_token']);
+        DB::table('users_role')->insert($data);
+        return redirect()->back();
+    }
+
+    public function delete_role($role_id, $user_id)
+    {
+        DB::table('users_role')->where(['user_id'=>$user_id, 'role_id'=>$role_id])->delete();
+        return redirect()->back();
     }
 }

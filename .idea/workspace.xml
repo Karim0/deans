@@ -29,19 +29,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/app/Models/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/database/factories/NewsFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/database/migrations/2020_12_17_090200_create_contacts_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/database/seeds/NewsSeed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/app/Http/Middleware/AdviserMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/contacts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/contacts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deans/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,15 +188,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/123" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/views/admin-panel" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\lang\ru" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views\admin-panel" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\lang\ru" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources" />
@@ -289,7 +285,8 @@
       <workItem from="1607783609192" duration="607000" />
       <workItem from="1608048415049" duration="4055000" />
       <workItem from="1608109424573" duration="16226000" />
-      <workItem from="1608190893695" duration="4376000" />
+      <workItem from="1608190893695" duration="4642000" />
+      <workItem from="1608278967324" duration="12182000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -445,7 +442,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608137634444</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added contacts">
+      <created>1608197218570</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608197218570</updated>
+    </task>
+    <task id="LOCAL-00024" summary="server conf">
+      <created>1608280042761</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608280042761</updated>
+    </task>
+    <task id="LOCAL-00025" summary="server conf">
+      <created>1608292964776</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608292964776</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,6 +518,8 @@
     <MESSAGE value="Localization" />
     <MESSAGE value="1" />
     <MESSAGE value="added DataTable(ordering, searching)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added DataTable(ordering, searching)" />
+    <MESSAGE value="added contacts" />
+    <MESSAGE value="server conf" />
+    <option name="LAST_COMMIT_MESSAGE" value="server conf" />
   </component>
 </project>
