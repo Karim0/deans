@@ -30,13 +30,14 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
 
     Route::post('/reset_password', 'RegController@reset_password')->name('reset_password');
 
+    Route::post('/add_order', 'OrderController@addOrder')->name('add_order');
+
     Route::middleware([AdviserMiddleware::class])->group(function (){
         Route::get('/profile', 'RegController@profile')->name('profile');
         Route::post('/add_user', 'RegController@addUser')->name('add_user');
         Route::post('/post_change_user', 'RegController@change_user')->name('post_change_user');
         Route::post('/drop_password', 'RegController@drop_password')->name('drop_password');
 
-        Route::post('/add_order', 'OrderController@addOrder')->name('add_order');
         Route::get('admin_panel/orders', 'OrderController@Orders')->name('panel-orders');
 
         Route::post('/add_student', 'StudentController@addStudent')->name('add_student');
