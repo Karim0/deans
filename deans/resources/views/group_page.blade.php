@@ -6,7 +6,7 @@
 @section('content')
 
     <div class="container">
-        <h3 class="text-center mt-3">{{$group->title_en}}</h3>
+        <h3 class="text-center pt-3">{{$group->title_en}}</h3>
 
         <div id="accordion">
             @foreach($group->students as $st)
