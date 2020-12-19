@@ -62,7 +62,8 @@
                                     <b>@lang('messages.patronymic')</b> <a class="float-right">{{$user->patronymic}}</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <b>@lang('messages.gender')</b> <a class="float-right">{{$user->gender['title_'.App::getLocale()]}}</a>
+                                    <b>@lang('messages.gender')</b> <a
+                                        class="float-right">{{$user->gender['title_'.App::getLocale()]}}</a>
                                 </li>
                                 <li class="list-group-item">
                                     <b>@lang('messages.phone')</b> <a class="float-right">{{$user->tel}}</a>
@@ -102,7 +103,8 @@
                                     {{$user->staff->english_level['description_'.App::getLocale()]}}
                                 </p>
                                 <hr>
-                                <strong><i class="fas fa-map-marker-alt mr-1"></i> @lang('messages.academic_degree')</strong>
+                                <strong><i class="fas fa-map-marker-alt mr-1"></i> @lang('messages.academic_degree')
+                                </strong>
                                 <p class="text-muted">{{$user->staff->academic_degree['title_'.App::getLocale()]}}</p>
                                 <hr>
                                 <strong><i class="fas fa-pencil-alt mr-1"></i> @lang('messages.academic_rank')</strong>
@@ -164,6 +166,9 @@
                                 {{--                                                            data-toggle="tab">Send order</a></li>--}}
                                 <li class="nav-item"><a class="nav-link" href="#groups"
                                                         data-toggle="tab">@lang('messages.my_group')</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#department"
+                                                        data-toggle="tab">@lang('messages.departments')</a></li>
 
 
                                 <li class="nav-item"><a class="nav-link" href="#add_student"
@@ -319,22 +324,62 @@
                                                        href="{{route('get_group', ['id'=>$group->id])}}">{{$group['title_'.App::getLocale()]}}</a>
                                                     <div class="d-flex">
                                                         <p class="mb-1"><b
-                                                                class="mr-2">@lang('messages.department'):</b> {{$group->departments['title_'.App::getLocale()]}}
+                                                                class="mr-2">@lang('messages.department')
+                                                                :</b> {{$group->departments['title_'.App::getLocale()]}}
                                                         </p>
                                                     </div>
                                                     <div class="d-flex">
-                                                        <p class="mb-1"><b class="mr-2">@lang('messages.students_amount'):</b> {{$group->students->count()}}</p>
+                                                        <p class="mb-1"><b
+                                                                class="mr-2">@lang('messages.students_amount')
+                                                                :</b> {{$group->students->count()}}</p>
                                                     </div>
 
                                                     <div class="d-flex">
                                                         <p class="mb-1"><b
-                                                                class="mr-2">@lang('messages.created'):</b> {{$group->created_at}}
+                                                                class="mr-2">@lang('messages.created')
+                                                                :</b> {{$group->created_at}}
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         @endforeach
                                     </div>
+                                </div>
+                                <div class="tab-pane" id="department">
+                                    @foreach($user->departments as $dep)
+                                        @if($loop->index > 0) <br> @endif
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5>{{$dep['title_'.App::getLocale()]}} {{$dep['title_short_'.App::getLocale()]}}</h5>
+                                            </div>
+                                            @foreach($dep->groups as $group)
+                                                <div class="col-4">
+                                                    <div class="group_card p-3 border">
+                                                        <a class="h3 mb-2"
+                                                           href="{{route('get_group', ['id'=>$group->id])}}">{{$group['title_'.App::getLocale()]}}</a>
+                                                        <div class="d-flex">
+                                                            <p class="mb-1"><b
+                                                                    class="mr-2">@lang('messages.department')
+                                                                    :</b> {{$group->departments['title_'.App::getLocale()]}}
+                                                            </p>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <p class="mb-1"><b
+                                                                    class="mr-2">@lang('messages.students_amount')
+                                                                    :</b> {{$group->students->count()}}</p>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <p class="mb-1"><b
+                                                                    class="mr-2">@lang('messages.created')
+                                                                    :</b> {{$group->created_at}}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    @endforeach
                                 </div>
                                 @if (auth()->user()->isAdmin())
                                     <div class="tab-pane" id="add_order_type">
@@ -430,7 +475,8 @@
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin" value="{{$user->iin}}">
                             </div>
-                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
+                            <button type="submit"
+                                    class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
                         </form>
                     </div>
                 </div>
@@ -499,7 +545,8 @@
                                 <input type="text" class="form-control" placeholder="IIN"
                                        name="iin">
                             </div>
-                            <button type="submit" class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
+                            <button type="submit"
+                                    class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
                         </form>
                     </div>
                 </div>
@@ -527,12 +574,14 @@
                                        required>
                             </div>
                             <div class="group-control">
-                                <label for="new_password2" class="font-weight-normal">@lang('messages.repeat_pass')</label>
+                                <label for="new_password2"
+                                       class="font-weight-normal">@lang('messages.repeat_pass')</label>
                                 <input type="password" id="new_password2" class="form-control" name="new_password2"
                                        required>
                             </div>
 
-                            <button class="btn btn-primary mt-3" id="btn_reset_pass">@lang('messages.reset_pass')</button>
+                            <button class="btn btn-primary mt-3"
+                                    id="btn_reset_pass">@lang('messages.reset_pass')</button>
                         </form>
                     </div>
                 </div>

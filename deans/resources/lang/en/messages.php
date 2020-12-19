@@ -90,5 +90,10 @@ return [
     'refers_to' => 'Refers to',
     'users' => 'Users',
     'role' => 'Role',
-    'description' => 'Description'
+    'description' => 'Description',
+
+    'title'=>'Title',
+    'name_owner'=>'Name owner',
+    'phone_number'=>'Phone number',
+    'email'=>'Email',
 ];

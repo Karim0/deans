@@ -135,6 +135,11 @@
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
+                                           href="{{route('panel-contact')}}">@lang('messages.contact')</a>
+                                    </li>
+
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
                                            href="{{route('panel-news')}}">@lang('messages.news')</a>
                                     </li>
 

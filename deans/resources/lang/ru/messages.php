@@ -90,5 +90,10 @@ return [
     'refers_to' => 'Относится к',
     'users'=>'Пользователи',
     'role'=>'Роль',
-    'description'=>'Описание'
+    'description'=>'Описание',
+
+    'title'=>'Заголовок',
+    'name_owner'=>'Владелец',
+    'phone_number'=>'Номер телефона',
+    'email'=>'Email',
 ];

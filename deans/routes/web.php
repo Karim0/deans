@@ -75,6 +75,10 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::get('/panel-staff/edit/{id}', 'StaffController@edit_staff_page')->name('edit-staff_page');
         Route::post('/panel-staff/edit/{id}', 'StaffController@edit_staff')->name('edit-staff');
         Route::get('/panel-staff/delete/{id}', 'StaffController@delete_staff')->name('delete-staff');
+        Route::post('/panel-staff/add_department_user', 'StaffController@add_department_user')->name('add_department_user');
+        Route::get('/panel-staff/delete_department_user/{dep_id}/{user_id}', 'StaffController@delete_department_user')->name('delete_department_user');
+        Route::post('/panel-staff/add_group_user', 'StaffController@add_group_user')->name('add_group_user');
+        Route::get('/panel-staff/delete_group_user/{group_id}/{user_id}', 'StaffController@delete_group_user')->name('delete_group_user');
 
 
         Route::get('/panel-department', 'DepartmentController@show_departments')->name('panel-department');
@@ -134,12 +138,17 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::post('/panel-study_form/edit/{id}', 'StudyFormController@edit_study_form')->name('edit-study_form');
         Route::get('/panel-study_form/delete/{id}', 'StudyFormController@delete_study_form')->name('delete-study_form');
 
-
         Route::get('/panel-news', 'NewsController@panel_edit')->name('panel-news');
         Route::post('/panel-add_news', 'NewsController@panel_add_news')->name('panel-add_news');
         Route::get('/panel-delete_news/{news}', 'NewsController@destroy')->name('panel-delete_news');
         Route::get('/panel-edit_news/{news}', 'NewsController@edit')->name('panel-edit_page_news');
         Route::post('/panel-edit_news/{news}', 'NewsController@update')->name('panel-edit_news');
+
+        Route::get('/panel-contact', 'ContactController@show_contacts')->name('panel-contact');
+        Route::post('/panel-contact', 'ContactController@add_contact')->name('add-contact');
+        Route::get('/panel-contact/edit/{id}', 'ContactController@edit_contact_page')->name('edit-contact_page');
+        Route::post('/panel-contact/edit/{id}', 'ContactController@edit_contact')->name('edit-contact');
+        Route::get('/panel-contact/delete/{id}', 'ContactController@delete_contact')->name('delete-contact');
     });
 
 

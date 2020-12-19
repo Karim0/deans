@@ -90,5 +90,10 @@ return [
     'refers_to' => 'Қатысты',
     'users'=>'Қолданушылар',
     'role'=>'Рөл',
-    'description'=>'Сипаттама'
+    'description'=>'Сипаттама',
+
+    'title'=>'Заголовок',
+    'name_owner'=>'Владелец',
+    'phone_number'=>'Номер телефона',
+    'email'=>'Email',
 ];

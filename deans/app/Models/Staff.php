@@ -32,4 +32,5 @@ class Staff extends Model
     {
         return $this->belongsTo(PaymentForms::class, 'payment_form_id');
     }
+
 }
