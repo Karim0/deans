@@ -45,6 +45,7 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::post('/add_study_form', 'StudentController@addStudyForm')->name('add_study_form');
         Route::post('/add_payment_forms', 'StudentController@addPaymentForms')->name('add_payment_forms');
         Route::post('/add_study_lang', 'StudentController@addStudyLang')->name('add_study_lang');
+        Route::get('/group/{id}', 'GroupController@getGroup')->name('get_group');
     });
 
     Route::middleware([AdminMiddleware::class])->group(function () {
@@ -68,7 +69,6 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::get('/panel-group/edit/{id}', 'GroupController@edit_group_page')->name('edit-group_page');
         Route::post('/panel-group/edit/{id}', 'GroupController@edit_group')->name('edit-group');
         Route::get('/panel-group/delete/{id}', 'GroupController@delete_group')->name('delete-group');
-        Route::get('/group/{id}', 'GroupController@getGroup')->name('get_group');
 
         Route::post('/add_staff', 'StaffController@addStaff')->name('add_staff');
         Route::get('/panel-staff', 'StaffController@show_staff')->name('panel-staff');
