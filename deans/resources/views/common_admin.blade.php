@@ -48,7 +48,7 @@
     </nav>
     <aside class="main-sidebar sidebar-dark-primary elevation-4 h-100">
         <a href="{{route('home')}}" class="brand-link">
-            <img src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
+            <img src="{{asset('img/logo.png')}}"
                  alt="Logo"
                  class="brand-image img-circle elevation-3 mt-1"
                  style="opacity: .8; width: 34px; height: auto">
@@ -58,7 +58,7 @@
         <div class="sidebar">
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="{{asset('img/def_user.png')}}" class="img-circle elevation-2" alt="User Image">
+                    <img src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
                     <a href="#" class="d-block">{{auth()->user()->lastname}} {{auth()->user()->name}}</a>
