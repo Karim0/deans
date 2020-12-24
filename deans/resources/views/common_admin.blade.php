@@ -48,7 +48,7 @@
     </nav>
     <aside class="main-sidebar sidebar-dark-primary elevation-4 h-100">
         <a href="{{route('home')}}" class="brand-link">
-            <img src="{{asset('img/logo.png')}}"
+            <img src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
                  alt="Logo"
                  class="brand-image img-circle elevation-3 mt-1"
                  style="opacity: .8; width: 34px; height: auto">
