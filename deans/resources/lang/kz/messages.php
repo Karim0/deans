@@ -96,4 +96,6 @@ return [
     'name_owner'=>'Владелец',
     'phone_number'=>'Номер телефона',
     'email'=>'Email',
+    'profile'=>'Профиль',
+    'study_statuses'=>'Статус обучающегося',
 ];

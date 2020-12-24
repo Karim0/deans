@@ -22,7 +22,16 @@
                 <textarea type="text" class="form-control" id="text" name="text" rows="10">{{$news->text}}</textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Добавить</button>
+            <button type="submit" class="btn btn-primary">@lang('messages.edit')</button>
         </form>
     </div>
+@endsection
+@section('script')
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#text'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 @endsection

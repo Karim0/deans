@@ -31,11 +31,14 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
     Route::post('/reset_password', 'RegController@reset_password')->name('reset_password');
 
     Route::post('/add_order', 'OrderController@addOrder')->name('add_order');
+    Route::get('/profile_student', 'RegController@profile_student')->name('profile_student');
+
+    Route::post('/post_change_user', 'RegController@change_user')->name('post_change_user');
 
     Route::middleware([AdviserMiddleware::class])->group(function (){
         Route::get('/profile', 'RegController@profile')->name('profile');
         Route::post('/add_user', 'RegController@addUser')->name('add_user');
-        Route::post('/post_change_user', 'RegController@change_user')->name('post_change_user');
+
         Route::post('/drop_password', 'RegController@drop_password')->name('drop_password');
 
         Route::get('admin_panel/orders', 'OrderController@Orders')->name('panel-orders');
@@ -80,13 +83,16 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::post('/panel-staff/add_group_user', 'StaffController@add_group_user')->name('add_group_user');
         Route::get('/panel-staff/delete_group_user/{group_id}/{user_id}', 'StaffController@delete_group_user')->name('delete_group_user');
 
+        Route::get('/panel-student', 'StudentController@show_student')->name('panel-student_info');
+        Route::get('/panel-student/edit/{id}', 'StudentController@edit_student_page')->name('edit-student_page');
+        Route::post('/panel-student/edit/{id}', 'StudentController@edit_student')->name('edit-student');
+        Route::get('/panel-student/delete/{id}', 'StudentController@delete_student')->name('delete-student');
 
         Route::get('/panel-department', 'DepartmentController@show_departments')->name('panel-department');
         Route::post('/panel-department', 'DepartmentController@add_department')->name('add-department');
         Route::get('/panel-department/edit/{id}', 'DepartmentController@edit_department_page')->name('edit-department_page');
         Route::post('/panel-department/edit/{id}', 'DepartmentController@edit_department')->name('edit-department');
         Route::get('/panel-department/delete/{id}', 'DepartmentController@delete_department')->name('delete-department');
-
 
         Route::get('/panel-academic_degree', 'AcademicDegreeController@show_academic_degrees')->name('panel-academic_degree');
         Route::post('/panel-academic_degree', 'AcademicDegreeController@add_academic_degree')->name('add-academic_degree');
@@ -106,13 +112,11 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::post('/panel-degree_type/edit/{id}', 'DegreeTypeController@edit_degree_type')->name('edit-degree_type');
         Route::get('/panel-degree_type/delete/{id}', 'DegreeTypeController@delete_degree_type')->name('delete-degree_type');
 
-
         Route::get('/panel-department_type', 'DepartmentTypeController@show_department_types')->name('panel-department_type');
         Route::post('/panel-department_type', 'DepartmentTypeController@add_department_type')->name('add-department_type');
         Route::get('/panel-department_type/edit/{id}', 'DepartmentTypeController@edit_department_type_page')->name('edit-department_type_page');
         Route::post('/panel-department_type/edit/{id}', 'DepartmentTypeController@edit_department_type')->name('edit-department_type');
         Route::get('/panel-department_type/delete/{id}', 'DepartmentTypeController@delete_department_type')->name('delete-department_type');
-
 
         Route::get('/panel-english_level', 'EnglishLevelController@show_english_levels')->name('panel-english_level');
         Route::post('/panel-english_level', 'EnglishLevelController@add_english_level')->name('add-english_level');
@@ -149,6 +153,12 @@ Route::middleware([Localization::class, Authenticate::class])->group(function ()
         Route::get('/panel-contact/edit/{id}', 'ContactController@edit_contact_page')->name('edit-contact_page');
         Route::post('/panel-contact/edit/{id}', 'ContactController@edit_contact')->name('edit-contact');
         Route::get('/panel-contact/delete/{id}', 'ContactController@delete_contact')->name('delete-contact');
+
+        Route::get('/panel-study_status', 'StudyStatusController@show_study_statuses')->name('panel-study_status');
+        Route::post('/panel-study_status', 'StudyStatusController@add_study_status')->name('add-study_status');
+        Route::get('/panel-study_status/edit/{id}', 'StudyStatusController@edit_study_status_page')->name('edit-study_status_page');
+        Route::post('/panel-study_status/edit/{id}', 'StudyStatusController@edit_study_status')->name('edit-study_status');
+        Route::get('/panel-study_status/delete/{id}', 'StudyStatusController@delete_study_status')->name('delete-study_status');
     });
 
 

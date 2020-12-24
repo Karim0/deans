@@ -56,7 +56,7 @@
                         <input type="number" class="form-control" id="course_count" name="course_count" value="{{$study_forms->course_count}}">
                     </div>
 
-                    <button class="btn btn-primary" type="submit">Редактировать</button>
+                    <button class="btn btn-primary" type="submit">@lang('messages.edit')</button>
                 </form>
             </div>
         </div>

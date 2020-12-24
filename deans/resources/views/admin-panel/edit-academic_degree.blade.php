@@ -32,7 +32,7 @@
                                value="{{$academic_degrees->sort_order}}">
                     </div>
 
-                    <button class="btn btn-primary" type="submit">Редактировать</button>
+                    <button class="btn btn-primary" type="submit">@lang('messages.edit')</button>
                 </form>
             </div>
         </div>

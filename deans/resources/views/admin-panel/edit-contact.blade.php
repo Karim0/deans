@@ -28,7 +28,7 @@
                         <input type="text" class="form-control" id="email" name="email" value="{{$contacts->email}}">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">@lang('messages.add')</button>
+                    <button type="submit" class="btn btn-primary">@lang('messages.edit')</button>
                 </form>
             </div>
         </div>

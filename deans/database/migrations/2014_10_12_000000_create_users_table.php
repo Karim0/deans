@@ -37,7 +37,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        DB::table('users')->insert(['id'=>1,
+        DB::table('users')->insert([
             'name'=>'Admin',
             'lastname'=>'Admin',
             'patronymic'=>'Admin',

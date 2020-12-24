@@ -95,6 +95,10 @@
                                     </li>
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
                                         <a class="text-white"
+                                           href="{{route('panel-student_info')}}">@lang('messages.student_info')</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark">
+                                        <a class="text-white"
                                            href="{{route('panel-order_type')}}">@lang('messages.references')</a>
                                     </li>
 
@@ -116,7 +120,7 @@
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">
-                                        <a class="text-white" href="{{route('panel-study_lang')}}">@lang('messages.payment_form')</a>
+                                        <a class="text-white" href="{{route('panel-study_lang')}}">@lang('messages.study_lang')</a>
                                     </li>
 
                                     <li class="list-group-item list-group-item-action list-group-item-dark">

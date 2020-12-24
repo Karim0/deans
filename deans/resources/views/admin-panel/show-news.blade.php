@@ -82,7 +82,6 @@
     </div>
 @endsection
 @section('script')
-
     <script>
         ClassicEditor
             .create(document.querySelector('#text'))

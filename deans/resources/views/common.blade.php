@@ -81,6 +81,8 @@
                     @if(auth()->check())
                         @if(auth()->user()->isAdvisor() or auth()->user()->isAdmin())
                             <a class="text-black-50 dropdown-item" href="{{route('profile')}}">@lang('messages.admin_panel')</a>
+                        @else
+                            <a class="text-black-50 dropdown-item" href="{{route('profile_student')}}">@lang('messages.profile')</a>
                         @endif
 
                         <a class="text-black-50 dropdown-item" href="{{route('logout')}}">@lang('messages.exit')</a>

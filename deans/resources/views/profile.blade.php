@@ -238,10 +238,12 @@
                                                             value="{{$group->id}}">{{$group['title_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
-                                                <a href="{{route('panel-group')}}"
-                                                   class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
-                                                    +
-                                                </a>
+                                                @if(auth()->user()->isAdmin())
+                                                    <a href="{{route('panel-group')}}"
+                                                       class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
+                                                        +
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
@@ -252,10 +254,12 @@
                                                             value="{{$form->id}}">{{$form['description_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
-                                                <a href="{{route('panel-study_form')}}"
-                                                   class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
-                                                    +
-                                                </a>
+                                                @if(auth()->user()->isAdmin())
+                                                    <a href="{{route('panel-study_form')}}"
+                                                       class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
+                                                        +
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
@@ -266,10 +270,12 @@
                                                             value="{{$langs->id}}">{{$langs['title_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
-                                                <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                   href="{{route('panel-study_lang')}}">
-                                                    +
-                                                </a>
+                                                @if(auth()->user()->isAdmin())
+                                                    <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                       href="{{route('panel-study_lang')}}">
+                                                        +
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
@@ -280,10 +286,12 @@
                                                             value="{{$pay->id}}">{{$pay['description_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
-                                                <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
-                                                   href="{{route('panel-payment_form')}}">
-                                                    +
-                                                </a>
+                                                @if(auth()->user()->isAdmin())
+                                                    <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                       href="{{route('panel-payment_form')}}">
+                                                        +
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
 
@@ -296,9 +304,12 @@
                                                             value="{{$stat->id}}">{{$stat['description_'.App::getLocale()]}}</option>
                                                     @endforeach
                                                 </select>
-                                                <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold">
-                                                    +
-                                                </a>
+                                                @if(auth()->user()->isAdmin())
+                                                    <a class="flex-grow-0 ml-2 bg-transparent text-success border-0 text-bold"
+                                                       href="{{route('panel-study_status')}}">
+                                                        +
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
 
@@ -546,7 +557,7 @@
                                        name="iin">
                             </div>
                             <button type="submit"
-                                    class="mt-2 btn btn-primary btn-block w-100">@lang('messages.edit')</button>
+                                    class="mt-2 btn btn-primary btn-block w-100">@lang('messages.add')</button>
                         </form>
                     </div>
                 </div>

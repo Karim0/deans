@@ -96,4 +96,6 @@ return [
     'name_owner'=>'Name owner',
     'phone_number'=>'Phone number',
     'email'=>'Email',
+    'profile'=>'Profile',
+    'study_statuses'=>'Study statuses',
 ];

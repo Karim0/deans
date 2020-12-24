@@ -27,7 +27,7 @@
                                value="{{$order_type->description_kz}}">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Редактировать</button>
+                    <button type="submit" class="btn btn-primary">@lang('messages.edit')</button>
                 </form>
             </div>
         </div>

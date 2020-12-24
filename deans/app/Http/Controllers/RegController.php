@@ -130,6 +130,16 @@ class RegController extends Controller
         return view('profile', $data);
     }
 
+    public function profile_student()
+    {
+
+        $data = ['user' => Auth::user()];
+        $orders = StudentOrder::where('user_id', $data['user']->id)->get();
+        $data += ['orders' => $orders];
+//        dd($data);
+        return view('profile-student', $data);
+    }
+
     public function logout()
     {
         auth()->logout();

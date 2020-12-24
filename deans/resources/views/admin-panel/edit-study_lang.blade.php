@@ -24,7 +24,7 @@
                         <input type="text" class="form-control" id="title_kz" name="title_kz" value="{{$study_langs->title_kz}}">
                     </div>
 
-                    <button class="btn btn-primary" type="submit">Редактировать</button>
+                    <button class="btn btn-primary" type="submit">@lang('messages.edit')</button>
                 </form>
             </div>
         </div>

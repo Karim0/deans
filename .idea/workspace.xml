@@ -29,20 +29,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a54d89ac-95f5-420d-aea3-9588a1208473" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/271f2de9-95e4-4a15-b95c-30faee338354/storage_v2/_src_/database/demo.4_0uAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StudyStatusController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/public/users_images/1608809789.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-student.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-study_status.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-student.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-study_status.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deans/resources/views/profile-student.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StaffController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deans/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/RegController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/lang/kz/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/kz/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/lang/ru/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-academic_degree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-academic_degree.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-academic_rank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-academic_rank.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-degree_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-degree_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-department_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-english_level.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-english_level.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-group.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-staff.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-staff.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-order_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-payment_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-payment_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-study_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-study_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-study_lang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/edit-study_lang.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/admin-panel/show-news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deans/resources/views/common.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/common_admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/resources/views/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deans/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deans/routes/web.php" afterDir="false" />
@@ -195,18 +211,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deans/resources/views/admin-panel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\lang" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views\admin-panel" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\lang\ru" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\app\Http\Controllers" />
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\views" />
-      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\img" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\lang" />
+      <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\resources\lang\ru" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Karim\PhpstormProjects\deans\deans\app\Models" />
@@ -295,7 +311,11 @@
       <workItem from="1608190893695" duration="4642000" />
       <workItem from="1608278967324" duration="12641000" />
       <workItem from="1608307054686" duration="2353000" />
-      <workItem from="1608356278531" duration="4970000" />
+      <workItem from="1608356278531" duration="7623000" />
+      <workItem from="1608616539201" duration="666000" />
+      <workItem from="1608731012903" duration="154000" />
+      <workItem from="1608793671038" duration="2478000" />
+      <workItem from="1608808481243" duration="5779000" />
     </task>
     <task id="LOCAL-00001" summary="login and reg">
       <created>1602765899279</created>
@@ -500,7 +520,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608309351021</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="contact crud">
+      <created>1608361334957</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1608361334957</updated>
+    </task>
+    <task id="LOCAL-00031" summary="contact crud">
+      <created>1608361556150</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1608361556150</updated>
+    </task>
+    <task id="LOCAL-00032" summary="contact crud">
+      <created>1608363218272</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1608363218272</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,6 +599,7 @@
     <MESSAGE value="server conf" />
     <MESSAGE value="users manipulation" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="contact crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact crud" />
   </component>
 </project>
