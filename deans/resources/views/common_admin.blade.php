@@ -58,7 +58,7 @@
         <div class="sidebar">
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="{{!is_null(auth()->user()->profile_img) ? auth()->user()->profile_img : asset('/img/def_user.png')}}"
+                    <img src="{{!is_null(auth()->user()->profile_img) ? '/'.auth()->user()->profile_img : asset('/img/def_user.png')}}"
                          class="img-circle elevation-2 profile-user-img-menu-custom" alt="User Image">
                 </div>
                 <div class="info">
